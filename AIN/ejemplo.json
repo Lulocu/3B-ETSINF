@@ -1,0 +1,43 @@
+{
+    "host": "gtirouter.dsic.upv.es",
+    "manager": "manager_luilocu2",
+    "service": "service_luilocu2",
+    "axis": [
+        {
+            "rank": "BDISoldier",
+            "name": "soldier_axis_luilocu2",
+            "password": "secret",
+			"amount": 1
+        },
+        {
+            "rank": "BDIMedic",
+            "name": "medic_axis_luilocu2",
+            "password": "secret",
+			"amount": 2
+        },
+        {
+            "rank": "BDIFieldOp",
+            "name": "fieldOp_axis_luilocu2",
+            "password": "secret",
+			"amount": 1
+        }
+    ],
+    "allied": [
+        {
+            "rank": "BDISoldier",
+            "name": "soldier_allied_luilocu2",
+            "password": "secret",
+            "amount": 1
+        },{
+            "rank": "BDIMedic",
+            "name": "medic_allied_luilocu2",
+            "password": "secret",
+            "amount": 2
+        },{
+            "rank": "BDIFieldOp",
+            "name": "medic_allied_luilocu2",
+            "password": "secret",
+            "amount": 1
+        }
+    ]
+}

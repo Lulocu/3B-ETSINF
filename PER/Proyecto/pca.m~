@@ -1,0 +1,17 @@
+#!/usr/bin/octave -qf
+
+
+function [m,W]=pca(X)
+  m = mean(X);
+  Xm = X - m;
+  covarianza = (Xm' * Xm)/rows(X);
+  [eigvec, eigval] = eig(covarianza);
+  [S, I] = sort(diag(X),"descend"); #X por eigval
+  W = eigvec(:,I);
+  
+  for i =1:5
+    xr=reshape(W(:,i),28,28);
+    imshow((xr - 255)',[]) #255 -xr
+    pause(5);
+  end
+endfunction
