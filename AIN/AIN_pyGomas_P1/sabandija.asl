@@ -68,9 +68,9 @@ quieto.
   +quieto.
 
 +packs_in_fov(ID,Type,Angle,Distance,Health,Position): Type < 1003
-<-
-.goto(Position);
+  <-
+  .goto(Position).
 
 +girar
   <-
-  .turn(3.14);
+  .turn(3.14).
