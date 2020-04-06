@@ -1,0 +1,77 @@
+####################
+#       INFO       #
+####################
+filename: 'spam.txt'
+
+####################
+#     BIGRAMS      #
+####################
+$	=>	11	=>	Spam:5 Egg:5 Lobster:1
+Bacon	=>	6	=>	sausage:2 and:2 $:2
+Egg	=>	8	=>	and:3 Bacon:2 sausage:1 Spam:1 Sausage:1
+Lobster	=>	1	=>	Thermidor:1
+Mornay	=>	1	=>	sauce:1
+Sausage	=>	1	=>	and:1
+Spam	=>	27	=>	Spam:11 $:9 Egg:3 Bacon:2 baked:1 and:1
+Thermidor	=>	1	=>	aux:1
+a	=>	2	=>	fried:1 Mornay:1
+and	=>	12	=>	Spam:9 Bacon:2 a:1
+aux	=>	1	=>	crevettes:1
+baked	=>	1	=>	beans:1
+beans	=>	1	=>	Spam:1
+brandy	=>	1	=>	and:1
+crevettes	=>	1	=>	with:1
+egg	=>	1	=>	on:1
+fried	=>	1	=>	egg:1
+garnished	=>	1	=>	with:1
+on	=>	1	=>	top:1
+pate	=>	1	=>	brandy:1
+sauce	=>	1	=>	garnished:1
+sausage	=>	3	=>	and:3
+top	=>	1	=>	and:1
+truffle	=>	1	=>	pate:1
+with	=>	2	=>	truffle:1 a:1
+
+####################
+#     TRIGRAMS     #
+####################
+('$', 'Egg')	=>	5	=>	and:2 Bacon:2 sausage:1
+('$', 'Lobster')	=>	1	=>	Thermidor:1
+('$', 'Spam')	=>	5	=>	Spam:2 Egg:2 Bacon:1
+('Bacon', 'and')	=>	2	=>	Spam:2
+('Bacon', 'sausage')	=>	2	=>	and:2
+('Egg', 'Bacon')	=>	2	=>	sausage:1 and:1
+('Egg', 'Sausage')	=>	1	=>	and:1
+('Egg', 'Spam')	=>	1	=>	Spam:1
+('Egg', 'and')	=>	3	=>	Spam:2 Bacon:1
+('Egg', 'sausage')	=>	1	=>	and:1
+('Lobster', 'Thermidor')	=>	1	=>	aux:1
+('Mornay', 'sauce')	=>	1	=>	garnished:1
+('Sausage', 'and')	=>	1	=>	Spam:1
+('Spam', 'Bacon')	=>	2	=>	sausage:1 and:1
+('Spam', 'Egg')	=>	3	=>	and:1 Spam:1 Sausage:1
+('Spam', 'Spam')	=>	11	=>	Spam:7 baked:1 and:1 Egg:1 Bacon:1
+('Spam', 'and')	=>	1	=>	Spam:1
+('Spam', 'baked')	=>	1	=>	beans:1
+('Thermidor', 'aux')	=>	1	=>	crevettes:1
+('a', 'Mornay')	=>	1	=>	sauce:1
+('a', 'fried')	=>	1	=>	egg:1
+('and', 'Bacon')	=>	2	=>	$:2
+('and', 'Spam')	=>	9	=>	$:9
+('and', 'a')	=>	1	=>	fried:1
+('aux', 'crevettes')	=>	1	=>	with:1
+('baked', 'beans')	=>	1	=>	Spam:1
+('beans', 'Spam')	=>	1	=>	Spam:1
+('brandy', 'and')	=>	1	=>	a:1
+('crevettes', 'with')	=>	1	=>	a:1
+('egg', 'on')	=>	1	=>	top:1
+('fried', 'egg')	=>	1	=>	on:1
+('garnished', 'with')	=>	1	=>	truffle:1
+('on', 'top')	=>	1	=>	and:1
+('pate', 'brandy')	=>	1	=>	and:1
+('sauce', 'garnished')	=>	1	=>	with:1
+('sausage', 'and')	=>	3	=>	Spam:2 Bacon:1
+('top', 'and')	=>	1	=>	Spam:1
+('truffle', 'pate')	=>	1	=>	brandy:1
+('with', 'a')	=>	1	=>	Mornay:1
+('with', 'truffle')	=>	1	=>	pate:1
