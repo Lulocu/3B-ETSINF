@@ -7,7 +7,7 @@ quieto.
 
 +flag(F): team(200)
   <-
-  .create_control_points(F,100,3,C);
+  .create_control_points(F,100,10,C);
   +control_points(C);
   //.wait(5000);
   .length(C,L);
@@ -38,7 +38,7 @@ quieto.
  /*  En modo arena no hace falta disparar al enemigo  
   +enemies_in_fov(ID,Type,Angle,Distance,Health,Position)
   <-
-  .shoot(3,Position).
+  .shoot(10,Position).
 */
 +threshold_health(vida) : health(X)
   <- +move. //actualizar vida
@@ -47,19 +47,47 @@ quieto.
   +vida(X).
 
   
-+move : position([X,Y,Z])
-  <- 
-  -quieto;
-  +andar;
-  .goto([X+3,Y,Z+3]);
-  -andar;
-  +vigilar.
+//+move : position([X,Y,Z])
+//  <- 
+//  -quieto;
+//  +andar;
+//  .goto([X+10,Y,Z+10]);
+//  -andar;
+//  +vigilar.
 
 
-+friends_in_fov(ID,Type,Angle,Distance,Health,Position)
++friends_in_fov(ID,Type,Angle,Distance,Health,Position): position([X,Y,Z])
   <-
   .shoot(10,Position);
-  +move.
+  +move(Position, [X,Y,Z]).
+
++move([X1,Y1,Z1],[X2,Y2,Z2]): X1 < X2 & Z1 > Z2
+<- -quieto;
++andar;
+.goto([X2+10,Y2,Z2-10]);
+-andar;
++vigilar.
+
++move(([X1,Y1,Z1]),([X2,Y2,Z2])): X1 > X2 & Z1 < Z2
+<- -quieto;
++andar;
+.goto([X2-10,Y2,Z2+10]);
+-andar;
++vigilar.
+
++move(([X1,Y1,Z1]),([X2,Y2,Z2])): X1 < X2 & Z1 < Z2
+<- -quieto;
++andar;
+.goto([X2+10,Y2,Z2+10]);
+-andar;
++vigilar.
+
++move(([X1,Y1,Z1]),([X2,Y2,Z2])): X1 > X2 & Z1 > Z2
+<- -quieto;
++andar;
+.goto([X2-10,Y2,Z2-10]);
+-andar;
++vigilar.
 
 +vigilar
   <-
@@ -67,7 +95,7 @@ quieto.
   -vigilar;
   +quieto.
 
-+packs_in_fov(ID,Type,Angle,Distance,Health,Position): Type < 1003
++packs_in_fov(ID,Type,Angle,Distance,Health,Position): Type < 10010
   <-
   .goto(Position).
 
