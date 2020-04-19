@@ -10,15 +10,15 @@
 % d(x,y) = \sum_d (x_d - y_d)^2 = 
 %        = \sum_d x_d^2 + y_d^2 - 2*x_d*y_d
 %        = \sum_d x_d^2 + \sum_d y_d^2 - 2 * \sum_d x_d*y_d
-function D = L2dist(X,Y)
-  XX = sum(X.*X,2);
-  YY = sum(Y.*Y,2);
-  D = XX + (YY' - 2*X*Y');
-end
+%function D = L2dist(X,Y)
+%  XX = sum(X.*X,2);
+%  YY = sum(Y.*Y,2);
+%  D = XX + (YY' - 2*X*Y');
+%end
 
 % Non-efficient implementation that computes the L2 distance for 
 % each test sample with respect to all samples in the training set
-% function D = L2dist(X,Y)
-% for i=1:rows(Y)
-%   D(:,i) = sum(abs(X-Y(i,:)).^2, 2);
-%end
+ function D = L2dist(X,Y)
+ for i=1:rows(Y)
+   D(:,i) = sum(abs(X-Y(i,:)).^2, 2);
+end
