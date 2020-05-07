@@ -10,14 +10,24 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    177228,       3885]
-NotebookOptionsPosition[    173755,       3822]
-NotebookOutlinePosition[    174120,       3838]
-CellTagsIndexPosition[    174077,       3835]
+NotebookDataLength[    124365,       2654]
+NotebookOptionsPosition[    123205,       2628]
+NotebookOutlinePosition[    123581,       2644]
+CellTagsIndexPosition[    123538,       2641]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+Cell[BoxData[
+ RowBox[{"(*", " ", 
+  RowBox[{"Autores", ":", " ", 
+   RowBox[{
+   "Luis", " ", "L\[OAcute]pez", " ", "Cuerva", " ", "y", " ", "Marc", " ", 
+    "Rodas", " ", "Lorente"}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.79782509841298*^9, 
+  3.7978251192936974`*^9}},ExpressionUUID->"72096519-78b0-4098-9993-\
+bf21bd7cfe5d"],
+
 Cell[BoxData[
  RowBox[{
   RowBox[{
@@ -89,8 +99,7 @@ Cell[BoxData[
             RowBox[{"[", "i", "]"}], "]"}]}], "]"}]}], "\[IndentingNewLine]", 
         "]"}], ";", "\[IndentingNewLine]", 
        RowBox[{"Return", "[", "resultado", "]"}], ";"}]}], 
-     "\[IndentingNewLine]", "]"}]}], ";"}], "\[IndentingNewLine]"}]], "Input",\
-
+     "\[IndentingNewLine]", "]"}]}], ";"}], "\[IndentingNewLine]"}]], "Input",
  CellChangeTimes->{{3.7923092456347857`*^9, 3.7923092726892104`*^9}, {
    3.792309469739369*^9, 3.7923094888046503`*^9}, {3.792309641055936*^9, 
    3.792309645913667*^9}, {3.7923096788277564`*^9, 3.792309697192663*^9}, {
@@ -108,7 +117,7 @@ Cell[BoxData[
    3.7971647575030975`*^9, 3.797165144182112*^9}, {3.797165280741939*^9, 
    3.797165330287813*^9}, {3.797165668410281*^9, 3.797165686875511*^9}, {
    3.797165803110035*^9, 3.797165813167156*^9}, 3.797169762848*^9},
- CellLabel->"In[1]:=",ExpressionUUID->"4397ba76-be72-44a7-a5f0-b31891698d17"],
+ CellLabel->"In[16]:=",ExpressionUUID->"4397ba76-be72-44a7-a5f0-b31891698d17"],
 
 Cell[BoxData[
  RowBox[{
@@ -215,7 +224,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.797165696878736*^9, 3.797165700017473*^9}, {
   3.797165752941883*^9, 3.797165755096362*^9}, {3.797166041546163*^9, 
   3.797166075513973*^9}},
- CellLabel->"In[2]:=",ExpressionUUID->"aeaad469-64ac-418a-8a0c-305a918a976a"],
+ CellLabel->"In[17]:=",ExpressionUUID->"aeaad469-64ac-418a-8a0c-305a918a976a"],
 
 Cell[BoxData[
  RowBox[{
@@ -231,7 +240,6 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"ReglaBin", "=", 
       RowBox[{"Reglas", "[", "ReglaInt", "]"}]}], ";", "\[IndentingNewLine]", 
-     
      RowBox[{"(*", " ", "Inicializar", "*)"}], "\[IndentingNewLine]", 
      RowBox[{"vacio", " ", "=", " ", 
       RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
@@ -291,7 +299,8 @@ sTaIlpp13QJET6/f5gii1Txnu4PoBE9dDxB97sH0TBB9wtWhCERv2nGwAkRb
 HNhTBaJZrms3g+h2sQV9IPqy98UpIPqjtcFUEF1j/GYLWP+3fVtB9Ixf9ntA
 dIbQ370g+kn7wyMgmqfkE5j+dlYpZy2Q3ut6HEzPcb5RAKK3mjEUgmgA9O6r
 ZA==
-  "],ExpressionUUID->"7c8f4a70-12aa-4a35-a2c8-e3da5879d7aa"],
+  "],
+ CellLabel->"In[18]:=",ExpressionUUID->"7c8f4a70-12aa-4a35-a2c8-e3da5879d7aa"],
 
 Cell[CellGroupData[{
 
@@ -303,7 +312,7 @@ Cell[BoxData[
     ",", "0", ",", "0", ",", "1", ",", "1", ",", "0"}], "}"}]}]], "Input",
  CellChangeTimes->{{3.7971658362675743`*^9, 3.79716585115178*^9}, {
   3.7971675755928907`*^9, 3.797167589529645*^9}},
- CellLabel->"In[4]:=",ExpressionUUID->"10a9e7c3-6e31-4c01-a1d7-3d57a7afe407"],
+ CellLabel->"In[19]:=",ExpressionUUID->"10a9e7c3-6e31-4c01-a1d7-3d57a7afe407"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -312,8 +321,8 @@ Cell[BoxData[
    ",", "0", ",", "0", ",", "1", ",", "1", ",", "0"}], "}"}]], "Output",
  CellChangeTimes->{
   3.797165852602523*^9, 3.797167385591861*^9, {3.79716758391247*^9, 
-   3.797167594205113*^9}, 3.797247929319652*^9},
- CellLabel->"Out[4]=",ExpressionUUID->"e7b56cc8-a055-4a6f-95fe-e5c589f52fb4"]
+   3.797167594205113*^9}, 3.797247929319652*^9, 3.7978256623406954`*^9},
+ CellLabel->"Out[19]=",ExpressionUUID->"4e914105-808c-4688-8190-ebe4ec041dc5"]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -328,12 +337,12 @@ Cell[BoxData[
   RowBox[{"lista", ",", "54", ",", "100"}], "]"}]], "Input",
  CellChangeTimes->{{3.7971678147678328`*^9, 3.7971678331275473`*^9}, {
   3.797169157195456*^9, 3.79716915758237*^9}},
- CellLabel->"In[9]:=",ExpressionUUID->"d6599faf-3aed-41b5-ba96-aaa01d51becb"],
+ CellLabel->"In[20]:=",ExpressionUUID->"d6599faf-3aed-41b5-ba96-aaa01d51becb"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`i12$$ = 1, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`i12$$ = 32, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {
     "\"min\"" :> {$CellContext`i12$$ = 1}, 
      "\"max\"" :> {$CellContext`i12$$ = 99}}, Typeset`bookmarkMode$$ = "Menu",
@@ -341,7 +350,7 @@ Cell[BoxData[
     "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{{
        Hold[$CellContext`i12$$], 1, ""}, 1, 99, 1}}, Typeset`size$$ = 
     Automatic, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`i12$19060$$ = 0}, 
+    Typeset`skipInitDone$$ = True, $CellContext`i12$14450$$ = 0}, 
     PaneBox[
      PanelBox[
       DynamicWrapperBox[GridBox[{
@@ -353,9 +362,9 @@ Cell[BoxData[
                 {"\<\"\"\>", 
                  AnimatorBox[Dynamic[$CellContext`i12$$], {1, 99, 1},
                   AnimationRate->Automatic,
-                  AnimationRunTime->0.,
+                  AnimationRunTime->6.565852165222168,
                   AnimationRunning->False,
-                  AnimationTimeIndex->0.,
+                  AnimationTimeIndex->1.565852165222168,
                   
                   AppearanceElements->{
                    "ProgressSlider", "PlayPauseButton", "FasterSlowerButtons",
@@ -385,9 +394,7 @@ Cell[BoxData[
               TagBox[
                PaneSelectorBox[{1->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeBjBgZGBkZGQAEWAazGdghItD1UD5YDVQdVANED5U
-AqYWYggjYTOQxPHRjLjlkfwAUYjLrQxIboXrR7YfXZyROD8wAADUJgJ9
-                  
+1:eJxTTMoPSmJiYGCQBGJeIGYcBaQABkZQkEGCjQHGZAAAM9MDCQ==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -407,9 +414,7 @@ AqYWYggjYTOQxPHRjLjlkfwAUYjLrQxIboXrR7YfXZyROD8wAADUJgJ9
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 2->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGZkYGRkBNEgAsFnBAMon4ERoQ6iBsoHq4Hph2iA
-8KESMLUQQxgJm4Ekjo9mxC2P5AeIQlxuZUByK1w/sv3o4oy4/QAA0vcCew==
-
+1:eJxTTMoPSmJiYGCQBGJeIGYcBQQAAyMolCAhxQBjAjEDI4zJAAAzGQMC
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -429,8 +434,7 @@ AqYWYggjYTOQxPHRjLjlkfwAUYjLrQxIboXrR7YfXZyROD8wAADUJgJ9
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 3->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGZkBBFAihFEgGiYIEycASwJV8fACBeHqoHpZ0TS
-D9EA4cPMhqqF20PIDCRxfDQjbnkkP0AU4nIrA5Jb4fqR7UcXRxUDANRcAn4=
+1:eJxTTMoPSmJiYGCQBGJeIGYcBZiAgREUMJDAYYAxgZiBEcZkgGCoIgAx/QL8
 
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
@@ -451,9 +455,8 @@ D9EA4cPMhqqF20PIDCRxfDQjbnkkP0AU4nIrA5Jb4fqR7UcXRxUDANRcAn4=
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 4->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeBhBgZGBkZIQxYHwwGyIOkYSrYwQDmHJGJP1gMZh+
-RiT9EA0QPsxsqFq4PYTMQBLHRzPilkf1K5I8ulsZkNwK149sP7o4IwDR2wJ7
-
+1:eJxTTMoPSmJiYGCQBGJeIGYcBWDAwAgKC0h4MMCYQMzACGMyQDBUEUQcLMPI
+CAAwlwL2
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -473,9 +476,8 @@ RiT9EA0QPsxsqFq4PYTMQBLHRzPilkf1K5I8ulsZkNwK149sP7o4IwDR2wJ7
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 5->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJyFT8sVgDAMAu8O4NGVHKELuP+tNb9yqT2k5AUI6d3epx0ArlHnKJC015sA
-bwKMmzokTTOzdFC/zdJP8VNycndoK2e3Q+Z/yDUvf3Dh6lbIreXX/K860zAC
-fQ==
+1:eJxTTMoPSmJiYGCQBGJeIGYcuYCBEeR9SBAwwJhAzMAIYzJAMFQRRBwsA1cH
+FmAAAC7fAu4=
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -495,9 +497,8 @@ fQ==
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 6->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGYEY0YgYACxwBQjI4QBpSAMhDqYNESQAa6OkRFq
-DEQJkn4UexiR9DMi2QMzG6oWbg8hM5DE8dGMuOWR/MDAgKwO3a0MSG6F6wdi
-ANIJAnw=
+1:eJxTTMoPSmJiYGCQBGJeIGYcUYCBEeRjiK8ZYEwgZmCEMRkgGKoIIg6WgasD
+CzDA9IONBQAszQLq
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -517,9 +518,8 @@ ANIJAnw=
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 7->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGZkBCJGBhCLAUyD+RABCB+qAIc6uH6IJFwdIyPU
-GIgSJP1gMZh+RiT9jEj2wMyGqoXbQ8gMJHF8NCNueSQ/MDAgq0N3KwPCrQDS
-HQJ9
+1:eJxTTMoPSmJiYGCQBGJeIGYc7oCBEeRJiEcZYEwgZmCEMRkgGKoIIg6WgasD
+CzDA9MPMhaljZAQAKoUC5Q==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -539,9 +539,8 @@ HQJ9
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 8->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeBhBgBGFGIGKEUWBBMA3mQwQYkdQx4FAH1w+RhKtj
-ZIQaA1GCpB9mP1QJQj8jkj0ws5HcyoBQi9sMJHF8NCNueSQ/MDAgq0N1KwDQ
-7QJ7
+1:eJxTTMoPSmJiYGCQBGJeIGYchoCBEeQviN8YYEwgZmCEMRkgGKoIIg6WgasD
+CzDA9MPMhaljhOmHCAIAJ/EC4A==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -561,9 +560,8 @@ ZIQaA1GCpB9mP1QJQj8jkj0ws5HcyoBQi9sMJHF8NCNueSQ/MDAgq0N1KwDQ
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 9->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJx9j8ENwCAMA+3+O0CfXakjsED3/0EgCf4EiSjIPifwtv9rF4Bn1D0KJK1o
-13mwhGhTd5shUDgUXOaXmRyZ6wyRPHy/IztP2ROz5a3YbD1D9FNn7csfAOXY
-AdJgAno=
+1:eJxTTMoPSmJiYGCQBGJeIGYcHoCBEeQViHcYYEwgZmCEMRkgGKoIIg6WgasD
+CzDA9MPMhaljhOlHyMENBgAlJQLZ
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -583,9 +581,8 @@ AdJgAno=
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 10->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGYEYTBgACMwZoRIQOQYkOTA4lBpRpgAI5I6Bhzq
-4PohknB1UKuhypH1w9wGVYLQz4hkD8xsJLcyINTiNgNJHB/NiFseyQ8MDADV
-FwJ6
+1:eJxTTMoPSmJiYGCQBGJeIGYcsoCBEeR6iA8YYEwgZmCEMRkgGKoIIg6WgasD
+CzDA9MPMhaljhOlHyCEMhtsDJAAh/gLT
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -605,9 +602,8 @@ FwJ6
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 11->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJx9jrkRwCAMBFfOXQChW3IJNED/GRg9KJEZNDy3d9LTx9svoK26VyGIre+O
-vdhbtQ2ZRtLMHBmo+3AUXPhVDM7HUDz7sf4+a/gl9fHsNCuHrTPS/98ptT4B
-17kCfw==
+1:eJxTTMoPSmJiYGCQBGJeIGYcSoCBEeRgiKMZYEwgZmCEMRkgGKoIIg6WgasD
+CzDA9MPMhaljhOlHyCEMhtvDiGQPiAAAHoACzQ==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -627,15 +623,15 @@ vdhbtQ2ZRtLMHBmo+3AUXPhVDM7HUDz7sf4+a/gl9fHsNCuHrTPS/98ptT4B
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 12->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJx9TsERwCAIS/x3AJ9dyRFcoPv/qpQgfSgHp4GQcPen9QKgjrpGkYQHZ9LD
-oCNYfjPxsJrSsL80ENoibHixr0NEZ9hNStqH++vW2GfykXa6FYu710j908sf
-fgHT/AJ8
+1:eJxTTMoPSmJiYGCQBGJeIGYc5ICBEeRGiDsZYEwgZmCEMRkgGKoIIg6WgasD
+CzDA9MPMhaljhOlHyCEMhtvDiGQPIwNCP9gMABqsAsQ=
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
                  GridLinesStyle->Directive[
                    GrayLevel[0.5, 0.4]],
+                 
                  Method->{
                   "DefaultBoundaryStyle" -> Automatic, 
                    "DefaultGraphicsInteraction" -> {
@@ -648,9 +644,8 @@ fgHT/AJ8
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 13->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJx9jrsRgDAMQ5/oGYCSlRghC7B/BziRnSb48vHJkqyz3VfbgOO9O1FCiucr
-MJiQoseEOH1mHgUyPKK3B11dPBa81DuI6cp1kbX0jP3OmnpNe+w9ZaW4a48J
-//v1ANQDAnw=
+1:eJxTTMoPSmJiYGCQBGJeIGYcfICBEeQsiNMYYEwgZmCEMRkgGKoIIg6WgasD
+CzDA9MPMhaljhOlHyCEMhtvDiGQPIwNCPwOSOohmABZ4AsA=
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -670,9 +665,8 @@ MJiQoseEOH1mHgUyPKK3B11dPBa81DuI6cp1kbX0jP3OmnpNe+w9ZaW4a48J
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 14->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJx1jrsRgDAMQ5/oGYCSlRghC7B/RyCW4+MuhZOzrN/Z7qttwNFn7yMkMR5i
-H2BCL5jQRwYTNPRBzhvlZlN7gONMWPBSX7uJ2S26Tj2R766pV8mxd+nK5K49
-Cv7/H9QoAn0=
+1:eJxTTMoPSmJiYGCQBGJeIGYcFICBEeQSiGsYYEwgZmCEMRkgGKoIIg6WgasD
+CzDA9MPMhaljhOlHyCEMhtvDiGQPIwNCPwOSOpjB8MBjYAQAEhQCvA==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -692,9 +686,8 @@ Cv7/H9QoAn0=
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 15->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJx1TrERwEAIgvQZIGVWygi/wO/fRT1Fi6TQ9xGEe+1nHQAuq9OKVPOHPkaD
-IP8LclBQkEMfc+qTrB3Gro7WDaDsZP7Nk35mIzpbZm090r+ySs/hU7dHVjT3
-/8bA7X0B0wACew==
+1:eJxTTMoPSmJiYGCQBGJeIGYcKMDACLIc4gAGGBOIGRhhTAYIhiqCiINl4OrA
+Agww/TBzYeoYYfoRcgiD4fYwItnDyIDQz4CkDmYwPLxg6qCGAgANggK3
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -714,9 +707,9 @@ IP8LclBQkEMfc+qTrB3Gro7WDaDsZP7Nk35mIzpbZm090r+ySs/hU7dHVjT3
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 16->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJx1jrsNwDAIRB/pM0DKrJQRvID372LjA1MkSFjycb+79acdwDX2ZI5hY1g7
-/ybQofWQkJMDmmBCTna9/GQpP90otzDNDkRchn/zUl+7Gbubum49yo+uqbeS
-E96lK5v778EL1FQCfg==
+1:eJy9kMsNgEAIRN94twCPtmQJ24D938TFga1AkkkIzIdwjvsaG3AE9oB+LPTm
+ZSZuA8gtiY+U87kp3hxgvX3Nk/W9a+PK0ZIjWs/Cs3G9yLy6gb7hAQiJArA=
+
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -736,9 +729,9 @@ E96lK5v778EL1FQCfg==
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 17->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJx1j7sRgDAMQyV6BqBkJUbIAtm/I/gjm+Mo7Fx0kv18jnmNDcCxal8FkvZ4
-8flbg+neEFKaUzJzSi3voudjXoyk9qDEYtC6ENh8+PEp39mIYgvWyutcCq+x
-orEmLl43fGbc0dcCew==
+1:eJxTTMoPSmJiYGCQBGJeIGakLWBgBFkBsYYBxgRiBkYYkwGCoYog4mAZuDqw
+AANMP8xcmDpGmH6EHMJguD2MSPYwMiD0MyCpgxkMDxWYOrgbGLC7gQEAA1gC
+qg==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -758,9 +751,9 @@ orEmLl43fGbc0dcCew==
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 18->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJx1j7sRwCAMQ6X0GSBlVsoILMD+Xezgj1JwZ8OdkPDzPeYzDgCX9WlNb1ox
-rxS9yH5DHOULc0qfOSXJL3HlKXPCzC1DjQuB4sPGV3llI5otWDtf67LwhBXC
-mrj47eAfvNM/An0=
+1:eJxTTMoPSmJiYGCQBGJeIGakOmBgBJkKMZkBxgRiBkYYkwGCoYog4mAZuDqw
+AANMP8xcmDpGmH6EHMJguD2MSPYwMiD0MyCpgxkMDwiYOrgbGLC7AWE2SAAA
+/bICow==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -780,9 +773,9 @@ mrj47eAfvNM/An0=
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 19->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJyFj8ENwCAMA+3+O0CfXakjsAD7/xoFx+RTFSkEGZsc95jPOABcUWcUCMbK
-A7KlUA0S7dMdtNknc0lpLqnll7jybHN+GTxOApsPHz7nOxux2cS68/4ujddY
-0VgLN194AdIIAnw=
+1:eJytj8ENgEAIBAf/FuDTlizhGrj+f+LhAg+fkmxCYFjgHPMaG3C4dpf9Edhj
+FGYodWFKCb1Q1FcnuVVA8/IVZ5qvXhnnHmt7jJqncTLO38XlDXzfUN7tt+Bu
+99ECng==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -802,9 +795,9 @@ A7KlUA0S7dMdtNknc0lpLqnll7jybHN+GTxOApsPHz7nOxux2cS68/4ujddY
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 20->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJyFj8EVgCAMQxPvDuDRlRyBBdz/BpY09OLjUALhl4a7vU87AFyjzlEk8cnc
-hDDOCJm+BDLN6Q5azAlOK+C0Sj81Ewn4yU0Gj5PBwuGHc3/NRqxsyrr6/V06
-XsmKkrUD0h8CfQ==
+1:eJydj8ENgDAMA23+DMCTlRihC3T/H6HBTh68qGSpSs5Oco55jQ3AEdpD/PnA
+x5t+6BsC9UXqhbK+OuZWAfIrVxzlr14Few7bHKL8aJyCfa4474DvHSq73QZn
+mbsB8ZgClg==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -824,9 +817,9 @@ XsmKkrUD0h8CfQ==
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 21->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJyFj7sRwDAIQ6X0GcClV8oIXsD7d/FxQtDk4vNXPIyYaz/rAjDOuhGDPJNx
-iQN6M4W4mzMOx8iKQZs5wSkFnFLLp2oiAX/548HlJLBx+OBay+WNKG/yWvlu
-l7ZXXl/Q9gJ7
+1:eJyNj8ENgFAIQx/eHcCjKznCX8D9b+LHAod/kKQJgbaUc9zX2IDDsTvsf2Ev
+PSSodWBqCXykmM9N8uYA6eUrnklfuzLOO9buGKWn8WScH4qXGVhnKO/2G+m1
+zvoA6xACkQ==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -846,9 +839,9 @@ l7ZXXl/Q9gJ7
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 22->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJyFT8kRgEAIS/xbgE9bsoRtYPv/iWw4fDjuDAMbQgjnmNfYABwWuwVBeyqe
-5IAXnqB/46Hxko7skdUDSnvJLHJATg6ozVM7EYSU/PGQ6wS8bvrgtZPLG1He
-5LXm81xZvQHScwJ6
+1:eJx9j8ENgEAIBAf/FuDTlizhGrD/n3i4wOMiySYEhgXOcV9jAw7X7rLfwF4i
+KJS6MKWEPijqs5PcLKB5+YozzVevjHOPtT1GzdM4GedT4vIG1jeUd/uN9Frf
+2jke5DwCig==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -868,9 +861,9 @@ l7ZXXl/Q9gJ7
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 23->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJyFT9sNgEAIK/47gJ+u5Ai3gPv/HfIoXIyRhByUXinnuK+xATg0d02IxfNo
-bR28sBmi9wdvHhqPdHBG7dQLbZdxckJpBQkSEu6RtufXA9cFsNz0wWsnlzdB
-eQuv9V9jAtVEAno=
+1:eJxtj8ENgEAIBGf9W4BPW7KEa8D+f553LhBzJJsQGBY42321DTi69i79A73F
+2cBpF3LK1AfN+ugENwp43r7m5PnspXHsUdkjcp7C2Tj+MBc3sL4hvctvhNf6
+1spROOkB3QoChA==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -890,9 +883,9 @@ eQuv9V9jAtVEAno=
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 24->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGaEAhATxmMA88EURBxCQcVhwgyY6hiQ1MGVM8Dl
-4GbDzIOaDTEGohgmxAB3FlQQLsQIt4cRyR6CboBbBxVA8RMOdUheRrgNEUxw
-twIA1+gCfw==
+1:eJxtj8ENwDAIA+3+O0CfXakjZIHs/ysNYKiUSFYQHAbuMZ9xALhMp4n2wO+P
+OEMTmCFcAXl+VcStBLKf5I9j9letjDWHbQ5R/WhcGoctxWkH7Hco73Yb5LXf
+tXNonHx9/AvVjgJ+
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -912,9 +905,9 @@ twIA1+gCfw==
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 25->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeBgRgZGBEADAfKsAA5kOkoepAFFQcJsyAqY4BSR1c
-OQNcDm42zDyo2RBjIIphQgxwZ0EFkZwLs4cRyR6CboBbBxVA8RMOdUheRgoy
-sGYA1AgCfA==
+1:eJxtj8ENwCAMA+3+O0CfXakjsAD7/4qSEPsBUpASzo55x/zGBeBZda8iGXdV
+9jlD9skkB1JcDLD1jCOOW683Gfce2h5Cehi3jcuWzXUGnDPI2/6G9jpndQ7G
+tW9lhWX9AdQsAno=
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -934,9 +927,9 @@ sGYA1AgCfA==
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 26->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJyFT8ENgEAIa/07gE9XcoRb4Pb/SeAKGGMkgYRSaDnHvMYG4LDcLQnSC1Hh
-vcL7BQQvxloGhAvGm4fGSzpylrd1T8YY0mUrvZXXZlc6bDq/HlJuAY+fPnjt
-ZSs31DYCfA==
+1:eJxtTrkRgDAMk+gZgJKVGCELsH+HURxbRQpfYlnfPd5nHACumDMGBMl4qP/c
+IUy4LkL+XUByJ+A8Ln3f2rhyaDlE62G8ZZy2LF51wL5De7MzUV77rs6D8co3
+u8K6mp78ANP4Anw=
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -956,9 +949,9 @@ ZSs31DYCfA==
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 27->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJyFT0EOgDAIa737AI9+ySfsA/v/zbHRBmOMZCRQCu3O1q+2AThG7iPJSEYV
-dbzsFbNXzD6BxVtj7QPCBePNQ+GZDs98W/fszV4NwbYSLHalw6Lz68FyCTz+
-9MHjDdREAn0=
+1:eJxtTssVwCAMgt47QI9dqSO4gPvfGtN86HseUINAuMd8xgHgMpwGOmgXScci
+glmzEz5+NH86pr//Uhw84sg9RPshugyOWJauOmDfobPZO1FZ+66qg+gqN7pC
+uoq/9/v7BdUtAn8=
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -978,9 +971,9 @@ dbzsFbNXzD6BxVtj7QPCBePNQ+GZDs98W/fszV4NwbYSLHalw6Lz68FyCTz+
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 28->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJyFUMsVwCAIC713gB67Ukdwge5/U4FEfD2U5y8hQvRu79MOANeYJ2aYzWVs
-5kcT9pGY4ZjhOInQRZr3AfKk8dWh6CSHcqrNevImr6IgW0kWu+xjpc+vh/U1
-QWxvKroO0xYCew==
+1:eJxtjrsRwDAIQ6X0GSBlVsoIXsD7dzFGfArfGXzoHkLvmN+4ADyr7lUg6Z89
+WHdhjy5vKTnXESKDMxHivIlTk23jwli2TC4z4JyhvFk3kV7nrJ1D49JXWdGy
+tv26z+67px/VOgKA
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1000,9 +993,9 @@ QWxvKroO0xYCew==
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 29->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJyFULENwDAIM917QMe+1BPyQP7fCiE2SB2KRBKMMVbuMZ9xALg8T0+YRxzx
-jGrdiUF4luQxVs3gfOllm/NA7dkyXx4aT3SoJ23qyZu8CoJsbbDZ5R5re349
-1NfY/jfxXtRzAn4=
+1:eJxtjsENwCAMA+3+O0CfXakjsAD7/0qLcfwgEhEix8V36087AFzjnPiK4Kh5
+5Wz8C3rWWJxmC9Y71MSpSRvcEktLc86AfYZys3bCrn3W5BCcvcqKyBr/az/T
+65mzvtVXAn8=
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1022,9 +1015,9 @@ jGrdiUF4luQxVs3gfOllm/NA7dkyXx4aT3SoJ23qyZu8CoJsbbDZ5R5re349
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 30->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJyFUMERgDAIS/w7gE9XcoQu4P4/WyGEOx9yhaMQQtpz3NfYABzT9+lEBoLr
-RIgaVX97VY+rcLIYTtO8+ZI75wHvSZovDg1XcFSvuMXnN8DarLXJZZerPWx7
-fjX4a1byANH6Ans=
+1:eJxtjrsRwCAMQ6X0GSBlVsoILMD+XQz+qYA7m0M8y3rH/MYF4LG6rUhv3Gdd
+2ILrSJHJLRHBeQsums9DuDQOWxbHgs8Z2pu9E+V1zqochCvfyArJKvO9n+pb
+f5W1dXv/1/sCgQ==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1044,9 +1037,9 @@ fjX4a1byANH6Ans=
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 31->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJyFj7sRgEAIRHfNLcDQlizhGrD/TAQWmDGQuQ1Yfu/OdV9rA3CYdhNIeyHQ
-DVdY6b8e5Xut/EjVp4jhDM1z3OGYLwbIxrcPnKyovqzVbu3rP6DZmnXgcuLq
-DsedXwY+01sCfQ==
+1:eJxtjsEVgDAIQxPvDuDRlRyhC3T/m/UR0hw8QCl8Qu4xn3EAuFacKwiS+Ip6
+WQXZ/2o2V0mcUu0jOEpDsjRHw9L2mN63B3uz1r/X5BCcdeUV4TX2932mrmf2
+uvvda/YF1YICfg==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1066,9 +1059,9 @@ DsedXwY+01sCfQ==
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 32->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxtj8sNwCAMQ+3eO0CPXakjsED3v5GSn6USyQKMQx73eJ9xALhMp4lW3+Ky
-PUPLCt+t8CPn/ror34+Zy/LmqOynzKH0F0Oh4Z+D5Cpef2jWfK//gGZrVsGl
-4uYcypwtwwTSLgJ8
+1:eJx1TsERwDAIgv47QJ5dqSNkge7/i+ch+ql3IQkC+uzv3ReAFedGFsGohLji
+nyAeAukEKZEZZc1G+utdsZai54ge2eyZcJZ15I8OQ+dc7Yqx6/D3fM5c97xr
+88VNrTMO1EECfg==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1088,9 +1081,9 @@ PUPLCt+t8CPn/ror34+Zy/LmqOynzKH0F0Oh4Z+D5Cpef2jWfK//gGZrVsGl
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 33->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxlj8ENgDAMA23+DMCTlRihC3T/H5AmjhGRIjWWG1/OMa+xATie3rGKIKPf
-ijma0peUelohL2k7IH2N5YNn8ZOV78yh/RcDSsbfB/PJrhuatfb1DWi2ZjVc
-Om7l0HKK4QbSOwJ9
+1:eJx1TssVwCAIS3rvAB67UkdwAfe/qXwih5YnUSDEPH28/QLQVt4rSRpu2Mdq
+B3gdYBSL5FnEqt5+JTm0Nab2U0N/QlrikT88FJ50wyuK17J//mfV1UxeTz97
+lfvtYQLS8AJ7
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1110,9 +1103,9 @@ Om7l0HKK4QbSOwJ9
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 34->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxlT0EOgDAMAu8+wKNf8gn7wP5/c1raYmzWpCUM6DnmNTYAx+p9NbkenwFR
-sTNKOIv3YkThorYGaRooPNbkwb348dIsH9p/zyqZPw/GK3rd0FlTr29AZ+us
-FpceN32kdwPRGQJ7
+1:eJyNjkESgDAIAxPvPsCjX/IJ/YD/v1lLCFyckRloGxaac9zX2AAcM/eZIEhC
+RW+VV4qguBVYet3jSDh61abnc4f/hHeZIz84sHtFcWic0PLq+bbXPXstPbXO
+/vDwANQWAn0=
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1132,9 +1125,9 @@ FpceN32kdwPRGQJ7
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 35->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxlT8ERwCAIS/rvAH12pY7gAu7/q1og8eoJSi6QcLf+tAPANeIcQXLm9WbM
-+juFUThnk7hE4UHVjG22a60bNVyLm1b8Q4fWXx6QMP48GK/otYO85jztAHmT
-V7NLtwu80pMCeg==
+1:eJxTTMoPSmJiYGCQBGJeIGYEY0ZGKMEI4oMBI0QcAhjA4gg2hIIphsghpBnh
++mFmQGmYOgYEH2YMFnUMSOrg5kLdyoDkViT9CPsZkc2Fy8HdihCHhwGyGGE3
+oNAA0/8CfA==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1154,9 +1147,9 @@ V7NLtwu80pMCeg==
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 36->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxlj9ERwCAIQx/97wD97EodwQXc/69qgeCVE4VcJOFu/WkHcI08R9qIeXm5
-XgKL/ovETLjNb+IaiTtVM7bZIK11vKdq2abltesUr6QHAubPo/CSnjvIa8zT
-DsibvBa7xgvVVwJ6
+1:eJyNTsERgDAIS/w7gE9XcoQu4P4/qxDIQ+/kyoWSENjHeYwFwDZznQmSyOD9
+mIGn33WAxME1zZqXR6J06L9sXnQwXfnGepuH+dl+um9xdWv31XPtjxu+8QLT
+6wJ8
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1176,9 +1169,9 @@ DsibvBa7xgvVVwJ6
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 37->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxlj7sRwDAIQx/pM0DKrJQRvID37+IPRjjhzIF1Qoi71KccwNXybGk9ep2d
-jfrFSTgzAjPh1sfENQJ3qjQ2bdCu8fxP3mXbruzVtX0+PLBg/jwSL+hxg7wu
-Pd2AvMnrC9fwAn8=
+1:eJxTTMoPSmJiYGCQBGJeBhBgZGCEAiADxIezIRRYEKyOASoIFYcKMsLNgNIw
+dQwIPswYLOoYkNTBzYVYj6SfAck8JPsZkc2Fy8HdihCHiSGrJcINuGlGZD4A
+17ICfw==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1198,9 +1191,9 @@ Pd2AvMnrC9fwAn8=
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 38->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxtj8sNgDAMQ5+5MwBHVmKELtD9b1CaTyOoWiW1bMc5W7/aBhzP27EjJI0q
-q7PTL86CF71rJq4hS64I3KjpUbwhZ73X/iWryqw1q3mbPjLgMF8eCy/osUNm
-db/cwbPe1C4CfA==
+1:eJxTTMoPSmJiYGCQBGJeIGZkBBMgwABGYAwSBIlDFMClGaGCYHGoOpg4RD+C
+DzMGizoGJHVwcyHWI+lnQDIPyX5GZHPhcnC3IsRhYshqiXADbpoRmQ8NHwgf
+ANUVAno=
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1220,9 +1213,9 @@ db/cwbPe1C4CfA==
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 39->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxtj9ERgCAMQ1/8dwA/XckRWMD9/wRb2nIK9KC5JA1nu6+2AUevvZfGlvyF
-3dYrcFt/OAWHop8awzVkyRWBOzU9Fm8ymx3vqbO0zKpZ3dv1kYEJ8+VReEGP
-P2TW6feCD9RCAnw=
+1:eJxTTMoPSmJiYGCQBGJeIGZkYGQEY0YGMABRUAEIBRVkhKllhOmBqmNA8GHG
+YFHHgKQObi5YO5I6qFIGmPUI/UjmwuXgbkWIw8SQ1RLhBtw0IzIfGj5Y3AQA
+0l4Ceg==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1242,9 +1235,9 @@ P2TW6feCD9RCAnw=
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 40->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxtj8ERgDAIBPf8W4BPW7KENGD/PxMkQEYfhORmDy5nu6+2AUevvReSxmld
-3u0NoRuVnN1/dIoOxT89r65hS1aE7mjOWGbXrCizUndp2VWz+mz3RwamzJej
-cIHHHzLrA9RTAn0=
+1:eJxTTMoPSmJiYGCQBGJeBjBgBGFGIAIBEAUVBIuDhaE0TB0Dgg+VxqaOAUkd
+3FywdiR1UKUMMOsR+pHMhcvB3YoQh4khqyXCDbhpRmQ+NHywuAnFrQDQ6gJ7
+
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1264,9 +1257,9 @@ cIHHHzLrA9RTAn0=
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 41->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxtjssRgCAQQ1+8WwBHW7IEGrD/GwyymB08ZICQ31Wfux5A6Tg7NCDtp/wN
-/i/TjfsPj/Fg/vBEN64VtgmljJSNbUXfVrxLqcu3zuzpXxsIml2H6Zb8JRvT
-LAJ7
+1:eJxTTMoPSmJiYGCQBGJeIGZkZARjEBOMGMB8RigNVsHACBdngGjBoY4BSR3c
+XLB2JHVQpVD9CPsZkc2Fy0HNZEQSh4khqyXCDbhpRmQ+xIHY3ITbrQDSJQJ9
+
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1286,9 +1279,8 @@ LAJ7
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 42->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJx9kFEOgCAMQ1/99wB+eiWPwAW8/58TB5RoTFjYSts17OU8ygJsUWuUFEd3
-83vLZ/B3Ga/2HziGg+mb5sHV81RMdDypw2PyxrKikRXfpWmXZ03v1PufpM2b
-h/GkC9SFAn4=
+1:eJxTTMoPSmJiYGCQBGJeIGZgBGNGIIDSID6IwYDgQ6WxqWNAUscIFwczkfQz
+IJkHNgKmH8lcuBzUTEYkcbg7kcUIuwE3zYjMhzgQm5vwuRXJXQDSEgJ8
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1308,9 +1300,9 @@ h/GkC9SFAn4=
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 43->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJx9kMENgDAMA8/8GYAnKzFCF2D/H6VyhSMQlSInke1Y3dt5tAXYeq3cT6Ok
-jjLyj8rZHp4VvNF/7Ik9hH5qZiaSq8yKikfxJrKiJyt5S+VWZrW39fkntnnz
-uADSEAJ7
+1:eJxTTMoPSmJiYGCQBGJeIGZkYGRkBNEgBhIfRMH5jCjqGJDUMcLFwUwk/QxI
+5oGNgOlHMhcuBzWTEUkcJoaslgg34KYZkfkQB2JzEz63IrmLAVkcANM4An0=
+
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1330,9 +1322,9 @@ uADSEAJ7
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 44->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJx9kLsRwCAMQ5/SZ4CUWSkjsAD7dzEBznKTQmcE1ue4W3/aAVyBM4CkD+MU
-GHPyvP+dcg7+LtuT5xS95WD6rdmd8F1BdkXFo3hjXVF2xbNUsrzr8l56/5Nl
-M/kL02oCfQ==
+1:eJxTTMoPSmJiYGCQBGJeBjBgZGBkZAQzIDQjlAETh7DhfEa4OJiJpB+iFKqf
+EaEO2Vy4HNRMRiRxmBiyWiLcgJtmROaj+BXFTfjciuQuBlx+YAAA0eUCew==
+
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1352,9 +1344,9 @@ M/kL02oCfQ==
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 45->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJx9kLkRwCAMBPecuwCHbskl0AD9ZybAsEoc3GgkdA+6W3/aAVwD50AWko3R
-x3P2/LfGPfg92ot9Cl8+iP9xVl7vBv2BFI2ijbKSnRV7pXg569SefN/kBdIt
-Anw=
+1:eJxTTMoPSmJiYGCQBGJeIGZkZASRIJoRSoNFQWw4n5ERSR0DkjqoUqh+RoQ6
+RiRz4XJQMxmRxGFiyGqJcANumhGZD3EgNjfhcyuSuxhw+QHuHrAYANRjAn4=
+
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1374,9 +1366,9 @@ Anw=
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 46->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJx9j8ERgCAQA3f9W4BPW7IEGrD/nzjAmPv4yHCEXBLOdl9tA46OvQPRgXde
-WNzkTZ7Q/53mHfLd0Jk5Zb/0Kl0tfVMr8QcsHsWb6IpfVzLLkpVdp/cYHtJK
-An0=
+1:eJxTTMoPSmJiYGCQBGJeIGZgZGBkZATRjCA2nM8IFwczEeqgSiF8EIDrR6hH
+yEHNZEQSh4khqyXCDbhpRmQ+A6qfGIlzK5K7GHD5Ae4eRpgz4W4FANMBAns=
+
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1396,9 +1388,9 @@ An0=
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 47->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJx9j7ERgDAMA1/0DEDJSoyQBbJ/R8xxx7uhcBzLsiWfY15jA44V+4ok9T6/
-ylULw9iLxzji/+W4BvcjXqzT5psvjKf5NTfoBtJ2tN3IK/m8Yq00LXu9AdEi
-Ans=
+1:eJxTTMoPSmJiYGCQBGJeIGYEY0ZGIM0IpcF8kASMzwCWg/JBAKaOEaEeIQc1
+kxFJHG4PshjMDNxuwE0zIvMhDsTmJnxuRXIXAy4/wN3DCHMm3K0MyGYDANQu
+An0=
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1418,16 +1410,15 @@ Ans=
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 48->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJx9j0EKgDAMBGe9+wCPfskn9AP+/9YaSLsVbWApGUIyPct9lQ04WnaihBR5
-KvoWGU/ms8nlHJtfvfLeHGA4pM8Hf3n9/qH7KDW7K5p2TLsxVzRc8VvyWxXS
-fwJ6
+1:eJxTTMoPSmJiYGCQBGJeIGZgZGQEkUAaSIBpEB8sARUHA5g6RoR6hByID9EA
+F4eJIauFm4EszoCkHh/NiMyHOBCbm/C5FcldDLj8AHcPI8yZcLcyMKKYgWQ2
+ANQaAnw=
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
                  GridLinesStyle->Directive[
                    GrayLevel[0.5, 0.4]],
-                 
                  Method->{
                   "DefaultBoundaryStyle" -> Automatic, 
                    "DefaultGraphicsInteraction" -> {
@@ -1440,9 +1431,9 @@ fwJ6
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 49->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJx9j8ENwCAMA339dwCeXakjsAD7/wpVCaYSPCLLJnKOK5c7H5JSnbMOApry
-6eth+PZmec98Nzo8l+3vFPfSigm/82M1Lq3+EDx0zGAVU8fULWMVg1V+6wHV
-KQJ6
+1:eJxTTMoPSmJiYGCQBGJeBhBgZGBkZGSAMBlhfBCAikPYMHUwORAfogEuDhND
+Vgs3A1mcAUk9PpoRmY/iVhQ34XMrkrsYcPkB7h5GmDPhbmVgRDEDxWwGhNsA
+1AYCfA==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1484,9 +1475,9 @@ kzpMLl+z7L8H8qfnu8pwH7Z/UnoP+NyZTqzGhb8/iIcTU6zglrFlw1jBxdoB
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 51->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeBhBgZGBkZGSAMBlhfBCAikPYMHUwORAfogEuDhND
-Vgs3A1mcAUk9PpoRmY/iVhQ34XMrkrsYcPkB7h5GmDPhbmVgRDEDxWwGhNsA
-1AYCfA==
+1:eJx9j8ENwCAMA339dwCeXakjsAD7/wpVCaYSPCLLJnKOK5c7H5JSnbMOApry
+6eth+PZmec98Nzo8l+3vFPfSigm/82M1Lq3+EDx0zGAVU8fULWMVg1V+6wHV
+KQJ6
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1506,9 +1497,9 @@ Vgs3A1mcAUk9PpoRmY/iVhQ34XMrkrsYcPkB7h5GmDPhbmVgRDEDxWwGhNsA
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 52->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGZgZGQEkUAaSIBpEB8sARUHA5g6RoR6hByID9EA
-F4eJIauFm4EszoCkHh/NiMyHOBCbm/C5FcldDLj8AHcPI8yZcLcyMKKYgWQ2
-ANQaAnw=
+1:eJx9j0EKgDAMBGe9+wCPfskn9AP+/9YaSLsVbWApGUIyPct9lQ04WnaihBR5
+KvoWGU/ms8nlHJtfvfLeHGA4pM8Hf3n9/qH7KDW7K5p2TLsxVzRc8VvyWxXS
+fwJ6
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1528,9 +1519,9 @@ ANQaAnw=
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 53->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGYEY0ZGIM0IpcF8kASMzwCWg/JBAKaOEaEeIQc1
-kxFJHG4PshjMDNxuwE0zIvMhDsTmJnxuRXIXAy4/wN3DCHMm3K0MyGYDANQu
-An0=
+1:eJx9j7ERgDAMA1/0DEDJSoyQBbJ/R8xxx7uhcBzLsiWfY15jA44V+4ok9T6/
+ylULw9iLxzji/+W4BvcjXqzT5psvjKf5NTfoBtJ2tN3IK/m8Yq00LXu9AdEi
+Ans=
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1550,9 +1541,9 @@ An0=
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 54->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGZgZGBkZATRjCA2nM8IFwczEeqgSiF8EIDrR6hH
-yEHNZEQSh4khqyXCDbhpRmQ+A6qfGIlzK5K7GHD5Ae4eRpgz4W4FANMBAns=
-
+1:eJx9j8ERgCAQA3f9W4BPW7IEGrD/nzjAmPv4yHCEXBLOdl9tA46OvQPRgXde
+WNzkTZ7Q/53mHfLd0Jk5Zb/0Kl0tfVMr8QcsHsWb6IpfVzLLkpVdp/cYHtJK
+An0=
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1572,9 +1563,9 @@ yEHNZEQSh4khqyXCDbhpRmQ+A6qfGIlzK5K7GHD5Ae4eRpgz4W4FANMBAns=
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 55->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGZkZASRIJoRSoNFQWw4n5ERSR0DkjqoUqh+RoQ6
-RiRz4XJQMxmRxGFiyGqJcANumhGZD3EgNjfhcyuSuxhw+QHuHrAYANRjAn4=
-
+1:eJx9kLkRwCAMBPecuwCHbskl0AD9ZybAsEoc3GgkdA+6W3/aAVwD50AWko3R
+x3P2/LfGPfg92ot9Cl8+iP9xVl7vBv2BFI2ijbKSnRV7pXg569SefN/kBdIt
+Anw=
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1594,9 +1585,9 @@ RiRz4XJQMxmRxGFiyGqJcANumhGZD3EgNjfhcyuSuxhw+QHuHrAYANRjAn4=
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 56->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeBjBgZGBkZAQzIDQjlAETh7DhfEa4OJiJpB+iFKqf
-EaEO2Vy4HNRMRiRxmBiyWiLcgJtmROaj+BXFTfjciuQuBlx+YAAA0eUCew==
-
+1:eJx9kLsRwCAMQ5/SZ4CUWSkjsAD7dzEBznKTQmcE1ue4W3/aAVyBM4CkD+MU
+GHPyvP+dcg7+LtuT5xS95WD6rdmd8F1BdkXFo3hjXVF2xbNUsrzr8l56/5Nl
+M/kL02oCfQ==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1616,9 +1607,9 @@ EaEO2Vy4HNRMRiRxmBiyWiLcgJtmROaj+BXFTfjciuQuBlx+YAAA0eUCew==
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 57->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGZkYGRkBNEgBhIfRMH5jCjqGJDUMcLFwUwk/QxI
-5oGNgOlHMhcuBzWTEUkcJoaslgg34KYZkfkQB2JzEz63IrmLAVkcANM4An0=
-
+1:eJx9kMENgDAMA8/8GYAnKzFCF2D/H6VyhSMQlSInke1Y3dt5tAXYeq3cT6Ok
+jjLyj8rZHp4VvNF/7Ik9hH5qZiaSq8yKikfxJrKiJyt5S+VWZrW39fkntnnz
+uADSEAJ7
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1638,9 +1629,9 @@ EaEO2Vy4HNRMRiRxmBiyWiLcgJtmROaj+BXFTfjciuQuBlx+YAAA0eUCew==
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 58->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGZgBGNGIIDSID6IwYDgQ6WxqWNAUscIFwczkfQz
-IJkHNgKmH8lcuBzUTEYkcbg7kcUIuwE3zYjMhzgQm5vwuRXJXQDSEgJ8
-                  
+1:eJx9kFEOgCAMQ1/99wB+eiWPwAW8/58TB5RoTFjYSts17OU8ygJsUWuUFEd3
+83vLZ/B3Ga/2HziGg+mb5sHV81RMdDypw2PyxrKikRXfpWmXZ03v1PufpM2b
+h/GkC9SFAn4=
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1660,9 +1651,9 @@ IJkHNgKmH8lcuBzUTEYkcbg7kcUIuwE3zYjMhzgQm5vwuRXJXQDSEgJ8
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 59->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGZkZARjEBOMGMB8RigNVsHACBdngGjBoY4BSR3c
-XLB2JHVQpVD9CPsZkc2Fy0HNZEQSh4khqyXCDbhpRmQ+xIHY3ITbrQDSJQJ9
-
+1:eJxtjssRgCAQQ1+8WwBHW7IEGrD/GwyymB08ZICQ31Wfux5A6Tg7NCDtp/wN
+/i/TjfsPj/Fg/vBEN64VtgmljJSNbUXfVrxLqcu3zuzpXxsIml2H6Zb8JRvT
+LAJ7
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1682,9 +1673,9 @@ XLB2JHVQpVD9CPsZkc2Fy0HNZEQSh4khqyXCDbhpRmQ+xIHY3ITbrQDSJQJ9
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 60->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeBjBgBGFGIAIBEAUVBIuDhaE0TB0Dgg+VxqaOAUkd
-3FywdiR1UKUMMOsR+pHMhcvB3YoQh4khqyXCDbhpRmQ+NHywuAnFrQDQ6gJ7
-
+1:eJxtj8ERgDAIBPf8W4BPW7KENGD/PxMkQEYfhORmDy5nu6+2AUevvReSxmld
+3u0NoRuVnN1/dIoOxT89r65hS1aE7mjOWGbXrCizUndp2VWz+mz3RwamzJej
+cIHHHzLrA9RTAn0=
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1704,9 +1695,9 @@ XLB2JHVQpVD9CPsZkc2Fy0HNZEQSh4khqyXCDbhpRmQ+xIHY3ITbrQDSJQJ9
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 61->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGZkYGQEY0YGMABRUAEIBRVkhKllhOmBqmNA8GHG
-YFHHgKQObi5YO5I6qFIGmPUI/UjmwuXgbkWIw8SQ1RLhBtw0IzIfGj5Y3AQA
-0l4Ceg==
+1:eJxtj9ERgCAMQ1/8dwA/XckRWMD9/wRb2nIK9KC5JA1nu6+2AUevvZfGlvyF
+3dYrcFt/OAWHop8awzVkyRWBOzU9Fm8ymx3vqbO0zKpZ3dv1kYEJ8+VReEGP
+P2TW6feCD9RCAnw=
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1726,9 +1717,9 @@ YFHHgKQObi5YO5I6qFIGmPUI/UjmwuXgbkWIw8SQ1RLhBtw0IzIfGj5Y3AQA
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 62->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGZkBBMgwABGYAwSBIlDFMClGaGCYHGoOpg4RD+C
-DzMGizoGJHVwcyHWI+lnQDIPyX5GZHPhcnC3IsRhYshqiXADbpoRmQ8NHwgf
-ANUVAno=
+1:eJxtj8sNgDAMQ5+5MwBHVmKELtD9b1CaTyOoWiW1bMc5W7/aBhzP27EjJI0q
+q7PTL86CF71rJq4hS64I3KjpUbwhZ73X/iWryqw1q3mbPjLgMF8eCy/osUNm
+db/cwbPe1C4CfA==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1748,9 +1739,9 @@ ANUVAno=
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 63->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeBhBgZGCEAiADxIezIRRYEKyOASoIFYcKMsLNgNIw
-dQwIPswYLOoYkNTBzYVYj6SfAck8JPsZkc2Fy8HdihCHiSGrJcINuGlGZD4A
-17ICfw==
+1:eJxlj7sRwDAIQx/pM0DKrJQRvID37+IPRjjhzIF1Qoi71KccwNXybGk9ep2d
+jfrFSTgzAjPh1sfENQJ3qjQ2bdCu8fxP3mXbruzVtX0+PLBg/jwSL+hxg7wu
+Pd2AvMnrC9fwAn8=
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1770,9 +1761,9 @@ dQwIPswYLOoYkNTBzYVYj6SfAck8JPsZkc2Fy8HdihCHiSGrJcINuGlGZD4A
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 64->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJyNTsERgDAIS/w7gE9XcoQu4P4/qxDIQ+/kyoWSENjHeYwFwDZznQmSyOD9
-mIGn33WAxME1zZqXR6J06L9sXnQwXfnGepuH+dl+um9xdWv31XPtjxu+8QLT
-6wJ8
+1:eJxlj9ERwCAIQx/97wD97EodwQXc/69qgeCVE4VcJOFu/WkHcI08R9qIeXm5
+XgKL/ovETLjNb+IaiTtVM7bZIK11vKdq2abltesUr6QHAubPo/CSnjvIa8zT
+DsibvBa7xgvVVwJ6
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1792,9 +1783,9 @@ mIGn33WAxME1zZqXR6J06L9sXnQwXfnGepuH+dl+um9xdWv31XPtjxu+8QLT
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 65->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGYEY0ZGKMEI4oMBI0QcAhjA4gg2hIIphsghpBnh
-+mFmQGmYOgYEH2YMFnUMSOrg5kLdyoDkViT9CPsZkc2Fy8HdihCHhwGyGGE3
-oNAA0/8CfA==
+1:eJxlT8ERwCAIS/rvAH12pY7gAu7/q1og8eoJSi6QcLf+tAPANeIcQXLm9WbM
++juFUThnk7hE4UHVjG22a60bNVyLm1b8Q4fWXx6QMP48GK/otYO85jztAHmT
+V7NLtwu80pMCeg==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1814,9 +1805,9 @@ oNAA0/8CfA==
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 66->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJyNjkESgDAIAxPvPsCjX/IJ/YD/v1lLCFyckRloGxaac9zX2AAcM/eZIEhC
-RW+VV4qguBVYet3jSDh61abnc4f/hHeZIz84sHtFcWic0PLq+bbXPXstPbXO
-/vDwANQWAn0=
+1:eJxlT0EOgDAMAu8+wKNf8gn7wP5/c1raYmzWpCUM6DnmNTYAx+p9NbkenwFR
+sTNKOIv3YkThorYGaRooPNbkwb348dIsH9p/zyqZPw/GK3rd0FlTr29AZ+us
+FpceN32kdwPRGQJ7
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1836,9 +1827,9 @@ RW+VV4qguBVYet3jSDh61abnc4f/hHeZIz84sHtFcWic0PLq+bbXPXstPbXO
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 67->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJx1TssVwCAIS3rvAB67UkdwAfe/qXwih5YnUSDEPH28/QLQVt4rSRpu2Mdq
-B3gdYBSL5FnEqt5+JTm0Nab2U0N/QlrikT88FJ50wyuK17J//mfV1UxeTz97
-lfvtYQLS8AJ7
+1:eJxlj8ENgDAMA23+DMCTlRihC3T/H5AmjhGRIjWWG1/OMa+xATie3rGKIKPf
+ijma0peUelohL2k7IH2N5YNn8ZOV78yh/RcDSsbfB/PJrhuatfb1DWi2ZjVc
+Om7l0HKK4QbSOwJ9
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1858,9 +1849,9 @@ lfvtYQLS8AJ7
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 68->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJx1TsERwDAIgv47QJ5dqSNkge7/i+ch+ql3IQkC+uzv3ReAFedGFsGohLji
-nyAeAukEKZEZZc1G+utdsZai54ge2eyZcJZ15I8OQ+dc7Yqx6/D3fM5c97xr
-88VNrTMO1EECfg==
+1:eJxtj8sNwCAMQ+3eO0CPXakjsED3v5GSn6USyQKMQx73eJ9xALhMp4lW3+Ky
+PUPLCt+t8CPn/ror34+Zy/LmqOynzKH0F0Oh4Z+D5Cpef2jWfK//gGZrVsGl
+4uYcypwtwwTSLgJ8
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1880,9 +1871,9 @@ nyAeAukEKZEZZc1G+utdsZai54ge2eyZcJZ15I8OQ+dc7Yqx6/D3fM5c97xr
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 69->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxtjsEVgDAIQxPvDuDRlRyhC3T/m/UR0hw8QCl8Qu4xn3EAuFacKwiS+Ip6
-WQXZ/2o2V0mcUu0jOEpDsjRHw9L2mN63B3uz1r/X5BCcdeUV4TX2932mrmf2
-uvvda/YF1YICfg==
+1:eJyFj7sRgEAIRHfNLcDQlizhGrD/TAQWmDGQuQ1Yfu/OdV9rA3CYdhNIeyHQ
+DVdY6b8e5Xut/EjVp4jhDM1z3OGYLwbIxrcPnKyovqzVbu3rP6DZmnXgcuLq
+DsedXwY+01sCfQ==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1902,9 +1893,9 @@ uvvda/YF1YICfg==
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 70->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxtjrsRwCAMQ6X0GSBlVsoILMD+XQz+qYA7m0M8y3rH/MYF4LG6rUhv3Gdd
-2ILrSJHJLRHBeQsums9DuDQOWxbHgs8Z2pu9E+V1zqochCvfyArJKvO9n+pb
-f5W1dXv/1/sCgQ==
+1:eJyFUMERgDAIS/w7gE9XcoQu4P4/WyGEOx9yhaMQQtpz3NfYABzT9+lEBoLr
+RIgaVX97VY+rcLIYTtO8+ZI75wHvSZovDg1XcFSvuMXnN8DarLXJZZerPWx7
+fjX4a1byANH6Ans=
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1924,9 +1915,9 @@ f5W1dXv/1/sCgQ==
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 71->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxtjsENwCAMA+3+O0CfXakjsAD7/0qLcfwgEhEix8V36087AFzjnPiK4Kh5
-5Wz8C3rWWJxmC9Y71MSpSRvcEktLc86AfYZys3bCrn3W5BCcvcqKyBr/az/T
-65mzvtVXAn8=
+1:eJyFULENwDAIM917QMe+1BPyQP7fCiE2SB2KRBKMMVbuMZ9xALg8T0+YRxzx
+jGrdiUF4luQxVs3gfOllm/NA7dkyXx4aT3SoJ23qyZu8CoJsbbDZ5R5re349
+1NfY/jfxXtRzAn4=
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1946,9 +1937,9 @@ f5W1dXv/1/sCgQ==
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 72->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxtjrsRwDAIQ6X0GSBlVsoIXsD7dzFGfArfGXzoHkLvmN+4ADyr7lUg6Z89
-WHdhjy5vKTnXESKDMxHivIlTk23jwli2TC4z4JyhvFk3kV7nrJ1D49JXWdGy
-tv26z+67px/VOgKA
+1:eJyFUMsVwCAIC713gB67Ukdwge5/U4FEfD2U5y8hQvRu79MOANeYJ2aYzWVs
+5kcT9pGY4ZjhOInQRZr3AfKk8dWh6CSHcqrNevImr6IgW0kWu+xjpc+vh/U1
+QWxvKroO0xYCew==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1968,9 +1959,9 @@ tv26z+67px/VOgKA
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 73->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxtTssVwCAMgt47QI9dqSO4gPvfGtN86HseUINAuMd8xgHgMpwGOmgXScci
-glmzEz5+NH86pr//Uhw84sg9RPshugyOWJauOmDfobPZO1FZ+66qg+gqN7pC
-uoq/9/v7BdUtAn8=
+1:eJyFT0EOgDAIa737AI9+ySfsA/v/zbHRBmOMZCRQCu3O1q+2AThG7iPJSEYV
+dbzsFbNXzD6BxVtj7QPCBePNQ+GZDs98W/fszV4NwbYSLHalw6Lz68FyCTz+
+9MHjDdREAn0=
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -1990,9 +1981,9 @@ uoq/9/v7BdUtAn8=
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 74->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxtTrkRgDAMk+gZgJKVGCELsH+HURxbRQpfYlnfPd5nHACumDMGBMl4qP/c
-IUy4LkL+XUByJ+A8Ln3f2rhyaDlE62G8ZZy2LF51wL5De7MzUV77rs6D8co3
-u8K6mp78ANP4Anw=
+1:eJyFT8ENgEAIa/07gE9XcoRb4Pb/SeAKGGMkgYRSaDnHvMYG4LDcLQnSC1Hh
+vcL7BQQvxloGhAvGm4fGSzpylrd1T8YY0mUrvZXXZlc6bDq/HlJuAY+fPnjt
+ZSs31DYCfA==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -2012,9 +2003,9 @@ u8K6mp78ANP4Anw=
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 75->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxtj8ENwCAMA+3+O0CfXakjsAD7/4qSEPsBUpASzo55x/zGBeBZda8iGXdV
-9jlD9skkB1JcDLD1jCOOW683Gfce2h5Cehi3jcuWzXUGnDPI2/6G9jpndQ7G
-tW9lhWX9AdQsAno=
+1:eJxTTMoPSmJiYGCQBGJeBgRgZGBEADAfKsAA5kOkoepAFFQcJsyAqY4BSR1c
+OQNcDm42zDyo2RBjIIphQgxwZ0EFkZwLs4cRyR6CboBbBxVA8RMOdUheRgoy
+sGYA1AgCfA==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -2034,9 +2025,9 @@ tW9lhWX9AdQsAno=
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 76->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxtj8ENwDAIA+3+O0CfXakjZIHs/ysNYKiUSFYQHAbuMZ9xALhMp4n2wO+P
-OEMTmCFcAXl+VcStBLKf5I9j9letjDWHbQ5R/WhcGoctxWkH7Hco73Yb5LXf
-tXNonHx9/AvVjgJ+
+1:eJxTTMoPSmJiYGCQBGJeIGaEAhATxmMA88EURBxCQcVhwgyY6hiQ1MGVM8Dl
+4GbDzIOaDTEGohgmxAB3FlQQLsQIt4cRyR6CboBbBxVA8RMOdUheRrgNEUxw
+twIA1+gCfw==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -2056,9 +2047,9 @@ tXNonHx9/AvVjgJ+
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 77->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxtj8ENgEAIBGf9W4BPW7KEa8D+f553LhBzJJsQGBY42321DTi69i79A73F
-2cBpF3LK1AfN+ugENwp43r7m5PnspXHsUdkjcp7C2Tj+MBc3sL4hvctvhNf6
-1spROOkB3QoChA==
+1:eJyFT9sNgEAIK/47gJ+u5Ai3gPv/HfIoXIyRhByUXinnuK+xATg0d02IxfNo
+bR28sBmi9wdvHhqPdHBG7dQLbZdxckJpBQkSEu6RtufXA9cFsNz0wWsnlzdB
+eQuv9V9jAtVEAno=
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -2078,9 +2069,9 @@ tXNonHx9/AvVjgJ+
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 78->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJx9j8ENgEAIBAf/FuDTlizhGrD/n3i4wOMiySYEhgXOcV9jAw7X7rLfwF4i
-KJS6MKWEPijqs5PcLKB5+YozzVevjHOPtT1GzdM4GedT4vIG1jeUd/uN9Frf
-2jke5DwCig==
+1:eJyFT8kRgEAIS/xbgE9bsoRtYPv/iWw4fDjuDAMbQgjnmNfYABwWuwVBeyqe
+5IAXnqB/46Hxko7skdUDSnvJLHJATg6ozVM7EYSU/PGQ6wS8bvrgtZPLG1He
+5LXm81xZvQHScwJ6
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -2100,16 +2091,15 @@ KJS6MKWEPijqs5PcLKB5+YozzVevjHOPtT1GzdM4GedT4vIG1jeUd/uN9Frf
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 79->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJyNj8ENgFAIQx/eHcCjKznCX8D9b+LHAod/kKQJgbaUc9zX2IDDsTvsf2Ev
-PSSodWBqCXykmM9N8uYA6eUrnklfuzLOO9buGKWn8WScH4qXGVhnKO/2G+m1
-zvoA6xACkQ==
+1:eJyFj7sRwDAIQ6X0GcClV8oIXsD7d/FxQtDk4vNXPIyYaz/rAjDOuhGDPJNx
+iQN6M4W4mzMOx8iKQZs5wSkFnFLLp2oiAX/548HlJLBx+OBay+WNKG/yWvlu
+l7ZXXl/Q9gJ7
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
                  GridLinesStyle->Directive[
                    GrayLevel[0.5, 0.4]],
-                 
                  Method->{
                   "DefaultBoundaryStyle" -> Automatic, 
                    "DefaultGraphicsInteraction" -> {
@@ -2122,9 +2112,9 @@ zvoA6xACkQ==
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 80->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJydj8ENgDAMA23+DMCTlRihC3T/H6HBTh68qGSpSs5Oco55jQ3AEdpD/PnA
-x5t+6BsC9UXqhbK+OuZWAfIrVxzlr14Few7bHKL8aJyCfa4474DvHSq73QZn
-mbsB8ZgClg==
+1:eJyFj8EVgCAMQxPvDuDRlRyBBdz/BpY09OLjUALhl4a7vU87AFyjzlEk8cnc
+hDDOCJm+BDLN6Q5azAlOK+C0Sj81Ewn4yU0Gj5PBwuGHc3/NRqxsyrr6/V06
+XsmKkrUD0h8CfQ==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -2144,9 +2134,9 @@ mbsB8ZgClg==
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 81->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJytj8ENgEAIBAf/FuDTlizhGrj+f+LhAg+fkmxCYFjgHPMaG3C4dpf9Edhj
-FGYodWFKCb1Q1FcnuVVA8/IVZ5qvXhnnHmt7jJqncTLO38XlDXzfUN7tt+Bu
-99ECng==
+1:eJyFj8ENwCAMA+3+O0CfXakjsAD7/xoFx+RTFSkEGZsc95jPOABcUWcUCMbK
+A7KlUA0S7dMdtNknc0lpLqnll7jybHN+GTxOApsPHz7nOxux2cS68/4ujddY
+0VgLN194AdIIAnw=
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -2166,9 +2156,9 @@ FGYodWFKCb1Q1FcnuVVA8/IVZ5qvXhnnHmt7jJqncTLO38XlDXzfUN7tt+Bu
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 82->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGakOmBgBJkKMZkBxgRiBkYYkwGCoYog4mAZuDqw
-AANMP8xcmDpGmH6EHMJguD2MSPYwMiD0MyCpgxkMDwiYOrgbGLC7AWE2SAAA
-/bICow==
+1:eJx1j7sRwCAMQ6X0GSBlVsoILMD+Xezgj1JwZ8OdkPDzPeYzDgCX9WlNb1ox
+rxS9yH5DHOULc0qfOSXJL3HlKXPCzC1DjQuB4sPGV3llI5otWDtf67LwhBXC
+mrj47eAfvNM/An0=
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -2188,9 +2178,9 @@ AANMP8xcmDpGmH6EHMJguD2MSPYwMiD0MyCpgxkMDwiYOrgbGLC7AWE2SAAA
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 83->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGakLWBgBFkBsYYBxgRiBkYYkwGCoYog4mAZuDqw
-AANMP8xcmDpGmH6EHMJguD2MSPYwMiD0MyCpgxkMDxWYOrgbGLC7gQEAA1gC
-qg==
+1:eJx1j7sRgDAMQyV6BqBkJUbIAtm/I/gjm+Mo7Fx0kv18jnmNDcCxal8FkvZ4
+8flbg+neEFKaUzJzSi3voudjXoyk9qDEYtC6ENh8+PEp39mIYgvWyutcCq+x
+orEmLl43fGbc0dcCew==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -2210,9 +2200,9 @@ qg==
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 84->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJy9kMsNgEAIRN94twCPtmQJ24D938TFga1AkkkIzIdwjvsaG3AE9oB+LPTm
-ZSZuA8gtiY+U87kp3hxgvX3Nk/W9a+PK0ZIjWs/Cs3G9yLy6gb7hAQiJArA=
-
+1:eJx1jrsNwDAIRB/pM0DKrJQRvID372LjA1MkSFjycb+79acdwDX2ZI5hY1g7
+/ybQofWQkJMDmmBCTna9/GQpP90otzDNDkRchn/zUl+7Gbubum49yo+uqbeS
+E96lK5v778EL1FQCfg==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -2232,9 +2222,9 @@ ZSZuA8gtiY+U87kp3hxgvX3Nk/W9a+PK0ZIjWs/Cs3G9yLy6gb7hAQiJArA=
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 85->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGYcKMDACLIc4gAGGBOIGRhhTAYIhiqCiINl4OrA
-Agww/TBzYeoYYfoRcgiD4fYwItnDyIDQz4CkDmYwPLxg6qCGAgANggK3
-                  
+1:eJx1TrERwEAIgvQZIGVWygi/wO/fRT1Fi6TQ9xGEe+1nHQAuq9OKVPOHPkaD
+IP8LclBQkEMfc+qTrB3Gro7WDaDsZP7Nk35mIzpbZm090r+ySs/hU7dHVjT3
+/8bA7X0B0wACew==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -2254,15 +2244,16 @@ Agww/TBzYeoYYfoRcgiD4fYwItnDyIDQz4CkDmYwPLxg6qCGAgANggK3
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 86->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGYcFICBEeQSiGsYYEwgZmCEMRkgGKoIIg6WgasD
-CzDA9MPMhaljhOlHyCEMhtvDiGQPIwNCPwOSOpjB8MBjYAQAEhQCvA==
-                  
+1:eJx1jrsRgDAMQ5/oGYCSlRghC7B/RyCW4+MuhZOzrN/Z7qttwNFn7yMkMR5i
+H2BCL5jQRwYTNPRBzhvlZlN7gONMWPBSX7uJ2S26Tj2R766pV8mxd+nK5K49
+Cv7/H9QoAn0=
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
                  GridLinesStyle->Directive[
                    GrayLevel[0.5, 0.4]],
+                 
                  Method->{
                   "DefaultBoundaryStyle" -> Automatic, 
                    "DefaultGraphicsInteraction" -> {
@@ -2275,10 +2266,10 @@ CzDA9MPMhaljhOlHyCEMhtvDiGQPIwNCPwOSOpjB8MBjYAQAEhQCvA==
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 87->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGYcfICBEeQsiNMYYEwgZmCEMRkgGKoIIg6WgasD
-CzDA9MPMhaljhOlHyCEMhtvDiGQPIwNCPwOSOohmABZ4AsA=
-                  "], {{0, 
-                  0}, {13, 25}}, {0, 1}],
+1:eJx9jrsRgDAMQ5/oGYCSlRghC7B/BziRnSb48vHJkqyz3VfbgOO9O1FCiucr
+MJiQoseEOH1mHgUyPKK3B11dPBa81DuI6cp1kbX0jP3OmnpNe+w9ZaW4a48J
+//v1ANQDAnw=
+                  "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
@@ -2297,10 +2288,10 @@ CzDA9MPMhaljhOlHyCEMhtvDiGQPIwNCPwOSOohmABZ4AsA=
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 88->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGYc5ICBEeRGiDsZYEwgZmCEMRkgGKoIIg6WgasD
-CzDA9MPMhaljhOlHyCEMhtvDiGQPIwNCP9gMABqsAsQ=
-                  "], {{0, 0}, {
-                  13, 25}}, {0, 1}],
+1:eJx9TsERwCAIS/x3AJ9dyRFcoPv/qpQgfSgHp4GQcPen9QKgjrpGkYQHZ9LD
+oCNYfjPxsJrSsL80ENoibHixr0NEZ9hNStqH++vW2GfykXa6FYu710j908sf
+fgHT/AJ8
+                  "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
@@ -2319,10 +2310,10 @@ CzDA9MPMhaljhOlHyCEMhtvDiGQPIwNCP9gMABqsAsQ=
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 89->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGYcSoCBEeRgiKMZYEwgZmCEMRkgGKoIIg6WgasD
-CzDA9MPMhaljhOlHyCEMhtvDiGQPiAAAHoACzQ==
-                  "], {{0, 0}, {13, 
-                  25}}, {0, 1}],
+1:eJx9jrkRwCAMBFfOXQChW3IJNED/GRg9KJEZNDy3d9LTx9svoK26VyGIre+O
+vdhbtQ2ZRtLMHBmo+3AUXPhVDM7HUDz7sf4+a/gl9fHsNCuHrTPS/98ptT4B
+17kCfw==
+                  "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
@@ -2341,10 +2332,10 @@ CzDA9MPMhaljhOlHyCEMhtvDiGQPiAAAHoACzQ==
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 90->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGYcsoCBEeR6iA8YYEwgZmCEMRkgGKoIIg6WgasD
-CzDA9MPMhaljhOlHyCEMhtsDJAAh/gLT
-                  "], {{0, 0}, {13, 25}}, {0,
-                   1}],
+1:eJxTTMoPSmJiYGCQBGJeIGYEYTBgACMwZoRIQOQYkOTA4lBpRpgAI5I6Bhzq
+4PohknB1UKuhypH1w9wGVYLQz4hkD8xsJLcyINTiNgNJHB/NiFseyQ8MDADV
+FwJ6
+                  "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
@@ -2363,8 +2354,9 @@ CzDA9MPMhaljhOlHyCEMhtsDJAAh/gLT
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 91->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGYcHoCBEeQViHcYYEwgZmCEMRkgGKoIIg6WgasD
-CzDA9MPMhaljhOlHyMENBgAlJQLZ
+1:eJx9j8ENwCAMA+3+O0CfXakjsED3/0EgCf4EiSjIPifwtv9rF4Bn1D0KJK1o
+13mwhGhTd5shUDgUXOaXmRyZ6wyRPHy/IztP2ROz5a3YbD1D9FNn7csfAOXY
+AdJgAno=
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -2384,8 +2376,9 @@ CzDA9MPMhaljhOlHyMENBgAlJQLZ
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 92->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGYchoCBEeQviN8YYEwgZmCEMRkgGKoIIg6WgasD
-CzDA9MPMhaljhOmHCAIAJ/EC4A==
+1:eJxTTMoPSmJiYGCQBGJeBhBgBGFGIGKEUWBBMA3mQwQYkdQx4FAH1w+RhKtj
+ZIQaA1GCpB9mP1QJQj8jkj0ws5HcyoBQi9sMJHF8NCNueSQ/MDAgq0N1KwDQ
+7QJ7
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -2405,8 +2398,9 @@ CzDA9MPMhaljhOmHCAIAJ/EC4A==
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 93->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGYc7oCBEeRJiEcZYEwgZmCEMRkgGKoIIg6WgasD
-CzDA9MPMhaljZAQAKoUC5Q==
+1:eJxTTMoPSmJiYGCQBGJeIGZkBCJGBhCLAUyD+RABCB+qAIc6uH6IJFwdIyPU
+GIgSJP1gMZh+RiT9jEj2wMyGqoXbQ8gMJHF8NCNueSQ/MDAgq0N3KwPCrQDS
+HQJ9
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -2426,8 +2420,9 @@ CzDA9MPMhaljZAQAKoUC5Q==
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 94->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGYcUYCBEeRjiK8ZYEwgZmCEMRkgGKoIIg6WgasD
-CzDA9IONBQAszQLq
+1:eJxTTMoPSmJiYGCQBGJeIGYEY0YgYACxwBQjI4QBpSAMhDqYNESQAa6OkRFq
+DEQJkn4UexiR9DMi2QMzG6oWbg8hM5DE8dGMuOWR/MDAgKwO3a0MSG6F6wdi
+ANIJAnw=
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -2447,8 +2442,9 @@ CzDA9IONBQAszQLq
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 95->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGYcuYCBEeR9SBAwwJhAzMAIYzJAMFQRRBwsA1cH
-FmAAAC7fAu4=
+1:eJyFT8sVgDAMAu8O4NGVHKELuP+tNb9yqT2k5AUI6d3epx0ArlHnKJC015sA
+bwKMmzokTTOzdFC/zdJP8VNycndoK2e3Q+Z/yDUvf3Dh6lbIreXX/K860zAC
+fQ==
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -2468,8 +2464,9 @@ FmAAAC7fAu4=
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 96->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGYcBWDAwAgKC0h4MMCYQMzACGMyQDBUEUQcLMPI
-CAAwlwL2
+1:eJxTTMoPSmJiYGCQBGJeBhBgZGBkZIQxYHwwGyIOkYSrYwQDmHJGJP1gMZh+
+RiT9EA0QPsxsqFq4PYTMQBLHRzPilkf1K5I8ulsZkNwK149sP7o4IwDR2wJ7
+
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -2489,7 +2486,8 @@ CAAwlwL2
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 97->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGYcBZiAgREUMJDAYYAxgZiBEcZkgGCoIgAx/QL8
+1:eJxTTMoPSmJiYGCQBGJeIGZkBBFAihFEgGiYIEycASwJV8fACBeHqoHpZ0TS
+D9EA4cPMhqqF20PIDCRxfDQjbnkkP0AU4nIrA5Jb4fqR7UcXRxUDANRcAn4=
 
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
@@ -2510,14 +2508,16 @@ CAAwlwL2
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 98->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGYcBQQAAyMolCAhxQBjAjEDI4zJAAAzGQMC
-                  
+1:eJxTTMoPSmJiYGCQBGJeIGZkYGRkBNEgAsFnBAMon4ERoQ6iBsoHq4Hph2iA
+8KESMLUQQxgJm4Ekjo9mxC2P5AeIQlxuZUByK1w/sv3o4oy4/QAA0vcCew==
+
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
                  GridLinesStyle->Directive[
                    GrayLevel[0.5, 0.4]],
+                 
                  Method->{
                   "DefaultBoundaryStyle" -> Automatic, 
                    "DefaultGraphicsInteraction" -> {
@@ -2530,8 +2530,8 @@ CAAwlwL2
                     "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
                    "DefaultPlotStyle" -> Automatic}], 99->
                 GraphicsBox[RasterBox[CompressedData["
-1:eJxTTMoPSmJiYGCQBGJeIGYcBaQABkZQkEGCjQHGZAAAM9MDCQ==
-                  
+1:eJxTTMoPSmJiYGCQBGJeBjBgZGBkZGQAEWAazGdghItD1UD5YDVQdVANED5U
+AqYWYggjYTOQxPHRjLjlkfwAUYjLrQxIboXrR7YfXZyROD8wAADUJgJ9
                   "], {{0, 0}, {13, 25}}, {0, 1}],
                  Frame->Automatic,
                  FrameLabel->{None, None},
@@ -2596,13 +2596,12 @@ CAAwlwL2
            CurrentValue["CurrentFormatTime"]]& , {
            
            Manipulate`Dump`controllerLink[{$CellContext`i12$$, \
-$CellContext`i12$19060$$}, "X1", 
+$CellContext`i12$14450$$}, "X1", 
             If["DefaultAbsolute", True, "JB1"], False, {1, 99, 1}, 99, 1.]}], 
-         
          CurrentValue[{
           "ControllerData", {
            "Gamepad", "Joystick", "Multi-Axis Controller"}}], {}]],
-       ImageSizeCache->{523., {409.5, 419.5}}],
+       ImageSizeCache->{526., {412., 422.}}],
       DefaultBaseStyle->{},
       FrameMargins->{{5, 5}, {5, 5}}],
      BaselinePosition->Automatic,
@@ -2622,1208 +2621,15 @@ $CellContext`i12$19060$$}, "X1",
    3.79716904793223*^9}, {3.7971690997221107`*^9, 3.797169113774538*^9}, {
    3.797169160803122*^9, 3.797169182500808*^9}, {3.797169254921075*^9, 
    3.797169276131401*^9}, 3.797169588779347*^9, 3.797169651913197*^9, 
-   3.797169707933362*^9, 3.7972479339086523`*^9, 3.7972488729954443`*^9},
- CellLabel->"Out[9]=",ExpressionUUID->"dea9a7e5-d20f-4f40-b202-c1db989b015b"]
-}, Open  ]],
-
-Cell[BoxData[
- RowBox[{"(*", 
-  RowBox[{"Parte", " ", "2"}], "*)"}]], "Input",
- CellChangeTimes->{{3.797249819136097*^9, 
-  3.797249832600377*^9}},ExpressionUUID->"4335fe17-c74c-4a9b-8364-\
-e8c87d9da16c"],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"Ejer1", "[", "AFD_", "]"}], ":=", 
-  RowBox[{"Module", "[", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{
-     "estados", ",", "simbolos", ",", "transiciones", ",", "finales", ",", 
-      "inicial", ",", "F", ",", "S", ",", "N", ",", "f", ",", "SMas", ",", 
-      "vecindario", ",", "i", ",", "k"}], "}"}], ",", "\[IndentingNewLine]", 
-    RowBox[{
-     RowBox[{"estados", "=", 
-      RowBox[{"AFD", "[", 
-       RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"simbolos", "=", 
-      RowBox[{"AFD", "[", 
-       RowBox[{"[", "2", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"transiciones", "=", 
-      RowBox[{"AFD", "[", 
-       RowBox[{"[", "3", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"inicial", "=", 
-      RowBox[{"AFD", "[", 
-       RowBox[{"[", "4", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"finales", " ", "=", 
-      RowBox[{"AFD", "[", 
-       RowBox[{"[", "5", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"S", " ", "=", " ", 
-      RowBox[{"Union", "[", 
-       RowBox[{"estados", ",", " ", "simbolos"}], "]"}]}], ";", 
-     "\[IndentingNewLine]", 
-     RowBox[{"SMas", " ", "=", " ", "finales"}], ";", "\[IndentingNewLine]", 
-     RowBox[{"vecindario", " ", "=", " ", 
-      RowBox[{"{", 
-       RowBox[{
-        RowBox[{"-", "1"}], ",", "0"}], "}"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"f", "=", "transiciones"}], ";", "\[IndentingNewLine]", 
-     "\[IndentingNewLine]", 
-     RowBox[{"For", "[", 
-      RowBox[{
-       RowBox[{"i", "=", "1"}], ",", 
-       RowBox[{"i", "\[LessEqual]", 
-        RowBox[{"Length", "[", "simbolos", "]"}]}], ",", 
-       RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
-       RowBox[{"For", "[", 
-        RowBox[{
-         RowBox[{"k", "=", "1"}], ",", 
-         RowBox[{"k", "\[LessEqual]", 
-          RowBox[{"Length", "[", "simbolos", "]"}]}], ",", 
-         RowBox[{"k", "++"}], ",", "\[IndentingNewLine]", 
-         RowBox[{
-          RowBox[{"AppendTo", "[", 
-           RowBox[{"f", ",", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"simbolos", "[", 
-               RowBox[{"[", "i", "]"}], "]"}], ",", 
-              RowBox[{"simbolos", "[", 
-               RowBox[{"[", "k", "]"}], "]"}], ",", 
-              RowBox[{"simbolos", "[", 
-               RowBox[{"[", "k", "]"}], "]"}]}], "}"}]}], "]"}], ";"}]}], 
-        "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}], ";", 
-     "\[IndentingNewLine]", 
-     RowBox[{"For", "[", 
-      RowBox[{
-       RowBox[{"i", "=", "1"}], ",", 
-       RowBox[{"i", "\[LessEqual]", 
-        RowBox[{"Length", "[", "estados", "]"}]}], ",", 
-       RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
-       RowBox[{"For", "[", 
-        RowBox[{
-         RowBox[{"k", "=", "1"}], ",", 
-         RowBox[{"k", "\[LessEqual]", 
-          RowBox[{"Length", "[", "estados", "]"}]}], ",", 
-         RowBox[{"k", "++"}], ",", "\[IndentingNewLine]", 
-         RowBox[{
-          RowBox[{"AppendTo", "[", 
-           RowBox[{"f", ",", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"estados", "[", 
-               RowBox[{"[", "i", "]"}], "]"}], ",", 
-              RowBox[{"estados", "[", 
-               RowBox[{"[", "k", "]"}], "]"}], ",", 
-              RowBox[{"estados", "[", 
-               RowBox[{"[", "k", "]"}], "]"}]}], "}"}]}], "]"}], ";"}]}], 
-        "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}], ";", 
-     "\[IndentingNewLine]", 
-     RowBox[{"Return", "[", 
-      RowBox[{"{", 
-       RowBox[{"S", ",", "f", ",", "SMas"}], "}"}], "]"}]}]}], 
-   "\[IndentingNewLine]", "]"}]}]], "Input",
- CellChangeTimes->{{3.797249838965207*^9, 3.7972498607326307`*^9}, {
-   3.7972499053327837`*^9, 3.7972499488103333`*^9}, {3.797250054132124*^9, 
-   3.7972500902254877`*^9}, {3.797250334241377*^9, 3.7972504231741877`*^9}, {
-   3.7972505920934563`*^9, 3.797250598035336*^9}, {3.797250634601061*^9, 
-   3.797250676908907*^9}, {3.797250707228723*^9, 3.7972507250471354`*^9}, {
-   3.7972509153732233`*^9, 3.7972509725033092`*^9}, {3.797251051771125*^9, 
-   3.797251064776145*^9}, {3.797251100385407*^9, 3.797251213716983*^9}, {
-   3.797251261867773*^9, 3.7972512970381403`*^9}, {3.7972513650147533`*^9, 
-   3.797251377022428*^9}, {3.797251674000099*^9, 3.7972516750326767`*^9}, 
-   3.79725175559204*^9},
- CellLabel->"In[6]:=",ExpressionUUID->"09f7d625-1495-4904-a845-75d11a1262ab"],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"Automata", " ", "=", " ", 
-  RowBox[{"{", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{"q", ",", "p", ",", "r"}], "}"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"a", ",", "b"}], "}"}], ",", 
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{"{", 
-       RowBox[{"q", ",", "a", ",", "p"}], "}"}], ",", 
-      RowBox[{"{", 
-       RowBox[{"q", ",", "b", ",", "r"}], "}"}], ",", 
-      RowBox[{"{", 
-       RowBox[{"r", ",", "a", ",", "r"}], "}"}], ",", 
-      RowBox[{"{", 
-       RowBox[{"r", ",", "b", ",", "r"}], "}"}], ",", 
-      RowBox[{"{", 
-       RowBox[{"p", ",", "a", ",", "r"}], "}"}], ",", 
-      RowBox[{"{", 
-       RowBox[{"p", ",", "b", ",", "q"}], "}"}]}], "}"}], ",", "q", ",", 
-    RowBox[{"{", "r", "}"}]}], "}"}]}]], "Input",
- CellChangeTimes->{{3.797251471169299*^9, 3.7972516306875143`*^9}},
- CellLabel->"In[5]:=",ExpressionUUID->"2faa3b68-9283-4d54-b747-67fbae0beec9"],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{"q", ",", "p", ",", "r"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"a", ",", "b"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{"q", ",", "a", ",", "p"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"q", ",", "b", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "a", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "b", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"p", ",", "a", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"p", ",", "b", ",", "q"}], "}"}]}], "}"}], ",", "q", ",", 
-   RowBox[{"{", "r", "}"}]}], "}"}]], "Output",
- CellChangeTimes->{
-  3.797251631869804*^9, {3.797255091800913*^9, 3.797255100108074*^9}, 
-   3.797255155908474*^9, 3.797255383794888*^9, 3.7974218457020073`*^9},
- CellLabel->"Out[5]=",ExpressionUUID->"ce5b331b-6dd4-478e-ad11-f8b4c4c6ae47"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"ACPruebas", " ", "=", " ", 
-  RowBox[{"Ejer1", "[", "Automata", "]"}]}]], "Input",
- CellChangeTimes->{{3.797251638123741*^9, 3.7972516437746983`*^9}, {
-  3.797252823542213*^9, 3.797252826693152*^9}},
- CellLabel->"In[7]:=",ExpressionUUID->"ac4aae62-e7d6-4456-a24d-c091a8075143"],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{"a", ",", "b", ",", "p", ",", "q", ",", "r"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{"q", ",", "a", ",", "p"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"q", ",", "b", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "a", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "b", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"p", ",", "a", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"p", ",", "b", ",", "q"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"a", ",", "a", ",", "a"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"a", ",", "b", ",", "b"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"b", ",", "a", ",", "a"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"b", ",", "b", ",", "b"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"q", ",", "q", ",", "q"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"q", ",", "p", ",", "p"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"q", ",", "r", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"p", ",", "q", ",", "q"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"p", ",", "p", ",", "p"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"p", ",", "r", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "q", ",", "q"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "p", ",", "p"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "r", ",", "r"}], "}"}]}], "}"}], ",", 
-   RowBox[{"{", "r", "}"}]}], "}"}]], "Output",
- CellChangeTimes->{
-  3.797251685108151*^9, 3.797251760465354*^9, 3.797252827150187*^9, {
-   3.797255089677209*^9, 3.797255101770413*^9}, 3.797421847738811*^9},
- CellLabel->"Out[7]=",ExpressionUUID->"2931edad-2c3a-4fa0-a5f7-0bdbbb27c4df"]
-}, Open  ]],
-
-Cell[BoxData[
- RowBox[{"\[IndentingNewLine]", 
-  RowBox[{
-   RowBox[{"Ejer2", "[", 
-    RowBox[{"cadena_", ",", "AC_", ",", "frontera_"}], "]"}], ":=", 
-   RowBox[{"Module", "[", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{
-      "SMas", ",", "i", ",", "estado", ",", "transiciones", ",", "aux"}], 
-      "}"}], ",", "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{"SMas", "=", " ", 
-       RowBox[{"AC", "[", 
-        RowBox[{"[", "3", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-      RowBox[{"transiciones", " ", "=", " ", 
-       RowBox[{"AC", "[", 
-        RowBox[{"[", "2", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-      RowBox[{"estado", " ", "=", " ", 
-       RowBox[{"frontera", "[", 
-        RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-      "\[IndentingNewLine]", 
-      RowBox[{"For", "[", 
-       RowBox[{
-        RowBox[{"i", "=", "1"}], ",", 
-        RowBox[{"i", "\[LessEqual]", " ", 
-         RowBox[{"Length", "[", "cadena", "]"}]}], ",", 
-        RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
-        RowBox[{
-         RowBox[{"aux", " ", "=", " ", 
-          RowBox[{"Cases", "[", 
-           RowBox[{"transiciones", ",", 
-            RowBox[{"{", 
-             RowBox[{"estado", ",", 
-              RowBox[{"cadena", "[", 
-               RowBox[{"[", "i", "]"}], "]"}], ",", "_"}], "}"}]}], "]"}]}], 
-         ";", "\[IndentingNewLine]", 
-         RowBox[{"estado", " ", "=", " ", 
-          RowBox[{
-           RowBox[{"aux", "[", 
-            RowBox[{"[", "1", "]"}], "]"}], "[", 
-           RowBox[{"[", "3", "]"}], "]"}]}], ";"}]}], "\[IndentingNewLine]", 
-       "]"}], ";", "\[IndentingNewLine]", 
-      RowBox[{"Return", "[", 
-       RowBox[{"MemberQ", "[", 
-        RowBox[{"SMas", ",", "estado"}], "]"}], "]"}]}]}], 
-    "\[IndentingNewLine]", "]"}]}]}]], "Input",
- CellChangeTimes->{{3.797251844700241*^9, 3.7972518991200542`*^9}, {
-  3.797252096260394*^9, 3.79725215919772*^9}, {3.797252207456534*^9, 
-  3.797252219921205*^9}, {3.797252367113892*^9, 3.797252429459098*^9}, {
-  3.7972524940034323`*^9, 3.7972524986326933`*^9}, {3.79725258775072*^9, 
-  3.797252719977367*^9}, {3.797252755320074*^9, 3.797252794448471*^9}, {
-  3.797252976326337*^9, 3.7972530325259647`*^9}, {3.797253063333844*^9, 
-  3.797253094226652*^9}, {3.797253127503933*^9, 3.797253131947789*^9}, {
-  3.797253164092626*^9, 3.797253171672201*^9}, {3.797253326558227*^9, 
-  3.7972533706311483`*^9}, {3.797253421187565*^9, 3.797253431680732*^9}, {
-  3.797423684648809*^9, 3.797423691764488*^9}},
- CellLabel->"In[79]:=",ExpressionUUID->"502a8e15-02bf-450f-8863-719b4c5dce9b"],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"cadena", "  ", "=", " ", 
-  RowBox[{"{", "a", "}"}]}]], "Input",
- CellChangeTimes->{{3.7972528683381042`*^9, 3.797252888510516*^9}, 
-   3.797253442699361*^9},
- CellLabel->"In[3]:=",ExpressionUUID->"a1b75d9b-cf36-49ee-9baa-4ea132ffe328"],
-
-Cell[BoxData[
- RowBox[{"{", "a", "}"}]], "Output",
- CellChangeTimes->{3.797252945768342*^9, 3.797253443258778*^9, 
-  3.797421840811873*^9},
- CellLabel->"Out[3]=",ExpressionUUID->"a5cf76a0-85b6-4750-b25b-a03e4dd0efed"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"\[IndentingNewLine]", 
-  RowBox[{"inicial", " ", "=", " ", 
-   RowBox[{"{", "q", "}"}]}]}]], "Input",
- CellChangeTimes->{{3.797252914217854*^9, 3.797252952260103*^9}},
- CellLabel->"In[4]:=",ExpressionUUID->"189057bb-8efc-4a5d-ba79-7d653e43e85e"],
-
-Cell[BoxData[
- RowBox[{"{", "q", "}"}]], "Output",
- CellChangeTimes->{{3.7972529167092123`*^9, 3.7972529530806723`*^9}, 
-   3.797421841881589*^9},
- CellLabel->"Out[4]=",ExpressionUUID->"f8e67e13-1300-4a8f-8bbd-61013d0fd5b6"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"Ejer2", "[", 
-  RowBox[{"cadena", ",", "ACPruebas", ",", "inicial"}], "]"}]], "Input",
- CellChangeTimes->{{3.797252831725019*^9, 3.797252859944706*^9}, {
-  3.797252892063218*^9, 3.7972529214686937`*^9}, {3.797252955099062*^9, 
-  3.797252955933942*^9}},
- CellLabel->"In[80]:=",ExpressionUUID->"e8ef3967-e2c0-4169-bb81-6e550bcbb07a"],
-
-Cell[BoxData["True"], "Output",
- CellChangeTimes->{{3.797252908276623*^9, 3.7972529565796833`*^9}, 
-   3.797253000411447*^9, 3.797253035822777*^9, 3.7972530855015583`*^9, 
-   3.797253140373764*^9, 3.797253175827072*^9, {3.7972533312060223`*^9, 
-   3.797253373699442*^9}, {3.7972534270814037`*^9, 3.797253445672553*^9}, 
-   3.7974236983882523`*^9},
- CellLabel->"Out[80]=",ExpressionUUID->"03f8ef26-cc9f-42fb-82f2-abd696c550ed"]
-}, Open  ]],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{
-  3.79725327171389*^9},ExpressionUUID->"a0b4eec2-ebf4-46aa-a4a8-319797781fa1"],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"Ejer3", "[", "AFD_", "]"}], ":=", 
-  RowBox[{"Module", "[", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{
-     "estados", ",", "simbolos", ",", "transiciones", ",", "finales", ",", 
-      "inicial", ",", "F", ",", "S", ",", "N", ",", "f", ",", "SMas", ",", 
-      "vecindario", ",", "i", ",", "j", ",", "k", ",", "aux", ",", "aux2"}], 
-     "}"}], ",", "\[IndentingNewLine]", 
-    RowBox[{
-     RowBox[{"estados", "=", 
-      RowBox[{"AFD", "[", 
-       RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"simbolos", "=", 
-      RowBox[{"AFD", "[", 
-       RowBox[{"[", "2", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"transiciones", "=", 
-      RowBox[{"AFD", "[", 
-       RowBox[{"[", "3", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"inicial", "=", 
-      RowBox[{"AFD", "[", 
-       RowBox[{"[", "4", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"finales", " ", "=", 
-      RowBox[{"AFD", "[", 
-       RowBox[{"[", "5", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"S", " ", "=", " ", 
-      RowBox[{"Union", "[", 
-       RowBox[{"estados", ",", " ", "simbolos"}], "]"}]}], ";", 
-     "\[IndentingNewLine]", 
-     RowBox[{"SMas", " ", "=", " ", "finales"}], ";", "\[IndentingNewLine]", 
-     RowBox[{"f", "=", 
-      RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"For", "[", 
-      RowBox[{
-       RowBox[{"i", " ", "=", " ", "1"}], ",", " ", 
-       RowBox[{"i", " ", "\[LessEqual]", " ", 
-        RowBox[{"Length", "[", "transiciones", "]"}]}], ",", 
-       RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
-       RowBox[{"For", "[", 
-        RowBox[{
-         RowBox[{"k", "=", " ", "1"}], ",", 
-         RowBox[{"k", " ", "\[LessEqual]", " ", 
-          RowBox[{"Length", "[", "S", "]"}]}], ",", 
-         RowBox[{"k", "++"}], ",", "\[IndentingNewLine]", 
-         RowBox[{
-          RowBox[{"aux", " ", "=", " ", 
-           RowBox[{"transiciones", "[", 
-            RowBox[{"[", "i", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-          RowBox[{"aux2", " ", "=", " ", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"aux", "[", 
-              RowBox[{"[", "1", "]"}], "]"}], ",", 
-             RowBox[{"aux", "[", 
-              RowBox[{"[", "2", "]"}], "]"}], ",", 
-             RowBox[{"S", "[", 
-              RowBox[{"[", "k", "]"}], "]"}], ",", 
-             RowBox[{"aux", "[", 
-              RowBox[{"[", "3", "]"}], "]"}]}], "}"}]}], ";", 
-          "\[IndentingNewLine]", 
-          RowBox[{"AppendTo", "[", 
-           RowBox[{"f", ",", "aux2"}], "]"}], ";"}]}], "\[IndentingNewLine]", 
-        "]"}]}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
-      "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
-     RowBox[{"For", "[", 
-      RowBox[{
-       RowBox[{"i", "=", "1"}], ",", 
-       RowBox[{"i", "\[LessEqual]", 
-        RowBox[{"Length", "[", "simbolos", "]"}]}], ",", 
-       RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
-       RowBox[{"For", "[", 
-        RowBox[{
-         RowBox[{"k", "=", "1"}], ",", 
-         RowBox[{"k", "\[LessEqual]", 
-          RowBox[{"Length", "[", "simbolos", "]"}]}], ",", 
-         RowBox[{"k", "++"}], ",", "\[IndentingNewLine]", 
-         RowBox[{"For", "[", 
-          RowBox[{
-           RowBox[{"j", "=", "1"}], ",", 
-           RowBox[{"j", "\[LessEqual]", 
-            RowBox[{"Length", "[", "simbolos", "]"}]}], ",", 
-           RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", 
-           RowBox[{
-            RowBox[{"AppendTo", "[", 
-             RowBox[{"f", ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"simbolos", "[", 
-                 RowBox[{"[", "i", "]"}], "]"}], ",", 
-                RowBox[{"simbolos", "[", 
-                 RowBox[{"[", "k", "]"}], "]"}], ",", 
-                RowBox[{"simbolos", "[", 
-                 RowBox[{"[", "j", "]"}], "]"}], ",", 
-                RowBox[{"simbolos", "[", 
-                 RowBox[{"[", "k", "]"}], "]"}]}], "}"}]}], "]"}], ";"}]}], 
-          "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]}], 
-      "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
-     RowBox[{"For", "[", 
-      RowBox[{
-       RowBox[{"i", "=", "1"}], ",", 
-       RowBox[{"i", "\[LessEqual]", 
-        RowBox[{"Length", "[", "estados", "]"}]}], ",", 
-       RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
-       RowBox[{"For", "[", 
-        RowBox[{
-         RowBox[{"k", "=", "1"}], ",", 
-         RowBox[{"k", "\[LessEqual]", 
-          RowBox[{"Length", "[", "estados", "]"}]}], ",", 
-         RowBox[{"k", "++"}], ",", "\[IndentingNewLine]", 
-         RowBox[{"For", "[", 
-          RowBox[{
-           RowBox[{"j", "=", "1"}], ",", 
-           RowBox[{"j", "\[LessEqual]", 
-            RowBox[{"Length", "[", "estados", "]"}]}], ",", 
-           RowBox[{"j", "++"}], ",", "\[IndentingNewLine]", 
-           RowBox[{
-            RowBox[{"AppendTo", "[", 
-             RowBox[{"f", ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"estados", "[", 
-                 RowBox[{"[", "i", "]"}], "]"}], ",", 
-                RowBox[{"estados", "[", 
-                 RowBox[{"[", "k", "]"}], "]"}], ",", 
-                RowBox[{"estados", "[", 
-                 RowBox[{"[", "j", "]"}], "]"}], ",", 
-                RowBox[{"estados", "[", 
-                 RowBox[{"[", "k", "]"}], "]"}]}], "}"}]}], "]"}], ";"}]}], 
-          "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]}], 
-      "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
-     RowBox[{"Return", "[", 
-      RowBox[{"{", 
-       RowBox[{"S", ",", "f", ",", "SMas"}], "}"}], "]"}]}]}], 
-   "\[IndentingNewLine]", "]"}]}]], "Input",
- CellChangeTimes->{{3.7972539453181868`*^9, 3.7972539459428663`*^9}, {
-   3.797253996013443*^9, 3.797253999547448*^9}, {3.797254041403323*^9, 
-   3.797254098711122*^9}, {3.797254270342389*^9, 3.797254445763432*^9}, {
-   3.7972544819000797`*^9, 3.797254560924716*^9}, {3.79725482850139*^9, 
-   3.7972548333327427`*^9}, {3.797254877507156*^9, 3.797254913200631*^9}, {
-   3.797254966102585*^9, 3.797255021080943*^9}, 3.797255368012759*^9, {
-   3.797255517348674*^9, 3.7972555630489883`*^9}},
- CellLabel->"In[4]:=",ExpressionUUID->"fea76d0e-76ff-4038-864e-95a12ea81676"],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"Ejer3", "[", "Automata", "]"}]], "Input",
- CellChangeTimes->{{3.797255042308721*^9, 3.797255063686427*^9}, {
-  3.797255167881673*^9, 3.797255173089602*^9}},
- CellLabel->"In[5]:=",ExpressionUUID->"1aee6127-9837-437c-9b8b-7b43809233d8"],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{"a", ",", "b", ",", "p", ",", "q", ",", "r"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{"q", ",", "a", ",", "a", ",", "p"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"q", ",", "a", ",", "b", ",", "p"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"q", ",", "a", ",", "p", ",", "p"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"q", ",", "a", ",", "q", ",", "p"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"q", ",", "a", ",", "r", ",", "p"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"q", ",", "b", ",", "a", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"q", ",", "b", ",", "b", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"q", ",", "b", ",", "p", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"q", ",", "b", ",", "q", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"q", ",", "b", ",", "r", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "a", ",", "a", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "a", ",", "b", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "a", ",", "p", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "a", ",", "q", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "a", ",", "r", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "b", ",", "a", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "b", ",", "b", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "b", ",", "p", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "b", ",", "q", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "b", ",", "r", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"p", ",", "a", ",", "a", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"p", ",", "a", ",", "b", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"p", ",", "a", ",", "p", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"p", ",", "a", ",", "q", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"p", ",", "a", ",", "r", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"p", ",", "b", ",", "a", ",", "q"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"p", ",", "b", ",", "b", ",", "q"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"p", ",", "b", ",", "p", ",", "q"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"p", ",", "b", ",", "q", ",", "q"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"p", ",", "b", ",", "r", ",", "q"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"a", ",", "a", ",", "a", ",", "a"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"a", ",", "a", ",", "b", ",", "a"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"a", ",", "b", ",", "a", ",", "b"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"a", ",", "b", ",", "b", ",", "b"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"b", ",", "a", ",", "a", ",", "a"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"b", ",", "a", ",", "b", ",", "a"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"b", ",", "b", ",", "a", ",", "b"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"b", ",", "b", ",", "b", ",", "b"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"q", ",", "q", ",", "q", ",", "q"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"q", ",", "q", ",", "p", ",", "q"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"q", ",", "q", ",", "r", ",", "q"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"q", ",", "p", ",", "q", ",", "p"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"q", ",", "p", ",", "p", ",", "p"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"q", ",", "p", ",", "r", ",", "p"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"q", ",", "r", ",", "q", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"q", ",", "r", ",", "p", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"q", ",", "r", ",", "r", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"p", ",", "q", ",", "q", ",", "q"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"p", ",", "q", ",", "p", ",", "q"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"p", ",", "q", ",", "r", ",", "q"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"p", ",", "p", ",", "q", ",", "p"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"p", ",", "p", ",", "p", ",", "p"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"p", ",", "p", ",", "r", ",", "p"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"p", ",", "r", ",", "q", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"p", ",", "r", ",", "p", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"p", ",", "r", ",", "r", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "q", ",", "q", ",", "q"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "q", ",", "p", ",", "q"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "q", ",", "r", ",", "q"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "p", ",", "q", ",", "p"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "p", ",", "p", ",", "p"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "p", ",", "r", ",", "p"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "r", ",", "q", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "r", ",", "p", ",", "r"}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"r", ",", "r", ",", "r", ",", "r"}], "}"}]}], "}"}], ",", 
-   RowBox[{"{", "r", "}"}]}], "}"}]], "Output",
- CellChangeTimes->{3.7972551737399483`*^9, 3.7972553889142733`*^9, 
-  3.797255568174493*^9},
- CellLabel->"Out[5]=",ExpressionUUID->"eaec1c49-d3a6-42e9-8a00-0c6a0630c81e"]
-}, Open  ]],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{
-   RowBox[{"Ejer4", "[", 
-    RowBox[{"cadena_", ",", "AC_", ",", "frontera_"}], "]"}], ":=", 
-   RowBox[{"Module", "[", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{
-      "SMas", ",", "i", ",", "estado", ",", "transiciones", ",", "aux", ",", 
-       "listaRes", ",", "devolver", ",", "vacio", ",", "anterior"}], "}"}], 
-     ",", "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{"SMas", "=", " ", 
-       RowBox[{"AC", "[", 
-        RowBox[{"[", "3", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-      RowBox[{"transiciones", " ", "=", " ", 
-       RowBox[{"AC", "[", 
-        RowBox[{"[", "2", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-      RowBox[{"estado", " ", "=", " ", 
-       RowBox[{"frontera", "[", 
-        RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-      RowBox[{"vacio", " ", "=", "  ", 
-       RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
-      RowBox[{"listaRes", " ", "=", " ", 
-       RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
-      RowBox[{"For", " ", "[", 
-       RowBox[{
-        RowBox[{"i", " ", "=", " ", "1"}], ",", " ", 
-        RowBox[{"i", " ", "\[LessEqual]", " ", 
-         RowBox[{"Length", "[", "cadena", "]"}]}], ",", " ", 
-        RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
-        RowBox[{"AppendTo", "[", 
-         RowBox[{"vacio", ",", "0"}], "]"}]}], "\[IndentingNewLine]", "]"}], 
-      ";", "\[IndentingNewLine]", 
-      RowBox[{"For", " ", "[", 
-       RowBox[{
-        RowBox[{"i", " ", "=", " ", "1"}], ",", " ", 
-        RowBox[{"i", " ", "<", " ", "6"}], ",", " ", 
-        RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
-        RowBox[{
-         RowBox[{"AppendTo", "[", 
-          RowBox[{"listaRes", ",", "vacio"}], "]"}], ";"}]}], 
-       "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
-      RowBox[{"anterior", " ", "=", " ", "cadena"}], ";", 
-      "\[IndentingNewLine]", "\[IndentingNewLine]", 
-      RowBox[{"PrependTo", "[", 
-       RowBox[{"listaRes", ",", "cadena"}], "]"}], ";", "\[IndentingNewLine]", 
-      RowBox[{"devolver", " ", "=", 
-       RowBox[{"{", 
-        RowBox[{"ArrayPlot", "[", 
-         RowBox[{"listaRes", ",", 
-          RowBox[{"ColorRules", "\[Rule]", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"a", " ", "\[Rule]", "Red"}], ",", 
-             RowBox[{"b", "\[Rule]", "Blue"}], ",", 
-             RowBox[{"q", "\[Rule]", "Yellow"}], ",", 
-             RowBox[{"p", "\[Rule]", "Purple"}], ",", 
-             RowBox[{"r", "\[Rule]", "Green"}]}], "}"}]}], ",", 
-          RowBox[{"Mesh", "\[Rule]", "All"}]}], "]"}], "}"}]}], ";", 
-      "\[IndentingNewLine]", 
-      RowBox[{"For", "[", 
-       RowBox[{
-        RowBox[{"i", "=", "1"}], ",", 
-        RowBox[{"i", "\[LessEqual]", " ", 
-         RowBox[{"Length", "[", "cadena", "]"}]}], ",", 
-        RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
-        RowBox[{
-         RowBox[{"aux", " ", "=", " ", 
-          RowBox[{"Cases", "[", 
-           RowBox[{"`", ",", 
-            RowBox[{"{", 
-             RowBox[{"estado", ",", 
-              RowBox[{"cadena", "[", 
-               RowBox[{"[", "i", "]"}], "]"}], ",", "_"}], "}"}]}], "]"}]}], 
-         ";", "\[IndentingNewLine]", 
-         RowBox[{"estado", " ", "=", " ", 
-          RowBox[{
-           RowBox[{"aux", "[", 
-            RowBox[{"[", "1", "]"}], "]"}], "[", 
-           RowBox[{"[", "3", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-         RowBox[{
-          RowBox[{"anterior", "[", 
-           RowBox[{"[", "i", "]"}], "]"}], " ", "=", " ", "estado"}], ";", 
-         "\[IndentingNewLine]", 
-         RowBox[{"listaRes", " ", "=", " ", 
-          RowBox[{"Drop", "[", 
-           RowBox[{"listaRes", ",", 
-            RowBox[{"-", "1"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
-         RowBox[{"PrependTo", "[", 
-          RowBox[{"listaRes", ",", "anterior"}], "]"}], ";", 
-         "\[IndentingNewLine]", 
-         RowBox[{"AppendTo", "[", 
-          RowBox[{"devolver", ",", 
-           RowBox[{"ArrayPlot", "[", 
-            RowBox[{"listaRes", ",", 
-             RowBox[{"ColorRules", "\[Rule]", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"a", " ", "\[Rule]", "Red"}], ",", 
-                RowBox[{"b", "\[Rule]", "Blue"}], ",", 
-                RowBox[{"q", "\[Rule]", "Yellow"}], ",", 
-                RowBox[{"p", "\[Rule]", "Purple"}], ",", 
-                RowBox[{"r", "\[Rule]", "Green"}]}], "}"}]}], ",", 
-             RowBox[{"Mesh", "\[Rule]", "All"}]}], "]"}]}], "]"}], ";"}]}], 
-       "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
-      RowBox[{"AppendTo", "[", 
-       RowBox[{"devolver", ",", 
-        RowBox[{"ArrayPlot", "[", 
-         RowBox[{"listaRes", ",", 
-          RowBox[{"ColorRules", "\[Rule]", 
-           RowBox[{"{", 
-            RowBox[{
-             RowBox[{"a", " ", "\[Rule]", "Red"}], ",", 
-             RowBox[{"b", "\[Rule]", "Blue"}], ",", 
-             RowBox[{"q", "\[Rule]", "Yellow"}], ",", 
-             RowBox[{"p", "\[Rule]", "Purple"}], ",", 
-             RowBox[{"r", "\[Rule]", "Green"}]}], "}"}]}], ",", 
-          RowBox[{"Mesh", "\[Rule]", "All"}]}], "]"}]}], "]"}], ";", 
-      "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"ListAnimate", "[", "devolver", "]"}], "\[IndentingNewLine]", 
-       RowBox[{"Return", "[", 
-        RowBox[{"MemberQ", "[", 
-         RowBox[{"SMas", ",", "estado"}], "]"}], "]"}]}]}]}], 
-    "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]"}]], "Input",
- CellChangeTimes->{
-  3.797421004878974*^9, {3.79742103917682*^9, 3.7974210551701107`*^9}, {
-   3.797421130055777*^9, 3.797421130746826*^9}, {3.797421171286224*^9, 
-   3.797421185893766*^9}, 3.79742124945574*^9, {3.797421661537113*^9, 
-   3.797421745339794*^9}, {3.797421790390514*^9, 3.7974218293692904`*^9}, {
-   3.797421871480865*^9, 3.797422062697401*^9}, {3.797422096192049*^9, 
-   3.797422107665646*^9}, 3.797422143038281*^9, 3.797422178779923*^9, {
-   3.797422263434628*^9, 3.7974222735253277`*^9}, {3.7974223370566063`*^9, 
-   3.797422387206293*^9}, {3.7974225473258123`*^9, 3.797422599141657*^9}, {
-   3.797422645113361*^9, 3.797422775960464*^9}, {3.797422889866269*^9, 
-   3.7974229297980433`*^9}, {3.7974229653417807`*^9, 3.797423008502493*^9}, {
-   3.797423180824122*^9, 3.797423272948368*^9}, {3.797423324955667*^9, 
-   3.797423330898756*^9}, {3.7974234446504393`*^9, 3.7974234769829283`*^9}, {
-   3.797423518554751*^9, 3.797423546136568*^9}, {3.797423579234065*^9, 
-   3.797423598419365*^9}, {3.7974236302441797`*^9, 
-   3.797423667360759*^9}},ExpressionUUID->"6f56c8c1-1001-4024-ade0-\
-94eaf22ad4f7"],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"cadena", " ", "=", " ", 
-  RowBox[{"{", 
-   RowBox[{"a", ",", "b", ",", "a", ",", "a", ",", "b"}], "}"}]}]], "Input",
- CellChangeTimes->{{3.797422163834876*^9, 3.797422199475284*^9}},
- CellLabel->"In[30]:=",ExpressionUUID->"ddaeec8f-d2b8-4dd8-95f0-3dd661e98e98"],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{"a", ",", "b", ",", "a", ",", "a", ",", "b"}], "}"}]], "Output",
- CellChangeTimes->{3.797422165498871*^9, 3.7974222107717237`*^9},
- CellLabel->"Out[30]=",ExpressionUUID->"dc8b790c-3f35-4b3f-9930-4ef54ef12a9f"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"Ejer4", "[", 
-  RowBox[{"cadena", ",", "ACPruebas", ",", "inicial"}], "]"}]], "Input",
- CellLabel->"In[78]:=",ExpressionUUID->"496e0dfc-fd0e-4240-b319-306131b89eba"],
-
-Cell[BoxData[
- RowBox[{
-  TagBox[
-   StyleBox[
-    DynamicModuleBox[{$CellContext`i41$$ = 1, Typeset`show$$ = True, 
-     Typeset`bookmarkList$$ = {
-     "\"min\"" :> {$CellContext`i41$$ = 1}, 
-      "\"max\"" :> {$CellContext`i41$$ = 7}}, Typeset`bookmarkMode$$ = "Menu",
-      Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
-     "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{{
-        Hold[$CellContext`i41$$], 1, ""}, 1, 7, 1}}, Typeset`size$$ = 
-     Automatic, Typeset`update$$ = 0, Typeset`initDone$$, 
-     Typeset`skipInitDone$$ = True, $CellContext`i41$46830$$ = 0}, 
-     PaneBox[
-      PanelBox[
-       DynamicWrapperBox[GridBox[{
-          {
-           ItemBox[
-            ItemBox[
-             TagBox[
-              StyleBox[GridBox[{
-                 {"\<\"\"\>", 
-                  AnimatorBox[Dynamic[$CellContext`i41$$], {1, 7, 1},
-                   AnimationRate->Automatic,
-                   AnimationRunTime->5.62186336517334,
-                   AnimationTimeIndex->0.6218633651733398,
-                   
-                   AppearanceElements->{
-                    "ProgressSlider", "PlayPauseButton", 
-                    "FasterSlowerButtons", "DirectionButton"},
-                   AutoAction->False,
-                   DisplayAllSteps->True]}
-                },
-                AutoDelete->False,
-                
-                GridBoxAlignment->{
-                 "Columns" -> {Right, {Left}}, "Rows" -> {{Baseline}}},
-                
-                GridBoxItemSize->{
-                 "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
-               "ListAnimateLabel",
-               StripOnInput->False],
-              {"ControlArea", Top}],
-             Alignment->{Automatic, Inherited},
-             StripOnInput->False],
-            Background->None,
-            StripOnInput->False]},
-          {
-           ItemBox[
-            TagBox[
-             StyleBox[
-              PaneBox[
-               TagBox[
-                PaneSelectorBox[{1->
-                 GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGBgA2JWIAaxIeCD/Sg9StOOJgQIqSfeHABFTWBr
-                    
-                    "], {{0, 0}, {5, 6}}, {0, 1}], {
-                    {GrayLevel[
-                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
-                    StyleBox[
-                    LineBox[{{{0, 6}, {5, 6}}, {{0, 5}, {5, 5}}, {{0, 4}, {5, 
-                    4}}, {{0, 3}, {5, 3}}, {{0, 2}, {5, 2}}, {{0, 1}, {5, 
-                    1}}, {{0, 0}, {5, 0}}}],
-                    Antialiasing->False]}, 
-                    {GrayLevel[
-                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
-                    StyleBox[
-                    LineBox[{{{0, 0}, {0, 6}}, {{1, 0}, {1, 6}}, {{2, 0}, {2, 
-                    6}}, {{3, 0}, {3, 6}}, {{4, 0}, {4, 6}}, {{5, 0}, {5, 
-                    6}}}],
-                    Antialiasing->False]}}},
-                  Frame->False,
-                  FrameLabel->{None, None},
-                  FrameTicks->{{None, None}, {None, None}},
-                  GridLinesStyle->Directive[
-                    GrayLevel[0.5, 0.4]],
-                  
-                  Method->{
-                   "DefaultBoundaryStyle" -> Automatic, 
-                    "DefaultGraphicsInteraction" -> {
-                    "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-                    "Effects" -> {
-                    "Highlight" -> {"ratio" -> 2}, 
-                    "HighlightPoint" -> {"ratio" -> 2}, 
-                    "Droplines" -> {
-                    "freeformCursorMode" -> True, 
-                    "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-                    "DefaultPlotStyle" -> Automatic}], 2->
-                 GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGBgA2JWIAaxIeCD/Sg9EmhCgJB6Us15gKYenU99ewF8dlWk
-
-                    "], {{0, 0}, {5, 6}}, {0, 1}], {
-                    {GrayLevel[
-                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
-                    StyleBox[
-                    LineBox[{{{0, 6}, {5, 6}}, {{0, 5}, {5, 5}}, {{0, 4}, {5, 
-                    4}}, {{0, 3}, {5, 3}}, {{0, 2}, {5, 2}}, {{0, 1}, {5, 
-                    1}}, {{0, 0}, {5, 0}}}],
-                    Antialiasing->False]}, 
-                    {GrayLevel[
-                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    StyleBox[
-                    LineBox[{{{0, 0}, {0, 6}}, {{1, 0}, {1, 6}}, {{2, 0}, {2, 
-                    6}}, {{3, 0}, {3, 6}}, {{4, 0}, {4, 6}}, {{5, 0}, {5, 
-                    6}}}],
-                    Antialiasing->False]}}},
-                  Frame->False,
-                  FrameLabel->{None, None},
-                  FrameTicks->{{None, None}, {None, None}},
-                  GridLinesStyle->Directive[
-                    GrayLevel[0.5, 0.4]],
-                  
-                  Method->{
-                   "DefaultBoundaryStyle" -> Automatic, 
-                    "DefaultGraphicsInteraction" -> {
-                    "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-                    "Effects" -> {
-                    "Highlight" -> {"ratio" -> 2}, 
-                    "HighlightPoint" -> {"ratio" -> 2}, 
-                    "Droplines" -> {
-                    "freeformCursorMode" -> True, 
-                    "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-                    "DefaultPlotStyle" -> Automatic}], 3->
-                 GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGBgA2JWIAaxIeCD/ShNT5oQIKSeVHMeoKlH59PbXlz2UG4v
-ABnaTAw=
-                    "], {{0, 0}, {5, 6}}, {0, 1}], {
-                    {GrayLevel[
-                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
-                    StyleBox[
-                    LineBox[{{{0, 6}, {5, 6}}, {{0, 5}, {5, 5}}, {{0, 4}, {5, 
-                    4}}, {{0, 3}, {5, 3}}, {{0, 2}, {5, 2}}, {{0, 1}, {5, 
-                    1}}, {{0, 0}, {5, 0}}}],
-                    Antialiasing->False]}, 
-                    {GrayLevel[
-                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
-                    StyleBox[
-                    LineBox[{{{0, 0}, {0, 6}}, {{1, 0}, {1, 6}}, {{2, 0}, {2, 
-                    6}}, {{3, 0}, {3, 6}}, {{4, 0}, {4, 6}}, {{5, 0}, {5, 
-                    6}}}],
-                    Antialiasing->False]}}},
-                  Frame->False,
-                  FrameLabel->{None, None},
-                  FrameTicks->{{None, None}, {None, None}},
-                  GridLinesStyle->Directive[
-                    GrayLevel[0.5, 0.4]],
-                  
-                  Method->{
-                   "DefaultBoundaryStyle" -> Automatic, 
-                    "DefaultGraphicsInteraction" -> {
-                    "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-                    "Effects" -> {
-                    "Highlight" -> {"ratio" -> 2}, 
-                    "HighlightPoint" -> {"ratio" -> 2}, 
-                    "Droplines" -> {
-                    "freeformCursorMode" -> True, 
-                    "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-                    "DefaultPlotStyle" -> Automatic}], 4->
-                 GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGBgA2JWIAaxIeCD/cikCQFC6kk15wGaenQ+ve3FZc9A2UtI
-PWF7AWtiQ4M=
-                    "], {{0, 0}, {5, 6}}, {0, 1}], {
-                    {GrayLevel[
-                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
-                    StyleBox[
-                    LineBox[{{{0, 6}, {5, 6}}, {{0, 5}, {5, 5}}, {{0, 4}, {5, 
-                    4}}, {{0, 3}, {5, 3}}, {{0, 2}, {5, 2}}, {{0, 1}, {5, 
-                    1}}, {{0, 0}, {5, 0}}}],
-                    Antialiasing->False]}, 
-                    {GrayLevel[
-                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
-                    StyleBox[
-                    LineBox[{{{0, 0}, {0, 6}}, {{1, 0}, {1, 6}}, {{2, 0}, {2, 
-                    6}}, {{3, 0}, {3, 6}}, {{4, 0}, {4, 6}}, {{5, 0}, {5, 
-                    6}}}],
-                    Antialiasing->False]}}},
-                  Frame->False,
-                  FrameLabel->{None, None},
-                  FrameTicks->{{None, None}, {None, None}},
-                  GridLinesStyle->Directive[
-                    GrayLevel[0.5, 0.4]],
-                  
-                  Method->{
-                   "DefaultBoundaryStyle" -> Automatic, 
-                    "DefaultGraphicsInteraction" -> {
-                    "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-                    "Effects" -> {
-                    "Highlight" -> {"ratio" -> 2}, 
-                    "HighlightPoint" -> {"ratio" -> 2}, 
-                    "Droplines" -> {
-                    "freeformCursorMode" -> True, 
-                    "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-                    "DefaultPlotStyle" -> Automatic}], 5->
-                 GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGBgA2JWIAaxIeCD/cDShAAh9aSa8wBNPTqf3vbismeg7CWk
-nt72opuL214Asv46+g==
-                    "], {{0, 0}, {5, 6}}, {0, 1}], {
-                    {GrayLevel[
-                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
-                    StyleBox[
-                    LineBox[{{{0, 6}, {5, 6}}, {{0, 5}, {5, 5}}, {{0, 4}, {5, 
-                    4}}, {{0, 3}, {5, 3}}, {{0, 2}, {5, 2}}, {{0, 1}, {5, 
-                    1}}, {{0, 0}, {5, 0}}}],
-                    Antialiasing->False]}, 
-                    {GrayLevel[
-                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
-                    StyleBox[
-                    LineBox[{{{0, 0}, {0, 6}}, {{1, 0}, {1, 6}}, {{2, 0}, {2, 
-                    6}}, {{3, 0}, {3, 6}}, {{4, 0}, {4, 6}}, {{5, 0}, {5, 
-                    6}}}],
-                    Antialiasing->False]}}},
-                  Frame->False,
-                  FrameLabel->{None, None},
-                  FrameTicks->{{None, None}, {None, None}},
-                  GridLinesStyle->Directive[
-                    GrayLevel[0.5, 0.4]],
-                  
-                  Method->{
-                   "DefaultBoundaryStyle" -> Automatic, 
-                    "DefaultGraphicsInteraction" -> {
-                    "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-                    "Effects" -> {
-                    "Highlight" -> {"ratio" -> 2}, 
-                    "HighlightPoint" -> {"ratio" -> 2}, 
-                    "Droplines" -> {
-                    "freeformCursorMode" -> True, 
-                    "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-                    "DefaultPlotStyle" -> Automatic}], 6->
-                 GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGBgA2JWIAaxIeCDPQNRAKYOl3pSzXmAph6dT297cdkzUPYS
-Uk9ve9HNHSz2IsQBA60ycQ==
-                    "], {{0, 0}, {5, 6}}, {0, 1}], {
-                    {GrayLevel[
-                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
-                    StyleBox[
-                    LineBox[{{{0, 6}, {5, 6}}, {{0, 5}, {5, 5}}, {{0, 4}, {5, 
-                    4}}, {{0, 3}, {5, 3}}, {{0, 2}, {5, 2}}, {{0, 1}, {5, 
-                    1}}, {{0, 0}, {5, 0}}}],
-                    Antialiasing->False]}, 
-                    {GrayLevel[
-                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
-                    StyleBox[
-                    LineBox[{{{0, 0}, {0, 6}}, {{1, 0}, {1, 6}}, {{2, 0}, {2, 
-                    6}}, {{3, 0}, {3, 6}}, {{4, 0}, {4, 6}}, {{5, 0}, {5, 
-                    6}}}],
-                    Antialiasing->False]}}},
-                  Frame->False,
-                  FrameLabel->{None, None},
-                  FrameTicks->{{None, None}, {None, None}},
-                  GridLinesStyle->Directive[
-                    GrayLevel[0.5, 0.4]],
-                  
-                  Method->{
-                   "DefaultBoundaryStyle" -> Automatic, 
-                    "DefaultGraphicsInteraction" -> {
-                    "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-                    "Effects" -> {
-                    "Highlight" -> {"ratio" -> 2}, 
-                    "HighlightPoint" -> {"ratio" -> 2}, 
-                    "Droplines" -> {
-                    "freeformCursorMode" -> True, 
-                    "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-                    "DefaultPlotStyle" -> Automatic}], 7->
-                 GraphicsBox[{RasterBox[CompressedData["
-1:eJxTTMoPSmVmYGBgA2JWIAaxIeCDPQNRAKYOl3pSzXmAph6dT297cdkzUPYS
-Uk9ve9HNHSz2IsQBA60ycQ==
-                    "], {{0, 0}, {5, 6}}, {0, 1}], {
-                    {GrayLevel[
-                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
-                    StyleBox[
-                    LineBox[{{{0, 6}, {5, 6}}, {{0, 5}, {5, 5}}, {{0, 4}, {5, 
-                    4}}, {{0, 3}, {5, 3}}, {{0, 2}, {5, 2}}, {{0, 1}, {5, 
-                    1}}, {{0, 0}, {5, 0}}}],
-                    Antialiasing->False]}, 
-                    {GrayLevel[
-                    NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
-                    StyleBox[
-                    LineBox[{{{0, 0}, {0, 6}}, {{1, 0}, {1, 6}}, {{2, 0}, {2, 
-                    6}}, {{3, 0}, {3, 6}}, {{4, 0}, {4, 6}}, {{5, 0}, {5, 
-                    6}}}],
-                    Antialiasing->False]}}},
-                  Frame->False,
-                  FrameLabel->{None, None},
-                  FrameTicks->{{None, None}, {None, None}},
-                  GridLinesStyle->Directive[
-                    GrayLevel[0.5, 0.4]],
-                  
-                  Method->{
-                   "DefaultBoundaryStyle" -> Automatic, 
-                    "DefaultGraphicsInteraction" -> {
-                    "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
-                    "Effects" -> {
-                    "Highlight" -> {"ratio" -> 2}, 
-                    "HighlightPoint" -> {"ratio" -> 2}, 
-                    "Droplines" -> {
-                    "freeformCursorMode" -> True, 
-                    "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
-                    "DefaultPlotStyle" -> Automatic}]}, 
-                 Dynamic[$CellContext`i41$$],
-                 Alignment->Automatic,
-                 BaseStyle->"ListAnimateCore",
-                 ImageSize->All,
-                 TransitionDirection->Horizontal,
-                 TransitionDuration->0.5,
-                 TransitionEffect->Automatic],
-                Identity,
-                Editable->True,
-                Selectable->True],
-               ImageMargins->10],
-              Deployed->False,
-              StripOnInput->False,
-              ScriptLevel->0,
-              GraphicsBoxOptions->{PreserveImageOptions->True},
-              Graphics3DBoxOptions->{PreserveImageOptions->True}],
-             Identity,
-             Editable->False,
-             Selectable->False],
-            Alignment->{Left, Center},
-            Background->GrayLevel[1],
-            Frame->1,
-            FrameStyle->GrayLevel[0, 0.2],
-            ItemSize->Automatic,
-            StripOnInput->False]}
-         },
-         AutoDelete->False,
-         GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Top}}},
-         GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
-         GridBoxItemSize->{
-          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
-         GridBoxSpacings->{"Columns" -> {
-             Offset[0.7], {
-              Offset[0.5599999999999999]}, 
-             Offset[0.7]}, "Rows" -> {
-             Offset[0.4], {
-              Offset[0.8]}, 
-             Offset[0.4]}}], If[
-         And[
-          CurrentValue["NotebookSelected"], 
-          CurrentValue["SelectionOver"]], 
-         Manipulate`Dump`ReadControllerState[
-          Map[Manipulate`Dump`updateOneVar[#, 
-            CurrentValue["PreviousFormatTime"], 
-            CurrentValue["CurrentFormatTime"]]& , {
-            
-            Manipulate`Dump`controllerLink[{$CellContext`i41$$, \
-$CellContext`i41$46830$$}, "X1", 
-             If["DefaultAbsolute", True, "JB1"], False, {1, 7, 1}, 7, 1.]}], 
-          
-          CurrentValue[{
-           "ControllerData", {
-            "Gamepad", "Joystick", "Multi-Axis Controller"}}], {}]],
-        ImageSizeCache->{666., {406.5, 416.5}}],
-       DefaultBaseStyle->{},
-       FrameMargins->{{5, 5}, {5, 5}}],
-      BaselinePosition->Automatic,
-      ImageMargins->0],
-     Deinitialization:>None,
-     DynamicModuleValues:>{},
-     SynchronousInitialization->True,
-     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
-     UnsavedVariables:>{Typeset`initDone$$},
-     UntrackedVariables:>{Typeset`size$$}], "ListAnimate",
-    Deployed->True,
-    StripOnInput->False],
-   Manipulate`InterpretManipulate[1]], " ", 
-  RowBox[{"Return", "[", "True", "]"}]}]], "Output",
- CellChangeTimes->{
-  3.797422276601907*^9, 3.797422351566081*^9, 3.7974223909813538`*^9, {
-   3.797422586635715*^9, 3.797422601545382*^9}, {3.797422674666691*^9, 
-   3.7974227790875587`*^9}, 3.797423282894272*^9, 3.797423335071795*^9, 
-   3.797423449156658*^9, 3.79742348087755*^9, {3.7974235228272123`*^9, 
-   3.797423602535809*^9}, 3.797423634598172*^9},
- CellLabel->"Out[78]=",ExpressionUUID->"5c2bee22-db00-40f6-8939-6dc61382a675"]
+   3.797169707933362*^9, 3.7972479339086523`*^9, 3.7972488729954443`*^9, 
+   3.797825665517266*^9},
+ CellLabel->"Out[20]=",ExpressionUUID->"7372a85d-e7bf-48f4-bda3-e6cf4c36b6a7"]
 }, Open  ]]
 },
-WindowSize->{1850, 1016},
-WindowMargins->{{Automatic, 0}, {0, Automatic}},
+WindowSize->{1536, 781},
+WindowMargins->{{Automatic, 1528}, {Automatic, -8}},
 Magnification:>1.7 Inherited,
-FrontEndVersion->"12.0 para Linux x86 (64-bit) (April 8, 2019)",
+FrontEndVersion->"12.0 para Microsoft Windows (64-bit) (April 8, 2019)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -3837,55 +2643,18 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 4283, 90, 926, "Input",ExpressionUUID->"4397ba76-be72-44a7-a5f0-b31891698d17"],
-Cell[4844, 112, 4450, 105, 1286, "Input",ExpressionUUID->"aeaad469-64ac-418a-8a0c-305a918a976a"],
-Cell[9297, 219, 3270, 74, 1253, "Input",ExpressionUUID->"7c8f4a70-12aa-4a35-a2c8-e3da5879d7aa"],
+Cell[558, 20, 333, 8, 49, "Input",ExpressionUUID->"72096519-78b0-4098-9993-bf21bd7cfe5d"],
+Cell[894, 30, 4282, 89, 810, "Input",ExpressionUUID->"4397ba76-be72-44a7-a5f0-b31891698d17"],
+Cell[5179, 121, 4451, 105, 1124, "Input",ExpressionUUID->"aeaad469-64ac-418a-8a0c-305a918a976a"],
+Cell[9633, 228, 3288, 74, 1095, "Input",ExpressionUUID->"7c8f4a70-12aa-4a35-a2c8-e3da5879d7aa"],
 Cell[CellGroupData[{
-Cell[12592, 297, 425, 8, 53, "Input",ExpressionUUID->"10a9e7c3-6e31-4c01-a1d7-3d57a7afe407"],
-Cell[13020, 307, 406, 8, 59, "Output",ExpressionUUID->"e7b56cc8-a055-4a6f-95fe-e5c589f52fb4"]
+Cell[12946, 306, 426, 8, 49, "Input",ExpressionUUID->"10a9e7c3-6e31-4c01-a1d7-3d57a7afe407"],
+Cell[13375, 316, 431, 8, 55, "Output",ExpressionUUID->"4e914105-808c-4688-8190-ebe4ec041dc5"]
 }, Open  ]],
-Cell[13441, 318, 152, 3, 53, "Input",ExpressionUUID->"fe0bf6ad-7d2a-47d8-a314-39db4dcb3ae2"],
+Cell[13821, 327, 152, 3, 49, "Input",ExpressionUUID->"fe0bf6ad-7d2a-47d8-a314-39db4dcb3ae2"],
 Cell[CellGroupData[{
-Cell[13618, 325, 291, 5, 53, "Input",ExpressionUUID->"d6599faf-3aed-41b5-ba96-aaa01d51becb"],
-Cell[13912, 332, 109022, 2293, 883, "Output",ExpressionUUID->"dea9a7e5-d20f-4f40-b202-c1db989b015b"]
-}, Open  ]],
-Cell[122949, 2628, 204, 5, 53, "Input",ExpressionUUID->"4335fe17-c74c-4a9b-8364-e8c87d9da16c"],
-Cell[123156, 2635, 4473, 101, 1187, "Input",ExpressionUUID->"09f7d625-1495-4904-a845-75d11a1262ab"],
-Cell[CellGroupData[{
-Cell[127654, 2740, 907, 24, 53, "Input",ExpressionUUID->"2faa3b68-9283-4d54-b747-67fbae0beec9"],
-Cell[128564, 2766, 943, 25, 59, "Output",ExpressionUUID->"ce5b331b-6dd4-478e-ad11-f8b4c4c6ae47"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[129544, 2796, 301, 5, 53, "Input",ExpressionUUID->"ac4aae62-e7d6-4456-a24d-c091a8075143"],
-Cell[129848, 2803, 1841, 49, 98, "Output",ExpressionUUID->"2931edad-2c3a-4fa0-a5f7-0bdbbb27c4df"]
-}, Open  ]],
-Cell[131704, 2855, 2607, 57, 604, "Input",ExpressionUUID->"502a8e15-02bf-450f-8863-719b4c5dce9b"],
-Cell[CellGroupData[{
-Cell[134336, 2916, 260, 5, 53, "Input",ExpressionUUID->"a1b75d9b-cf36-49ee-9baa-4ea132ffe328"],
-Cell[134599, 2923, 217, 4, 59, "Output",ExpressionUUID->"a5cf76a0-85b6-4750-b25b-a03e4dd0efed"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[134853, 2932, 269, 5, 92, "Input",ExpressionUUID->"189057bb-8efc-4a5d-ba79-7d653e43e85e"],
-Cell[135125, 2939, 224, 4, 59, "Output",ExpressionUUID->"f8e67e13-1300-4a8f-8bbd-61013d0fd5b6"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[135386, 2948, 355, 6, 53, "Input",ExpressionUUID->"e8ef3967-e2c0-4169-bb81-6e550bcbb07a"],
-Cell[135744, 2956, 426, 6, 85, "Output",ExpressionUUID->"03f8ef26-cc9f-42fb-82f2-abd696c550ed"]
-}, Open  ]],
-Cell[136185, 2965, 125, 2, 53, "Input",ExpressionUUID->"a0b4eec2-ebf4-46aa-a4a8-319797781fa1"],
-Cell[136313, 2969, 6350, 143, 1770, "Input",ExpressionUUID->"fea76d0e-76ff-4038-864e-95a12ea81676"],
-Cell[CellGroupData[{
-Cell[142688, 3116, 258, 4, 53, "Input",ExpressionUUID->"1aee6127-9837-437c-9b8b-7b43809233d8"],
-Cell[142949, 3122, 5781, 140, 326, "Output",ExpressionUUID->"eaec1c49-d3a6-42e9-8a00-0c6a0630c81e"]
-}, Open  ]],
-Cell[148745, 3265, 6644, 143, 1613, "Input",ExpressionUUID->"6f56c8c1-1001-4024-ade0-94eaf22ad4f7"],
-Cell[CellGroupData[{
-Cell[155414, 3412, 286, 5, 53, "Input",ExpressionUUID->"ddaeec8f-d2b8-4dd8-95f0-3dd661e98e98"],
-Cell[155703, 3419, 248, 4, 85, "Output",ExpressionUUID->"dc8b790c-3f35-4b3f-9930-4ef54ef12a9f"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[155988, 3428, 189, 3, 53, "Input",ExpressionUUID->"496e0dfc-fd0e-4240-b319-306131b89eba"],
-Cell[156180, 3433, 17559, 386, 903, "Output",ExpressionUUID->"5c2bee22-db00-40f6-8939-6dc61382a675"]
+Cell[13998, 334, 292, 5, 49, "Input",ExpressionUUID->"d6599faf-3aed-41b5-ba96-aaa01d51becb"],
+Cell[14293, 341, 108896, 2284, 924, "Output",ExpressionUUID->"7372a85d-e7bf-48f4-bda3-e6cf4c36b6a7"]
 }, Open  ]]
 }
 ]
