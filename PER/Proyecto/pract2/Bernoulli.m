@@ -5,10 +5,9 @@
 % Y is a m x d test data matrix
 % yl is a m x 1 test label vector 
 % epsilons is a vector of values to use in Lplace
-function [etr,edv]= multinomial(Xtr,xltr,Xdv,xldvl,epsilons)
+function [etr,edv]= bernoulli(Xtr,xltr,Xdv,xldvl,epsilons)
 
-for i = epsilons
-%Aplicar suavizado Laplace a los datos
+%Umbralizar datos
 
 %Estimar probabilidad a priori
 
@@ -17,6 +16,7 @@ for i = epsilons
 %Clasificador en forma de producto escalar
 
 end
+
 % percentage of error
 err = mean(yl!=classification')*100; %dudas de si dejar
 
