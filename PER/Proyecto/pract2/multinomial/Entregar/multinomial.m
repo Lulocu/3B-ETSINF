@@ -10,6 +10,15 @@ function [etr,edv]= multinomial(Xtr,xltr,Xdv,xldvl,epsilon)
 %sacamos clases y numero de clases
 etiquetas=unique(xltr);
 
+%Aplicar suavizado Laplace a los datos
+
+%sumamos epsilon
+%Xtr = Xtr .+ epsilon;
+
+%sum(Xtr(1,:),2)
+%normalizamos
+
+%Xtr = Xtr ./ sum(Xtr,2);
 
 for j = etiquetas'
     priori = length(find(j==xltr))/length(Xtr);
@@ -20,7 +29,6 @@ for j = etiquetas'
     Wc(j+1,:) = total;
 end
 
-%Aplicamos suavizado de Laplace
 Wc = (Wc +epsilon) ./ sum(Wc +epsilon);
 
 Wco = log(Wco);

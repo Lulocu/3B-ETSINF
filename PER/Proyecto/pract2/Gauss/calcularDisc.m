@@ -11,7 +11,9 @@ proy = -1/2 .* pinv(covarianza);
 vecLinealW= pinv(covarianza) * media';
 
 
-vecPesos = log(probPrio) - 1/2 * logdet(covarianza) - 1/2 * (media)' * pinv(covarianza) * media;
-probC = sum((xdv' * proy) .* Xdv) +  vecLinealW' * Xdv + vecPesos;
+vecPesos = log(probPrio) - 1/2 * logdet(covarianza) - 1/2 * media * pinv(covarianza) * media';
+
+
+probC = sum((Xdv * proy) .* Xdv,2) +  (vecLinealW' * Xdv')' + vecPesos;
 endfunction
 

@@ -39,7 +39,7 @@ for k = alphas
 
    
 
-printf("realmin\n")
+
 
     %Funcion discriminante datos entrenamientos
     for i = etiquetas'
@@ -54,13 +54,13 @@ printf("realmin\n")
     %Clasificacion datos entrenamiento
     for i = etiquetas'
         [valor, indice] = max(gE,[],2);  %Si fuera por columnas max(gE)
-        etr(aux) = mean((indice -1)!=xltr)*100; 
+        ert(aux) = mean((indice -1)!=xltr)*100; 
     end
 
     %Clasificacion datos validacion
     for i = etiquetas'
-        [valor, indice] = max(gV,[],2)  %Si fuera por columnas max(gE)
-        edv(aux) = meandv((indice -1)!=xldv)*100; 
+        [valor, indice] = max(gV,[],2);  %Si fuera por columnas max(gE)
+        erv(aux) = mean((indice -1)!=xldv)*100; 
     end
     aux = aux + 1;
 end   
