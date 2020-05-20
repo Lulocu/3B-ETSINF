@@ -1,7 +1,7 @@
 #! /snap/bin/octave -qf
 
-if (nargin!=5)
-printf("Usage: pca+knn-exp.m <trdata> <trlabels> <ks> <%%trper> <%%dvper>\n")
+if (nargin!=6)
+printf("Usage: pca+knn-exp.m <trdata> <trlabels> <ks> <%%trper> <%%dvper> <alpha>\n")
 exit(1);
 end;
 
@@ -11,6 +11,7 @@ trlabs=arg_list{2};
 ks=str2num(arg_list{3});
 trper=str2num(arg_list{4});
 dvper=str2num(arg_list{5});
+alpha=str2num(arg_list{6});
 
 load(trdata);
 load(trlabs);
@@ -24,17 +25,20 @@ Ndv=round(dvper/100*N);
 Xtr=X(1:Ntr,:); xltr=xl(1:Ntr);
 Xdv=X(N-Ndv+1:N,:); xldv=xl(N-Ndv+1:N);
 
-filename = "pca+knn-exp.out";
+filename = "Mahapca+knn-exp.out";
 fid = fopen(filename,"w");
 
 
 [m,trDataPCA] = pca(Xtr);
 
-for i = 1:columns(ks)
-  proyX = (Xtr -m) * trDataPCA(:,1:ks(i));
-  proyY = (Xdv-m)*trDataPCA(:,1:ks(i));
-  error = knn(proyX,xltr,proyY,xldv,1);
-  fprintf(fid,"%d \t %d \n",ks(i), error);
+for j = ks
+  for i = alpha
+    proyX = (Xtr -m) * trDataPCA(:,1:j);
+    proyY = (Xdv-m)*trDataPCA(:,1:j);
+    error = knnMaha(proyX,xltr,proyY,xldv,1,i);
+    fprintf(fid,"%d \t %d \t %d \n",j, i, error);
+
+  end
 end;
 
 fclose(fid);

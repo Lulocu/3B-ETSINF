@@ -5,36 +5,43 @@
 % Y is a m x d test data matrix
 % yl is a m x 1 test label vector 
 % epsilon is a value to use in Laplace
-function [etr,edv]= multinomial(Xtr,xltr,Xdv,xldvl,epsilon)
+function [etr,edv]= bernoulli(Xtr,xltr,Xdv,xldvl,epsilon,threshold)
 
 %sacamos clases y numero de clases
 etiquetas=unique(xltr);
 
+maxX=max(max(Xtr));
+minX=min(min(Xtr));
+Xtr=(Xtr>(minX+(maxX-minX)*threshold));
+Xdv=(Xdv>(minX+(maxX-minX)*threshold));
 
 for j = etiquetas'
-    priori = length(find(j==xltr))/length(Xtr);
     numerador = sum(Xtr(find(j==xltr),:));
-    total = numerador ./ sum(numerador);
+    total = numerador / length(find(j==xltr));
 
-    Wco(1, j+1) = priori;
-    Wc(j+1,:) = total;
+    total = min(total,(1-epsilon));
+    total = max(total,epsilon);
+
+    Wc(j+1,:) = log(total) - log(1-total);
+    priori = length(find(j==xltr))/length(Xtr);
+    Wco(1, j+1) = log(priori) + sum(log(1-total));
 end
 
-%Aplicamos suavizado de Laplace
-Wc = (Wc +epsilon) ./ sum(Wc +epsilon);
+    
+%Wc = (Wc +epsilon) ./ sum(Wc +epsilon);
 
-Wco = log(Wco);
-Wc = log(Wc);
+%Wco = log(Wco);
+%Wc = log(Wc);
 
 %Error test
-gx = Xtr * Wc' + Wco;
+gx =  Xtr * Wc'  + Wco;
 [valor, ind] = max(gx,[],2);
 % percentage of error
 etr = mean((ind -1)!=xltr)*100; 
 
 
 %Error validacion
-gx = Xdv * Wc' + Wco;
+gx = Xdv * Wc'  + Wco;
 [valor, ind] = max(gx,[],2);
 % percentage of error
 edv = mean((ind -1)!=xldvl)*100; 
