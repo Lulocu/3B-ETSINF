@@ -77,7 +77,7 @@ MiPos().
 	-SolicitarCura(_);
 	.print("enviada propuesta de ayuda") 
 
-+acceptproposal[source(solado)]: ayudando(soldado,Pos)
++acceptproposalCura[source(solado)]: ayudando(soldado,Pos)
 	<-
 	.print("Me voy a ayudar al agente: ", soldado, "a la posicion: ", Pos);
 	.goto(Pos).
@@ -90,7 +90,7 @@ MiPos().
 	.goto(MiPos);
 	-ayudando(soldado, Pos).
 
-+cancelproposal[source(solado)]: ayudando(soldado, Pos)
++cancelproposalCura[source(solado)]: ayudando(soldado, Pos)
 	<-
 	.print("Me cancelan mi proposicion");
 	-ayudando(soldado, Pos).  
