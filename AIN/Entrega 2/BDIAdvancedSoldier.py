@@ -6,6 +6,7 @@ from spade.message import Message
 from pygomas.bditroop import BDITroop
 from pygomas.bdisoldier import BDISoldier
 from pygomas.ontology import HEALTH
+from pygomas.ontology import AMMO
 from agentspeak import Actions
 from agentspeak import grounded
 from agentspeak.stdlib import actions as asp_action
@@ -22,18 +23,22 @@ class BDIMAdvancedSoldier(BDISoldier):
      def add_custom_actions(self, actions):
         super().add_custom_actions(actions)
         
-        @actions.add(".AFormar", 2)      
-        def _AFormar(agent, term, intention):
+        @actions.addfunction(".elegirAscender", list)      
+        def _Ascender(listaSoldados):
             """
-            Gives the position where agents should be placed
-            :param number: number of agents
+            Gives de soldier nearest the flag
+            :param number: list of soldiers
             :param type: type of the agents
-            :rtype list
+            :rtype soldier
             """
-            args = asp.grounded(term.args, intention.scope)
-            
-            
-            yield
+            if len(listaSoldados) < 1:
+                return []
+            capi = listaSoldados[0]
+            for sol in listaSoldados:
+                if sol.health > capi.health:
+                    capi = sol
+                elif sol.health = salud:
+                    if sol.ammo < capi.ammo:
+                        capi = sol
+            return capi
 
-      
-#        super().__init__(actions=example_agent_actions, *args, **kwargs)

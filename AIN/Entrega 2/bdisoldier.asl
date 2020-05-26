@@ -18,11 +18,30 @@ vida(60).
 /******************************
 *Ampliaciones capi
 ******************************/
-+Ascender:
-  +Soycapitan;
-  .register_service("capitan").
 
-+AFormar: // mirar git
+
++elegirCapi:myBackups(Soldados) & not eligiendo
+ <-
+  +eligiendo
+  .send(Soldados,tell,eligiendoCap);
+  
+  .elegirAscender(Soldados,nuevoCapi);
+  .send(nuevoCapi, tell, nuevoCapi).
+
++eligiendoCap[source(soldier)]:
+    +eligiendo.
+
++muerteEnEleccion: threshold_health(0) & eligiendo & myBackups(Soldados):
+   .send(Soldados,tell,muerteElector).
+
++muerteElector[source(soldier)]:
+    -eligiendo.
+
++nuevoCapi[source(soldier)]:
+    .register_service("capitan");
+    +soyCapi.
+
++AFormar: // mirar gi
 <-
   .get_medics(M);
   .get_fieldops(F);
