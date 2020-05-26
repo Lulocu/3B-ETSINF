@@ -3,9 +3,9 @@
 *Creencias iniciales
 ******************************/
 vida(60).
-capitanAct(). // Esto que se supone que es?
-medicos().
-fieldOps().
+//capitanAct(). // Esto que se supone que es?
+//medicos().
+//fieldOps().
 
 /******************************
 *Objetivos iniciales
@@ -43,11 +43,11 @@ fieldOps().
 
 +solicitarParar()[source(soldier)]:.get_service("allied")
     <-
-    .send(allied,tell,quieto)
+    .send(allied,tell,quieto).
 
 +ordenAvanzar():.get_service("allied") & flag([X,Y,Z])
     <-
-    .send(allied,tell,avanzar([X,Y,Z])) //dudas en el allied
+    .send(allied,tell,avanzar([X,Y,Z])). //dudas en el allied
 
 //------------SOLDADO---------------
 /******************************
@@ -58,47 +58,49 @@ fieldOps().
 +capitan(C)
     <-
     .print("Mi capitan es:", A);
-    -capitanAct().
     +capitanAct(C).
-    -capitan(_).
-+friends_in_fov(ID,Type,Angle,Distance,Health,Position): position([X,Y,Z]) // ¿lo de después de :?
+
++enemies_in_fov(ID,Type,Angle,Distance,Health,Position): position([X,Y,Z]) // ¿lo de después de :?
   <-
   .send(capitanAct, tell, solicitarAtaque(Position))
   .shoot(3,Position);
+
 +atacar(Position)[source(capitanAct)]
     <-
      .lookAt(Position); //al girarse si lo ven ya deberían atacar, si no lo ven nada porque romerían la formacion
 
-
-+solicitarParada(): solicitarParar
++solicitarParada(): //vida o municion por debajo de algo y listoCurar listoMuni
     <-
-    -solicitarParar //¿esta creencia?
     .send(capitanAct, tell, solicitarParar)
 
 +quieto()[source(capitanAct)]
     <-
-    .stop;  //parar no se como es
+    +parado:
+    .stop.//parar no se como es
 
 
-+solicitarCura(): vida(X) < 30
++solicitarCura(): parado & threshold_health(40)
     <-
-    .send(capitanAct, tell, Solicitar cura)
+    //pedimos lista de medicos que nos pueden curar
+    // se lo enviamos a todos lso medicos
+    .send(capitanAct, tell, Solicitar cura). 
 
-+curate()[source(capitanAct)]
++curate()[source(medico)] //medico
     <-
-    .send(medicos, tell, Solicitar cura);
+    //elegimos el medico que nos va a curar
+    .send(medicos, tell, solicitarCura).
 
 +solicitarMunicion(): municion(X) < 3
-    <-
-    .send(capitanAct, tell, Solicitar municion)
+    <- //igual que con medicos
+    .send(capitanAct, tell, Solicitar municion).
 
 +recarga()[source(capitanAct)]
-    <-
-    .send(fieldops, tell, Solicitar municion);
+    <-//igual que con medicos
+    .send(fieldops, tell, Solicitar municion).
 
-+avanzar(Position)
++avanzar(Position)[source(capitan)]
     <-
-    .goto(Position)
+    .goto(Position).
 
 /******************************
 *Métodos normales soldados 
@@ -109,7 +111,7 @@ fieldOps().
     
   .goto(F).
 
-+flag_taken: team(100)
++flag_taken: team(100) & soyCapitan
   <-
   .print("In ASL, TEAM_ALLIED flag_taken");
   ?base(B);
