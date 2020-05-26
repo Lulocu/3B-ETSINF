@@ -1,12 +1,28 @@
-//TEAM_AXIS
+//TEAM_ALLIED captura bandera
+/******************************
+*Creencias iniciales
+******************************/
+vida(60).
+capitanAct(). // Esto que se supone que es?
+medicos().
+fieldOps().
 
+/******************************
+*Objetivos iniciales
+******************************/
 
-//Míos
+/******************************
+*Planes
+******************************/
+
+/******************************
+*Ampliaciones capi
+******************************/
 +Ascender:
   +Soycapitan;
   .register_service("capitan").
 
-+AFormar:
++AFormar: // mirar git
 <-
   .get_medics(M);
   .get_fieldops(F);
@@ -20,62 +36,73 @@
   .send(F,tell,Ordenar); //Pasar posicion a soldados
   .wait(1000).
 
-+AAtacar(Position):
-  <-
-  .get_service()//indicar de que equipo pdf1 pg7
-  .send(,tell,Atacar(Position))
++solicitarAtaque(Position)[source(soldier)]:myBackups(Soldados)
+    <-
+    .send(Soldados, tell, atacar(Position)).
 
-+AParar:
-  <-
-  .get_service()//indicar de que equipo pdf1 pg7
-  .send(,tell,Parar)
 
-+AAvanzar(Position):
-  .get_service()//indicar de que equipo pdf1 pg7
-  .send(tell,Avanzar(Position))
++solicitarParar()[source(soldier)]:.get_service("allied")
+    <-
+    .send(allied,tell,quieto)
+
++ordenAvanzar():.get_service("allied") & flag([X,Y,Z])
+    <-
+    .send(allied,tell,avanzar([X,Y,Z])) //dudas en el allied
 
 //------------SOLDADO---------------
-+Ordenar(Position)[sourceA]
-<-
-  .goto(Postion)
-+Atacar(Position)[sourceA]
-<- 
-  .lookAt(Position); //al girarse si lo ven ya deberían atacar, si no lo ven nada porque romerían la formacion
+/******************************
+*Ampli soldado normal
+******************************/
 
-+Parar[sourceA]
-<-
-  .stop
-//FIN
-+flag (F): team(200)
+
++capitan(C)
+    <-
+    .print("Mi capitan es:", A);
+    -capitanAct().
+    +capitanAct(C).
+    -capitan(_).
++friends_in_fov(ID,Type,Angle,Distance,Health,Position): position([X,Y,Z]) // ¿lo de después de :?
   <-
-  .create_control_points(F,25,3,C);
-  +control_points(C);
-  .length(C,L);
-  +total_control_points(L);
-  +patrolling;
-  +patroll_point(0);
-  .print("Got control points").
+  .send(capitanAct, tell, solicitarAtaque(Position))
+  .shoot(3,Position);
++atacar(Position)[source(capitanAct)]
+    <-
+     .lookAt(Position); //al girarse si lo ven ya deberían atacar, si no lo ven nada porque romerían la formacion
 
 
-+target_reached(T): patrolling & team(200)
-  <-
-  ?patroll_point(P);
-  -+patroll_point(P+1);
-  -target_reached(T).
++solicitarParada(): solicitarParar
+    <-
+    -solicitarParar //¿esta creencia?
+    .send(capitanAct, tell, solicitarParar)
 
-+patroll_point(P): total_control_points(T) & P<T
-  <-
-  ?control_points(C);
-  .nth(P,C,A);
-  .goto(A).
-
-+patroll_point(P): total_control_points(T) & P==T
-  <-
-  -patroll_point(P);
-  +patroll_point(0).
++quieto()[source(capitanAct)]
+    <-
+    .stop;  //parar no se como es
 
 
-//TEAM_ALLIED
++solicitarCura(): vida(X) < 30
+    <-
+    .send(capitanAct, tell, Solicitar cura)
+
++curate()[source(capitanAct)]
+    <-
+    .send(medicos, tell, Solicitar cura);
+
++solicitarMunicion(): municion(X) < 3
+    <-
+    .send(capitanAct, tell, Solicitar municion)
+
++recarga()[source(capitanAct)]
+    <-
+    .send(fieldops, tell, Solicitar municion);
+
++avanzar(Position)
+    <-
+    .goto(Position)
+
+/******************************
+*Métodos normales soldados 
+******************************/
 
 +flag (F): team(100)
   <-
@@ -89,22 +116,3 @@
   +returning;
   .goto(B);
   -exploring.
-
-+heading(H): exploring
-  <-
-  .wait(2000);
-  .turn(0.375).
-
-//+heading(H): returning
-//  <-
-//  .print("returning").
-
-+target_reached(T): team(100)
-  <-
-  .print("target_reached");
-  +exploring;
-  .turn(0.375).
-
-+enemies_in_fov(ID,Type,Angle,Distance,Health,Position)
-  <-
-  .shoot(3,Position).
