@@ -64,3 +64,33 @@
 +enemies_in_fov(ID,Type,Angle,Distance,Health,Position)
   <- 
   .shoot(3,Position).
+  
+//Nuevas implementaciones medicos
+    
+MiPos().
+
++SolicitarCura(Pos)[source(soldado)]: not (ayudando(_,_))
+	<-
+	?position(MiPos);
+	.send(soldado, tell, curate(MiPos));
+	+ayudando(soldado, Pos);
+	-SolicitarCura(_);
+	.print("enviada propuesta de ayuda") 
+
++acceptproposal[source(solado)]: ayudando(soldado,Pos)
+	<-
+	.print("Me voy a ayudar al agente: ", soldado, "a la posicion: ", Pos);
+	.goto(Pos).
+
++target_reached(Pos): ayudando(soldado, Pos)
+	<-
+	.print("MEDPACK! para el agente:", soldado);
+	.cure;
+	//?posFormacion(P);
+	.goto(MiPos);
+	-ayudando(soldado, Pos).
+
++cancelproposal[source(solado)]: ayudando(soldado, Pos)
+	<-
+	.print("Me cancelan mi proposicion");
+	-ayudando(soldado, Pos).  
