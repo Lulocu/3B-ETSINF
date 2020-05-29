@@ -1,5 +1,5 @@
 //TEAM_AXIS
-
+miPos([]).
 +flag (F): team(200) 
   <-
   .create_control_points(F,25,3,C);
@@ -51,9 +51,6 @@
   .wait(2000);
   .turn(0.375).
 
-//+heading(H): returning
-//  <-
-//  .print("returning").
 
 +target_reached(T): team(100)
   <- 
@@ -67,15 +64,15 @@
   
 //Nuevas implementaciones medicos
     
-MiPos().
 
-+SolicitarCura(Pos)[source(soldado)]: not (ayudando(_,_))
+
++solicitarCura(Pos)[source(soldado)]: not (ayudando(_,_))
 	<-
-	?position(MiPos);
-	.send(soldado, tell, curate(MiPos));
+	?position(miPos);
+	.send(soldado, tell, curate(miPos));
 	+ayudando(soldado, Pos);
-	-SolicitarCura(_);
-	.print("enviada propuesta de ayuda") 
+	-solicitarCura(_);
+	.print("enviada propuesta de ayuda").
 
 +acceptproposalCura[source(solado)]: ayudando(soldado,Pos)
 	<-
@@ -87,7 +84,7 @@ MiPos().
 	.print("MEDPACK! para el agente:", soldado);
 	.cure;
 	//?posFormacion(P);
-	.goto(MiPos);
+	.goto(miPos);
 	-ayudando(soldado, Pos).
 
 +cancelproposalCura[source(solado)]: ayudando(soldado, Pos)

@@ -1,3 +1,4 @@
+import math
 import json
 from loguru import logger
 from spade.behaviour import OneShotBehaviour
@@ -6,39 +7,98 @@ from spade.message import Message
 from pygomas.bditroop import BDITroop
 from pygomas.bdisoldier import BDISoldier
 from pygomas.ontology import HEALTH
-from pygomas.ontology import AMMO
 from agentspeak import Actions
 from agentspeak import grounded
-from agentspeak.stdlib import actions as asp_action
-
-#ddudas
 import agentspeak as asp
-#fin
+from agentspeak.stdlib import actions as asp_action
+from pygomas.agent import LONG_RECEIVE_WAIT
+
+from pygomas.vector import Vector3D
+
+from pygomas.ontology import (
+    AIM,
+    ANGLE,
+    DEC_HEALTH,
+    DISTANCE,
+    FOV,
+    HEAD_X,
+    HEAD_Y,
+    HEAD_Z,
+    MAP,
+    PACKS,
+    QTY,
+    SHOTS,
+    VEL_X,
+    TYPE,
+    VEL_Y,
+    VEL_Z,
+    X,
+    Y,
+    Z,
+    PERFORMATIVE,
+    PERFORMATIVE_CFA,
+    PERFORMATIVE_CFB,
+    PERFORMATIVE_CFM,
+    PERFORMATIVE_DATA,
+    PERFORMATIVE_GAME,
+    PERFORMATIVE_GET,
+    PERFORMATIVE_INIT,
+    PERFORMATIVE_MOVE,
+    PERFORMATIVE_OBJECTIVE,
+    PERFORMATIVE_SHOOT,
+    AMMO_SERVICE,
+    BACKUP_SERVICE,
+    MEDIC_SERVICE,
+    AMMO,
+    BASE,
+    CLASS,
+    DESTINATION,
+    ENEMIES_IN_FOV,
+    FRIENDS_IN_FOV,
+    FLAG,
+    HEADING,
+    HEALTH,
+    NAME,
+    MY_MEDICS,
+    MY_FIELDOPS,
+    MY_BACKUPS,
+    PACKS_IN_FOV,
+    PERFORMATIVE_PACK_TAKEN,
+    PERFORMATIVE_TARGET_REACHED,
+    PERFORMATIVE_FLAG_TAKEN,
+    POSITION,
+    TEAM,
+    THRESHOLD_HEALTH,
+    THRESHOLD_AMMO,
+    THRESHOLD_AIM,
+    THRESHOLD_SHOTS,
+    VELOCITY,
+)
 
 
 from pygomas.agent import LONG_RECEIVE_WAIT
 
-class BDIMAdvancedSoldier(BDISoldier):
+class BDIAdvancedSoldier(BDISoldier):
 
      def add_custom_actions(self, actions):
         super().add_custom_actions(actions)
         
-        @actions.addfunction(".elegirAscender", list)      
-        def _Ascender(listaSoldados):
+        @actions.add(".elegirAscender", 1)      
+        #def _elegirAscender(listaSoldados):
+        def _elegirAscender(agent,term,intention):
             """
-            Gives de soldier nearest the flag
+            Gives soldier in the middle
             :param number: list of soldiers
             :param type: type of the agents
             :rtype soldier
             """
-            if len(listaSoldados) < 1:
-                return []
-            capi = listaSoldados[0]
-            for sol in listaSoldados:
-                if sol.health > capi.health:
-                    capi = sol
-                elif sol.health = salud:
-                    if sol.ammo < capi.ammo:
-                        capi = sol
-            return capi
+            args = asp.grounded(term.args, intention.scope)
+
+            listaSoldados = args[0]
+            pos = len(listaSoldados)//2
+            capi = listaSoldados[pos]
+            super().set_belief(MI_CAPITAN, capi)
+            yield
+            
+            
 

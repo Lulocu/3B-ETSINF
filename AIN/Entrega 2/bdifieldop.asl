@@ -1,5 +1,5 @@
 //TEAM_AXIS
-
+miPos([]).
 +flag (F): team(200) 
   <-
   .create_control_points(F,25,3,C);
@@ -67,15 +67,15 @@
   
 // nuevas implementaciones
 
-MiPos().
 
-+SolicitarMunicion(Pos)[source(soldado)]: not (ayudando(_,_))
+
++solicitarMunicion(Pos)[source(soldado)]: not (ayudando(_,_))
 	<-
-	?position(MiPos);
-	.send(soldado, tell, recarga(MiPos));
+	?position(miPos);
+	.send(soldado, tell, recarga(miPos));
 	+ayudando(soldado, Pos);
-	-SolicitarMunicion(_);
-	.print("enviada propuesta de ayuda") 
+	-solicitarMunicion(_);
+	.print("enviada propuesta de ayuda").
 
 +acceptproposalMun[source(solado)]: ayudando(soldado,Pos)
 	<-
@@ -87,7 +87,7 @@ MiPos().
 	.print("Recargar! para el agente:", soldado);
 	.reload;
 	//?posFormacion(P);
-	.goto(MiPos);
+	.goto(miPos);
 	-ayudando(soldado, Pos).
 
 +cancelproposalMun[source(solado)]: ayudando(soldado, Pos)
