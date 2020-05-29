@@ -18,11 +18,30 @@ vida(60).
 /******************************
 *Ampliaciones capi
 ******************************/
-+Ascender:
-  +Soycapitan;
-  .register_service("capitan").
 
-+AFormar: // mirar git
+
++elegirCapi:myBackups(Soldados) & not eligiendo
+ <-
+  +eligiendo
+  .send(Soldados,tell,eligiendoCap);
+  
+  .elegirAscender(Soldados,nuevoCapi);
+  .send(nuevoCapi, tell, nuevoCapi).
+
++eligiendoCap[source(soldier)]:
+    +eligiendo.
+
++muerteEnEleccion: threshold_health(0) & eligiendo & myBackups(Soldados):
+   .send(Soldados,tell,muerteElector).
+
++muerteElector[source(soldier)]:
+    -eligiendo.
+
++nuevoCapi[source(soldier)]:
+    .register_service("capitan");
+    +soyCapi.
+
++AFormar: // mirar gi
 <-
   .get_medics(M);
   .get_fieldops(F);
@@ -78,25 +97,80 @@ vida(60).
     +parado:
     .stop.//parar no se como es
 
+//nuevas implementaciones
+
+bidsCura([]).
+agentsCura([]).
+bidsMun([]).
+agentsMun([]).
 
 +solicitarCura(): parado & threshold_health(40)
     <-
     //pedimos lista de medicos que nos pueden curar
-    // se lo enviamos a todos lso medicos
-    .send(capitanAct, tell, Solicitar cura). 
+	.get_medics(M);
+    // se lo enviamos a todos los medicos
+	?position(Pos);
+	+ayudaPedidaCura;
+    .send(M, tell, SolicitarCura(Pos)). 
 
-+curate()[source(medico)] //medico
++curate(Pos)[source(medico)]: ayudaPedidaCura
     <-
-    //elegimos el medico que nos va a curar
-    .send(medicos, tell, solicitarCura).
+    ?bidsCura(B);
+	.concat(B, [Pos], B1); -+bidsCura(B1);
+	?agentsCura(Ag);
+	.concat(Ag, [medico], Ag1); -+agentsCura(Ag1);
+	-curate(Pos).
 
-+solicitarMunicion(): municion(X) < 3
-    <- //igual que con medicos
-    .send(capitanAct, tell, Solicitar municion).
++!elegirmejorCura: bidsCura(Bi) & agentsCura(Ag)
+	<-
+	.print("Selecciono el mejor: ", Bi, Ag);
+	.nth(0, Bi, Pos); // no elijo el mejor, me quedo con el primero
+	.nth(0, Ag, A);
+	.send(A, tell, acceptproposalCura);
+	.delete(1, Ag, Ag1); //0 no es el mismo?no seria 1?
+	.send(Ag1, tell, cancelproposalCura);
+	-+bidsCura([]);
+	-+agentsCura([]).
 
-+recarga()[source(capitanAct)]
-    <-//igual que con medicos
-    .send(fieldops, tell, Solicitar municion).
++!elegirmejorCura: not (bidsCura(Bi))
+	<-
+	.print("Nadie me puede ayudar");
+	-ayudaPedidaCura.
+
++solicitarMunicion(): parado & municion(X) < 3
+    <- 
+    //pedimos lista de fieldops que nos pueden curar
+	.get_fieldops(F);
+    // se lo enviamos a todos los medicos
+	?position(Pos);
+	+ayudaPedidaMun;
+    .send(F, tell, SolicitarMun(Pos)).
+
++recarga(Pos)[source(fieldop)]: ayudaPedidaMun
+    <-
+    ?bidsMun(B);
+	.concat(B, [Pos], B1); -+bidsMun(B1);
+	?agentsMun(Ag);
+	.concat(Ag, [fieldop], Ag1); -+agentsMun(Ag1);
+	-recarga(Pos).
+
++!elegirmejorMun: bidsMun(Bi) & agentsMun(Ag)
+	<-
+	.print("Selecciono el mejor: ", Bi, Ag);
+	.nth(0, Bi, Pos); // no elijo el mejor, me quedo con el primero
+	.nth(0, Ag, A);
+	.send(A, tell, acceptproposalMun);
+	.delete(1, Ag, Ag1); //0 no es el mismo?no seria 1?
+	.send(Ag1, tell, cancelproposalMun);
+	-+bidsMun([]);
+	-+agentsMun([]).
+
++!elegirmejorMun: not (bidsMun(Bi))
+	<-
+	.print("Nadie me puede ayudar");
+	-ayudaPedidaMun.
+ 
+//Fin nuevas implementaciones
 
 +avanzar(Position)[source(capitan)]
     <-
