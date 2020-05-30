@@ -1,5 +1,5 @@
 //TEAM_AXIS
-miPos([]).
+
 +flag (F): team(200) 
   <-
   .create_control_points(F,25,3,C);
@@ -32,47 +32,32 @@ miPos([]).
 
 //TEAM_ALLIED 
 
+
++flag (F): team(100) 
+  <-
+  .goto(F).
+
 +flag_taken: team(100) 
   <-
-      .get_service("allied");
-    ?allied(Allied);
-    .print(Allied);
-  .print("In ASL, TEAM_ALLIED flag_taken").
+  ?base(B);
+  +returning;
+  .goto(B);
+  -exploring.
 
-+enemies_in_fov(ID,Type,Angle,Distance,Health,Position)
++heading(H): exploring
+  <-
+  .cure;
+  .wait(2000);
+  .turn(0.375).
+
+//+heading(H): returning
+//  <-
+
++target_reached(T): team(100)
   <- 
-  .shoot(3,Position).
-  
-//Nuevas implementaciones medicos
-    
+  +exploring;
+  .turn(0.375).
 
-
-+solicitarCura(Pos)[source(Soldado)]: not (ayudando(_,_))
-	<-
-	?position(miPos);
-	.send(Soldado, tell, curate(miPos));
-	+ayudando(Soldado, Pos);
-	-solicitarCura(_);
-	.print("enviada propuesta de ayuda").
-
-+acceptproposalCura[source(Soldado)]: ayudando(Soldado,Pos)
-	<-
-	.print("Me voy a ayudar al agente: ", Soldado, "a la posicion: ", Pos);
-	.goto(Pos).
-
-+target_reached(Pos): ayudando(Soldado, Pos)
-	<-
-	.print("MEDPACK! para el agente:", Soldado);
-	.cure;
-	//?posFormacion(P);
-	.goto(miPos);
-	-ayudando(Soldado, Pos).
-
-+cancelproposalCura[source(Soldado)]: ayudando(Soldado, Pos)
-	<-
-	.print("Me cancelan mi proposicion");
-	-ayudando(Soldado, Pos).  
-
-  +avanzar(Position)[source(Capitan)]
-    <-
-    .goto(Position).
+//+enemies_in_fov(ID,Type,Angle,Distance,Health,Position)
+//  <- 
+//  .shoot(3,Position).

@@ -1,36 +1,20 @@
 //TEAM_ALLIED captura bandera
-/******************************
-*Creencias iniciales
-******************************/
+
 vida(100).
-bidsCura([]). //lista posiciones médicos que ayudan
-agentsCura([]). //lista de médicos que ayudan
-bidsMun([]). //lista posiciones fieldops que ayudan
-agentsMun([]). //lista fieldops que ayudan
-/******************************
-*Objetivos iniciales
-******************************/
+min(80).
 
-/******************************
-*Planes
-******************************/
-
-/******************************
-*Ampliaciones capi
-******************************/
 noenviado.
 iniciar.
-
++threshold_health(min)
+    <-
+    .print("Capitan ha muerto");
+    +iniciar.
 
 +iniciar
     <-
     +capitanNuevo;
     .get_backups;
-    .get_medics;
-    .get_service("allied");
-    .get_fieldops.
-
-
+    .get_service("allied").
 
 +myBackups(S): capitanNuevo
     <-
@@ -64,7 +48,8 @@ iniciar.
     +soyCapi;
     ?name(X);
     +capitanAct(X);
-    +aFormar.
+    ?flag(Bandera);
+    +aFormar(Bandera).
 
 
 +capitanElegido[source(Capitan)]
@@ -72,46 +57,31 @@ iniciar.
     +capitanAct(Capitan).
 
 
-+aFormar: soyCapi
++aFormar(Destino): soyCapi
     <-
     ?position([X,Y,Z]);
-    .get_medics;
-    .get_fieldops;
     .get_backups;
     ?myBackups(S);
-    ?myFieldops(F);
-    ?myMedics(M);
     .length(S, LenS);
-    .length(M, LenM);
-    .length(F, LenF);
-
-    +loop(0);
-    while(loop(I) & (I<LenM))
-        {
-        .nth(I, M, Medico);
-        .send(Medico,tell,avanzar(X + I,Y,Z+I));
-        -+loop(I+1);
-        }
-    -+loopF(0); 
-    while(loopF(I) & (I<LenF))
-        {
-        .nth(I, F, Fieldop);
-        .send(Fieldop,tell,avanzar(X +I+3,Y,Z+I+3));
-        -+loopF(I+1);
-        }
-    -+loopS(0);
+    +loopS(0); 
     while(loopS(I) & (I<LenS))
         {
         .nth(I, S, Soldado);
-        .send(Soldado,tell,avanzar(X+I+6,Y,Z+I+6));
+		if(I == 0 |I == 2 |I == 4 |I == 6 |I == 8){
+			.send(Soldado,tell,avanzar(X+I*1.5,Y,Z));
+		}
+		if(I == 1 |I == 3 |I == 5 |I == 7 |I == 9){
+			.send(Soldado,tell,avanzar(X,Y,Z+I*1.5));
+		}
         -+loopS(I+1);
         }
     -loopS(_);
-    .wait(3000);
-    .print("Finalizaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaado");
+    .goto([X-5,Y,Z]);
     ?flag(Bandera);
-    .print(Bandera);
-    +ordenAvanzar(Bandera).
+    if(Destino==Bandera){
+        .wait(8000);
+    }
+    +ordenAvanzar(Destino).
 
 
 +solicitarAtaque(Position)[source(Soldier)]
@@ -120,13 +90,6 @@ iniciar.
     myBackups(Soldados);
     .send(Soldados, tell, atacar(Position)).
 
-
-+solicitarParar[source(Soldier)]:.get_service("allied")
-    <-
-    ?allied(Allied);
-    .print("solicitarParar");
-    .send(Allied,tell,quieto).
-
 +ordenAvanzar([X,Y,Z])//: flag([X,Y,Z])
     <-
     .get_service("allied");
@@ -134,159 +97,34 @@ iniciar.
     .send(L,tell,avanzar([X,Y,Z]));
     .goto([X,Y,Z]).
 
-
-+threshold_health(0):soyCapi
++enemies_in_fov(ID,Type,Angle,Distance,Health,Position): friends_in_fov(ID1,Type1,Angle1,Distance1,Health1,Position1)
     <-
-    +iniciar.
-
-
-
-//------------SOLDADO---------------
-/******************************
-*Ampli soldado normal
-******************************/
-
-+enemies_in_fov(ID,Type,Angle,Distance,Health,Position): position([X,Y,Z]) // ¿lo de después de :?
+    .fuegoAmigo(Position,Position1,Permiso);
+    ?capitanAct(CapitanAct);
+    .send(CapitanAct, tell, solicitarAtaque(Position));
+    if(Permiso == true){
+        
+        .shoot(10,Position);
+    }.
++enemies_in_fov(ID,Type,Angle,Distance,Health,Position): not friends_in_fov(ID1,Type1,Angle1,Distance1,Health1,Position1)
     <-
     ?capitanAct(CapitanAct);
     .send(CapitanAct, tell, solicitarAtaque(Position));
-    .shoot(3,Position).
+    .shoot(10,Position).
+
 
 +atacar(Position)[source(CapitanAct)]
     <-
-    .look_at(Position). //al girarse si lo ven ya deberían atacar, si no lo ven nada porque romerían la formacion
+    .look_at(Position).
 
-+solicitarParada//vida o municion por debajo de algo y listoCurar listoMuni
-    <-
-    ?capitanAct(CapitanAct);
-    .send(CapitanAct, tell, solicitarParar).
-
-+quieto[source(CapitanAct)]
-    <-
-    +parado;
-    .stop.
-//nuevas implementaciones
-
-
-
-+threshold_health(40)
-    <-
-    .print("Pedimos parar");
-    +activaCura;
-	.get_medics.	
-
-+myMedics(M): activaCura
-<-
-    -activaCura;
-    ?position(Pos);
-	+ayudaPedidaCura;
-    .send(M, tell, solicitarCura(Pos)). 
-
-+curate(Pos)[source(Medico)]: ayudaPedidaCura
-    <-
-    .print("Tenemos respuesta medico");
-    ?bidsCura(B);
-	.concat(B, [Pos], B1); -+bidsCura(B1);
-	?agentsCura(Ag);
-	.concat(Ag, [Medico], Ag1); -+agentsCura(Ag1);
-	-curate(Pos).
-
-+!elegirmejorCura: bidsCura(Bi) & agentsCura(Ag)
-	<-
-	.print("Selecciono el mejor: ", Bi, Ag);
-	.nth(0, Bi, Pos); // no elijo el mejor, me quedo con el primero
-	.nth(0, Ag, A);
-	.send(A, tell, acceptproposalCura);
-	.delete(0, Ag, Ag1); //0 no es el mismo?no seria 1?
-	.send(Ag1, tell, cancelproposalCura);
-	-+bidsCura([]);
-	-+agentsCura([]).
-
-+!elegirmejorCura: not (bidsCura(Bi))
-	<-
-	.print("Nadie me puede ayudar");
-	-ayudaPedidaCura.
-
-+threshold_ammo(90) //deberia ser 30
-    <- 
-    //pedimos lista de fieldops que nos pueden curar
-    .print("pedimos muni");
-    +activarField;
-	.get_fieldops.
-    // se lo enviamos a todos los medicos
-	
-
-+myFieldops(F): activarField
-<-
-    -activarField;
-    ?position(Pos);
-	+ayudaPedidaMun;
-    .send(F, tell, solicitarMun(Pos)).
-
-+recarga(Pos)[source(Fieldop)]: ayudaPedidaMun
-    <-
-    .print("Tenemos  respuesta muni");
-    ?bidsMun(B);
-	.concat(B, [Pos], B1); -+bidsMun(B1);
-	?agentsMun(Ag);
-	.concat(Ag, [fieldop], Ag1); -+agentsMun(Ag1);
-	-recarga(Pos).
-
-+!elegirmejorMun: bidsMun(Bi) & agentsMun(Ag)
-	<-
-	.print("Selecciono el mejor: ", Bi, Ag);
-	.nth(0, Bi, Pos); // no elijo el mejor, me quedo con el primero
-	.nth(0, Ag, A);
-	.send(A, tell, acceptproposalMun);
-	.delete(0, Ag, Ag1); //0 no es el mismo?no seria 1?
-	.send(Ag1, tell, cancelproposalMun);
-	-+bidsMun([]);
-	-+agentsMun([]).
-
-+!elegirmejorMun: not (bidsMun(Bi))
-	<-
-	.print("Nadie me puede ayudar");
-	-ayudaPedidaMun.
- 
-//Fin nuevas implementaciones
-
-+avanzar(Position)[source(Capitan)]
++avanzar(Position)[source(Capitan)]: not abanderado
     <-
     .goto(Position).
 
-/******************************
-*Métodos normales soldados 
-******************************/
-+flag_taken: team(100) & not soyCapi
-  <-
-  ?capitanAct(CapitanAct);
-  .send(CapitanAct,tell,tenemosBandera);
-  ?base(B);
-  .goto(B);
-
-
-    .get_service("allied");
-    ?allied(Allied);
-    .print(Allied);
-
-
-  .print("In ASL, TEAM_ALLIED flag_taken SOLDADO").
-
-+tenemosBandera[source(Bandera)]
++flag_taken: team(100)
     <-
-    .wait(1000);
-    .get_service("allied");
-    ?allied(Allied);
+    +soyCapi;
     ?base(B);
-    +ordenAvanzar(B).
-
-+flag_taken: team(100) & soyCapi
-  <-
-    .print("In ASL, TEAM_ALLIED flag_taken");
-    ?base(B);
-    +returning;
-    .get_service("allied");
-    ?allied(L);
-    .send(L,tell,avanzar(B));
     .goto(B);
-    -exploring.
+    +aFormar(B).
+    +abanderado.
