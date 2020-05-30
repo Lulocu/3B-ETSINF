@@ -39,27 +39,10 @@ miPos([]).
 //
 +flag_taken: team(100) 
   <-
+      .get_service("allied");
+    ?allied(Allied);
+    .print(Allied);
   .print("In ASL, TEAM_ALLIED flag_taken").
-//  ?base(B);
-//  +returning;
-//  .goto(B);
-//  -exploring.
-
-+heading(H): exploring
-  <-
-  .reload;
-  .wait(2000);
-  .turn(0.375).
-
-//+heading(H): returning
-//  <-
-//  .print("returning").
-
-+target_reached(T): team(100)
-  <- 
-  .print("target_reached");
-  +exploring;
-  .turn(0.375).
 
 +enemies_in_fov(ID,Type,Angle,Distance,Health,Position)
   <- 
@@ -97,5 +80,4 @@ miPos([]).
 
 +avanzar(Position)[source(Capitan)]
     <-
-    .print("Avanzamos los mediocres");
     .goto(Position).

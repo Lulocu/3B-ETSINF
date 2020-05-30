@@ -9,8 +9,8 @@
             "rank": "BDISoldier",
             "name": "axis_luilocu2",
             "password": "secret",
-            "amount": 0,
-            "asl": "bdisoldier.asl"
+            "amount": 10,
+            "asl": "EJEbdisoldier.asl"
         },
         {
             "rank": "BDIMedic",

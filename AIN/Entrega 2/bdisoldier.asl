@@ -2,11 +2,11 @@
 /******************************
 *Creencias iniciales
 ******************************/
-vida(60).
-bidsCura([]).
-agentsCura([]).
-bidsMun([]).
-agentsMun([]).
+vida(100).
+bidsCura([]). //lista posiciones médicos que ayudan
+agentsCura([]). //lista de médicos que ayudan
+bidsMun([]). //lista posiciones fieldops que ayudan
+agentsMun([]). //lista fieldops que ayudan
 /******************************
 *Objetivos iniciales
 ******************************/
@@ -34,21 +34,8 @@ iniciar.
 
 +myBackups(S): capitanNuevo
     <-
-
     -capitanNuevo;
     +elegirCapi(S).
-
-
-//Con otra condicion
-//+myBackups(M)
-//<-
-// .print("Pido ayuda");
-
-
-//+mi_capitan(cap)
-//<-
-//.send(capitan, tell, nuevoCapi);
-//    .print("HECHO").
 
 +elegirCapi(Soldados): not eligiendo
     <-
@@ -85,7 +72,7 @@ iniciar.
     +capitanAct(Capitan).
 
 
-+aFormar: soyCapi // mirar gi
++aFormar: soyCapi
     <-
     ?position([X,Y,Z]);
     .get_medics;
@@ -120,16 +107,17 @@ iniciar.
         -+loopS(I+1);
         }
     -loopS(_);
-    .wait(1000);
+    .wait(3000);
     .print("Finalizaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaado");
-    +ordenAvanzar.
+    ?flag(Bandera);
+    .print(Bandera);
+    +ordenAvanzar(Bandera).
 
 
 +solicitarAtaque(Position)[source(Soldier)]
     <-
     .get_backups;
     myBackups(Soldados);
-    .print("solicitarAtaque");
     .send(Soldados, tell, atacar(Position)).
 
 
@@ -139,11 +127,7 @@ iniciar.
     .print("solicitarParar");
     .send(Allied,tell,quieto).
 
-//+allied(L)
-//    <-
-//    .print("Los agentes de mi equipo con el servicio_a son: ", L).
-
-+ordenAvanzar: flag([X,Y,Z])
++ordenAvanzar([X,Y,Z])//: flag([X,Y,Z])
     <-
     .get_service("allied");
     ?allied(L);
@@ -166,13 +150,10 @@ iniciar.
     <-
     ?capitanAct(CapitanAct);
     .send(CapitanAct, tell, solicitarAtaque(Position));
-    .print("Disparando");
-    .print(CapitanAct);
     .shoot(3,Position).
 
 +atacar(Position)[source(CapitanAct)]
     <-
-    .print("atacar");
     .look_at(Position). //al girarse si lo ven ya deberían atacar, si no lo ven nada porque romerían la formacion
 
 +solicitarParada//vida o municion por debajo de algo y listoCurar listoMuni
@@ -183,19 +164,16 @@ iniciar.
 +quieto[source(CapitanAct)]
     <-
     +parado;
-    .stop.//parar no se como es
-
+    .stop.
 //nuevas implementaciones
 
 
 
-+solicitarCura: parado & threshold_health(40)
++threshold_health(40)
     <-
-    //pedimos lista de medicos que nos pueden curar
+    .print("Pedimos parar");
     +activaCura;
-	.get_medics.
-    // se lo enviamos a todos los medicos
-	
+	.get_medics.	
 
 +myMedics(M): activaCura
 <-
@@ -206,6 +184,7 @@ iniciar.
 
 +curate(Pos)[source(Medico)]: ayudaPedidaCura
     <-
+    .print("Tenemos respuesta medico");
     ?bidsCura(B);
 	.concat(B, [Pos], B1); -+bidsCura(B1);
 	?agentsCura(Ag);
@@ -228,9 +207,10 @@ iniciar.
 	.print("Nadie me puede ayudar");
 	-ayudaPedidaCura.
 
-+solicitarMunicion: parado & municion(X) < 3
++threshold_ammo(90) //deberia ser 30
     <- 
     //pedimos lista de fieldops que nos pueden curar
+    .print("pedimos muni");
     +activarField;
 	.get_fieldops.
     // se lo enviamos a todos los medicos
@@ -245,6 +225,7 @@ iniciar.
 
 +recarga(Pos)[source(Fieldop)]: ayudaPedidaMun
     <-
+    .print("Tenemos  respuesta muni");
     ?bidsMun(B);
 	.concat(B, [Pos], B1); -+bidsMun(B1);
 	?agentsMun(Ag);
@@ -271,16 +252,33 @@ iniciar.
 
 +avanzar(Position)[source(Capitan)]
     <-
-    .print("Avanzamos");
     .goto(Position).
 
 /******************************
 *Métodos normales soldados 
 ******************************/
-+flag_taken: team(100) 
++flag_taken: team(100) & not soyCapi
   <-
-  .print("In ASL, TEAM_ALLIED flag_taken").
+  ?capitanAct(CapitanAct);
+  .send(CapitanAct,tell,tenemosBandera);
+  ?base(B);
+  .goto(B);
 
+
+    .get_service("allied");
+    ?allied(Allied);
+    .print(Allied);
+
+
+  .print("In ASL, TEAM_ALLIED flag_taken SOLDADO").
+
++tenemosBandera[source(Bandera)]
+    <-
+    .wait(1000);
+    .get_service("allied");
+    ?allied(Allied);
+    ?base(B);
+    +ordenAvanzar(B).
 
 +flag_taken: team(100) & soyCapi
   <-
