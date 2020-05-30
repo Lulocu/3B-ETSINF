@@ -7,13 +7,12 @@ miPos([]).
   .length(C,L);
   +total_control_points(L);
   +patrolling;
-  +patroll_point(0);
-  .print("Got control points").
+  +patroll_point(0).
 
 
 +target_reached(T): patrolling & team(200) 
   <-
-  .print("MEDPACK!");
+
   .cure;
   ?patroll_point(P);
   -+patroll_point(P+1);
@@ -32,19 +31,19 @@ miPos([]).
 
 
 //TEAM_ALLIED 
-
-+flag (F): team(100) 
-  <-
-  .goto(F).
-
+//
+//+flag (F): team(100) 
+//  <-
+//  .goto(F).
+//
 +flag_taken: team(100) 
   <-
-  .print("In ASL, TEAM_ALLIED flag_taken");
-  ?base(B);
-  +returning;
-  .goto(B);
-  -exploring.
-
+  .print("In ASL, TEAM_ALLIED flag_taken").
+//  ?base(B);
+//  +returning;
+//  .goto(B);
+//  -exploring.
+//
 +heading(H): exploring
   <-
   .cure;
@@ -66,28 +65,33 @@ miPos([]).
     
 
 
-+solicitarCura(Pos)[source(soldado)]: not (ayudando(_,_))
++solicitarCura(Pos)[source(Soldado)]: not (ayudando(_,_))
 	<-
 	?position(miPos);
-	.send(soldado, tell, curate(miPos));
-	+ayudando(soldado, Pos);
+	.send(Soldado, tell, curate(miPos));
+	+ayudando(Soldado, Pos);
 	-solicitarCura(_);
 	.print("enviada propuesta de ayuda").
 
-+acceptproposalCura[source(solado)]: ayudando(soldado,Pos)
++acceptproposalCura[source(Soldado)]: ayudando(Soldado,Pos)
 	<-
-	.print("Me voy a ayudar al agente: ", soldado, "a la posicion: ", Pos);
+	.print("Me voy a ayudar al agente: ", Soldado, "a la posicion: ", Pos);
 	.goto(Pos).
 
-+target_reached(Pos): ayudando(soldado, Pos)
++target_reached(Pos): ayudando(Soldado, Pos)
 	<-
-	.print("MEDPACK! para el agente:", soldado);
+	.print("MEDPACK! para el agente:", Soldado);
 	.cure;
 	//?posFormacion(P);
 	.goto(miPos);
-	-ayudando(soldado, Pos).
+	-ayudando(Soldado, Pos).
 
-+cancelproposalCura[source(solado)]: ayudando(soldado, Pos)
++cancelproposalCura[source(Soldado)]: ayudando(Soldado, Pos)
 	<-
 	.print("Me cancelan mi proposicion");
-	-ayudando(soldado, Pos).  
+	-ayudando(Soldado, Pos).  
+
+  +avanzar(Position)[source(Capitan)]
+    <-
+    .print("Avanzamos los medicos");
+    .goto(Position).

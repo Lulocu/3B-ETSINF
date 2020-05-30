@@ -1,5 +1,6 @@
 import math
 import json
+import agentspeak
 from loguru import logger
 from spade.behaviour import OneShotBehaviour
 from spade.template import Template
@@ -83,22 +84,32 @@ class BDIAdvancedSoldier(BDISoldier):
      def add_custom_actions(self, actions):
         super().add_custom_actions(actions)
         
-        @actions.add(".elegirAscender", 1)      
+        @actions.add_function(".elegirAscender", (tuple,))      
         #def _elegirAscender(listaSoldados):
-        def _elegirAscender(agent,term,intention):
+        def _elegirAscender(listaSoldados):#listaSoldados,soldado):
             """
             Gives soldier in the middle
             :param number: list of soldiers
             :param type: type of the agents
             :rtype soldier
             """
-            args = asp.grounded(term.args, intention.scope)
-
-            listaSoldados = args[0]
-            pos = len(listaSoldados)//2
-            capi = listaSoldados[pos]
-            super().set_belief(MI_CAPITAN, capi)
-            yield
+            #args = asp.grounded(term.args, intention.scope)
+            #listaSoldados = list(listaSoldados) + [str(soldado)]
+    
+            #pos = len(listaSoldados)//2
+            #capi = listaSoldados[pos]
+            #capi = list(capi)
+            #print(capi)
+            pos = (len(listaSoldados)) //2
+            return listaSoldados[pos]
             
-            
+        
+        @actions.add_function(".delete", (int, tuple, ))
+        def _delete(p, l):
+            if p==0:
+                return l[1:]
+            elif p == len(l) -1:
+                return l[:p]
+            else:
+                return l[0:p] + l[p+1:]
 

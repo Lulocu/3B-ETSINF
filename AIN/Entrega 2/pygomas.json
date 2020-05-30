@@ -29,9 +29,9 @@
      "allied": [
 		{
             "rank": "BDIAdvancedSoldier.BDIAdvancedSoldier",
-            "name": "ATAQUEEEEEEEEEEEEEEEEEEEEEEEEE_luilocu2",
+            "name": "Chutulu_luilocu2",
             "password": "secret",
-            "amount": 2,
+            "amount": 4,
             "asl": "bdisoldier.asl"
         },
         {
@@ -45,6 +45,7 @@
             "rank": "BDIFieldOp",
             "name": "fieldop_allied_luilocu2",
             "password": "secret",
+            "amount":2,
             "asl": "bdifieldop.asl"
         }
    ]
