@@ -1,6 +1,6 @@
 //TEAM_AXIS
 
-+flag (F): team(200) 
++flag (F): team(200)
   <-
   .create_control_points(F,25,3,C);
   +control_points(C);
@@ -10,15 +10,13 @@
   +patroll_point(0).
 
 
-+target_reached(T): patrolling & team(200) 
++target_reached(T): patrolling & team(200)
   <-
-
-  .cure;
   ?patroll_point(P);
   -+patroll_point(P+1);
   -target_reached(T).
 
-+patroll_point(P): total_control_points(T) & P<T 
++patroll_point(P): total_control_points(T) & P<T
   <-
   ?control_points(C);
   .nth(P,C,A);
@@ -30,15 +28,16 @@
   +patroll_point(0).
 
 
-//TEAM_ALLIED 
+//TEAM_ALLIED
 
-
-+flag (F): team(100) 
++flag (F): team(100)
   <-
+    
   .goto(F).
 
-+flag_taken: team(100) 
++flag_taken: team(100)
   <-
+
   ?base(B);
   +returning;
   .goto(B);
@@ -46,18 +45,19 @@
 
 +heading(H): exploring
   <-
-  .cure;
   .wait(2000);
   .turn(0.375).
 
 //+heading(H): returning
 //  <-
 
+
 +target_reached(T): team(100)
-  <- 
+  <-
+
   +exploring;
   .turn(0.375).
 
 //+enemies_in_fov(ID,Type,Angle,Distance,Health,Position)
-//  <- 
+//  <-
 //  .shoot(3,Position).

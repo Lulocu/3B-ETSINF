@@ -1,3 +1,4 @@
+
 //TEAM_AXIS
 
 +flag (F): team(200) 
@@ -7,13 +8,11 @@
   .length(C,L);
   +total_control_points(L);
   +patrolling;
-  +patroll_point(0);
-  .print("Got control points").
+  +patroll_point(0).
 
 
 +target_reached(T): patrolling & team(200) 
   <-
-  .print("AMMOPACK!");
   .reload;
   ?patroll_point(P);
   -+patroll_point(P+1);
@@ -39,7 +38,6 @@
 
 +flag_taken: team(100) 
   <-
-  .print("In ASL, TEAM_ALLIED flag_taken");
   ?base(B);
   +returning;
   .goto(B);
@@ -53,44 +51,12 @@
 
 //+heading(H): returning
 //  <-
-//  .print("returning").
 
 +target_reached(T): team(100)
   <- 
-  .print("target_reached");
   +exploring;
   .turn(0.375).
 
-+enemies_in_fov(ID,Type,Angle,Distance,Health,Position)
-  <- 
-  .shoot(3,Position).
-  
-// nuevas implementaciones
-
-MiPos().
-
-+SolicitarMunicion(Pos)[source(soldado)]: not (ayudando(_,_))
-	<-
-	?position(MiPos);
-	.send(soldado, tell, recarga(MiPos));
-	+ayudando(soldado, Pos);
-	-SolicitarMunicion(_);
-	.print("enviada propuesta de ayuda") 
-
-+acceptproposalMun[source(solado)]: ayudando(soldado,Pos)
-	<-
-	.print("Me voy a ayudar al agente: ", soldado, "a la posicion: ", Pos);
-	.goto(Pos).
-
-+target_reached(Pos): ayudando(soldado, Pos)
-	<-
-	.print("Recargar! para el agente:", soldado);
-	.reload;
-	//?posFormacion(P);
-	.goto(MiPos);
-	-ayudando(soldado, Pos).
-
-+cancelproposalMun[source(solado)]: ayudando(soldado, Pos)
-	<-
-	.print("Me cancelan mi proposicion");
-	-ayudando(soldado, Pos).
+//+enemies_in_fov(ID,Type,Angle,Distance,Health,Position)
+//  <- 
+//  .shoot(3,Position).

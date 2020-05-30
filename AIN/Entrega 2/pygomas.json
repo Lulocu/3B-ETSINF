@@ -9,13 +9,14 @@
             "rank": "BDISoldier",
             "name": "axis_luilocu2",
             "password": "secret",
-            "amount": 8,
-            "asl": "bdisoldier.asl"
+            "amount": 7,
+            "asl": "EJEbdisoldier.asl"
         },
         {
             "rank": "BDIMedic",
             "name": "medic_axis_luilocu2",
             "password": "secret",
+            "amount":2,
             "asl": "bdimedic.asl"
         },
          {
@@ -27,23 +28,11 @@
     ],
      "allied": [
 		{
-            "rank": "BDISoldier",
-            "name": "allied_luilocu2",
+            "rank": "BDIAdvancedSoldier.BDIAdvancedSoldier",
+            "name": "Chutulu_luilocu2",
             "password": "secret",
-            "amount": 8,
+            "amount": 10,
             "asl": "bdisoldier.asl"
-        },
-        {
-            "rank": "BDIMedic",
-            "name": "medic_allied_luilocu2",
-            "password": "secret",
-            "asl": "bdimedic.asl"
-        },
-         {
-            "rank": "BDIFieldOp",
-            "name": "fieldop_allied_luilocu2",
-            "password": "secret",
-            "asl": "bdifieldop.asl"
         }
    ]
   }

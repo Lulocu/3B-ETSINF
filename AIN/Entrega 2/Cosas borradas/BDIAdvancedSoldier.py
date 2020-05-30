@@ -85,14 +85,21 @@ class BDIAdvancedSoldier(BDISoldier):
         super().add_custom_actions(actions)
         
         @actions.add_function(".elegirAscender", (tuple,))      
-        
-        def _elegirAscender(listaSoldados):
+        #def _elegirAscender(listaSoldados):
+        def _elegirAscender(listaSoldados):#listaSoldados,soldado):
             """
             Gives soldier in the middle
             :param number: list of soldiers
             :param type: type of the agents
             :rtype soldier
             """
+            #args = asp.grounded(term.args, intention.scope)
+            #listaSoldados = list(listaSoldados) + [str(soldado)]
+    
+            #pos = len(listaSoldados)//2
+            #capi = listaSoldados[pos]
+            #capi = list(capi)
+            #print(capi)
             pos = (len(listaSoldados)) //2
             return listaSoldados[pos]
             
@@ -105,20 +112,4 @@ class BDIAdvancedSoldier(BDISoldier):
                 return l[:p]
             else:
                 return l[0:p] + l[p+1:]
-        @actions.add_function(".fuegoAmigo", (tuple, tuple, ))
-            
-        def _delete(enemigo, aliado):
-            """
-            Concede o deniega permiso para disparar en funcion de si hay un aliado muy cerca del objetivo
-            :param enemigo: lista con la posicion del enemigo
-            :param aliado: lista con la posicion del aliado
-            :rtype boolean
-            """
-            if aliado == None:
-                aliado = (9999,9999,9999)
-            distX = enemigo[0] - aliado[0]
-            distX = abs(distX)
-            distZ = enemigo[2] - aliado[2]
-            distZ = abs(distX)
 
-            return (distX > 25 and distZ > 25)
