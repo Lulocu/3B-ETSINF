@@ -1,0 +1,12 @@
+PER - 5/Junio/2020 - Test P1
+
+Nombre: Luis López Cuerva
+
+1 ->C
+2 ->A
+3 ->C
+4 ->C
+5 ->A
+6 ->B
+7 ->D
+8 ->D
