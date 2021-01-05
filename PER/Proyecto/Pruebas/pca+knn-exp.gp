@@ -16,7 +16,7 @@ set terminal postscript eps font "Helvetica,24"
 # Nombre del fichero de salida
 #
 
-set output "pca+knn-exp.eps"
+set output "pca+mixgaussian-exp1e-5.eps"
 
 # Establece que los ejes estén en escala logarítmica
 # para observar más fácilmente valores muy cercanos entre si
@@ -27,19 +27,19 @@ set logscale xy
 # Rangos del eje x y del eje y
 #
 
-set xrange [0.9:710]
-set yrange [1.7:100]
+set xrange [0.5:100.5]
+set yrange [1.0:100]
 
 # Define los puntos de referencia (tics) sobre el eje x y el eje y
 # Entre paréntesis se indican separados por coma la etiqueta de texto
 # entre comillas dobles y la posición en ese eje donde aparece la
 # etiqueta
 
-set xtics ("1" 1, "2" 2, "5" 5, "10" 10, "20" 20, "50" 50, "100" 100, "200" 200, "500" 500)
+set xtics ("1" 1, "2" 2, "5" 5, "10" 10, "20" 20, "50" 50, "100" 100)
 set ytics ("1" 1, "2" 2, "5" 5, "10" 10, "20" 20, "50" 50, "100" 100)
 
 # Definimos el texto que usamos para poner etiquetas en la gráfica:
-# - El eje x "Dimensionalidad"
+# - El eje x "Componentes por mixtura"
 # - El eje y "Error (%)"
 # - La línea horizontal que representa la tasa de error sin aplicar PCA "Original"
 # - El título de la gráfica "MNIST 1-NN"
@@ -48,10 +48,10 @@ set ytics ("1" 1, "2" 2, "5" 5, "10" 10, "20" 20, "50" 50, "100" 100)
 # donde debe aparecer la etiqueta seguido de como se alinea el texto (right, left, center)
 # e incluso el tipo y tamaño de la fuente: font  "HelveticaBold,30"
 
-set label "Dimensionalidad" at 650,2.0 right
+set label "Mixturas" at 650,2.0 right
 set label "Error (%)" at 0.92,85 left
 set label "Original" at 0.92,3.1 left
-set label "MNIST 1-NN" at 100,20 center font "HelveticaBold,30"
+set label "pca+mixgaussian alpha = 1e-5" at 100,20 center font "HelveticaBold,30"
 
 # El comando plot representa las dos curvas que aparecen en la
 # gráfica. La primera curva es la de PCA y la segunda, la Original,
@@ -81,7 +81,7 @@ set label "MNIST 1-NN" at 100,20 center font "HelveticaBold,30"
 # el tipo de curva es una línea "with line" (w l) cuyo linewidth es 4 (lw 4)
 # y el tipo de línea es la 2 (lt 2)
 
-plot "pca+knn-exp.out" u 1:2 t "PCA" w lp lw 2 lt 1 ps 2.0, 2.82 not w l lw 4 lt 2
+plot "exp5.out" u 3:4 t "PCA" w lp lw 2 lt 1 ps 2.0, 2.82 not w l lw 4 lt 2
 
 # Si quieres saber más sobre los anchos de línea, tipos de línea/punto, etc. ejecuta
 # "gnuplot" desde el interprete de comandos, y dentro de gnuplot ejecuta el comando "test"
